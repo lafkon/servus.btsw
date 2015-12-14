@@ -3,11 +3,10 @@ Center of Doubt
 
 % BY: Ivar Veermäe
 
-*Center of Doubt*\*\*is a long-term artistic research project. The aim of
-the project is to explore and visualize the disappearance and reappearance
-of network technology, its infrastructure and representation. *Center of
-Doubt* is a collection of visual traces depicting the data industry of
-our times.
+*Center of Doubt* is a long-term artistic research project. The aim of the
+project is to explore and visualize the disappearance and reappearance of
+network technology, its infrastructure and representation. *Center of Doubt*
+is a collection of visual traces depicting the data industry of our times.
 
 The appearance of the commercial 'cloud computing', or more precisely
 the data centers and their supporting infrastructure, is depicted as
@@ -35,10 +34,7 @@ Bruno Latour has a suggestion in his Actor-Network-Theory for thinking
 about things – make their role more important:
 
 > Non-humans have to be actors and not simply the hapless bearers of 
-> symbolic projection. 
-
-– Bruno Latour, Reassembling the Social: An Introduction to
-Actor-Network-Theory [1]
+> symbolic projection. [@latour:2005:reassembling] 
 
 An actor, according to Latour, is meant as something/someone who/which
 influences the behaviour of other actors. Symbolic representation is offered
@@ -59,10 +55,10 @@ Crystal Computing (Google Inc., St. Ghislain)
 > data security reason. 
 
 > This is the main reason why we setup a website where I am sure, you will 
-> find a lot of useful**information 
-> on*[*http://www.google.com/about/datacenters/*](http://www.google.com/about/datacenters/)*. 
+> find a lot of useful information on 
+> http://www.google.com/about/datacenters. 
 
-–Thanks st-ghislain@google.com, 05.02.13
+> Thanks st-ghislain@google.com, 05.02.13 
 
 I continued my research with Google's data center in Saint-Ghislain,
 Belgium. It is the largest Google data center in Europe and the second
@@ -102,27 +98,22 @@ example of this kind of thinking:
 > steel, I come from Cyberspace, the new home of Mind. On behalf of the 
 > future, I ask you of the past to leave us alone. You are not welcome 
 > among us. You have no sovereignty where we gather. 
-
-– Peter Ludlow, Crypto Anarchy, Cyberstates, and Pirate Utopias, pg. 28
-[2]
+> [@[p.28]ludlow:2001:essays] 
 
 and:
 
 > Your legal concepts of property, expression, identity, movement, and 
 > context do not apply to us. They are based on matter. There is no matter 
-> here. 
-
-– Peter Ludlow, Crypto Anarchy, Cyberstates, and Pirate Utopias,*pg. 29
-[2]*
+> here. [@[p.29]ludlow:2001:essays] 
 
 In this kind of conceptualization of cyberspace, which was supposed
 to be a home for pure mind in its immateriality, the mediatory role of
 technology is – probably consciously – forgotten. WIRED, the advocate
 and lobby agency of the Internet, concentrated mostly on *liberation*,
 which could be understood in a *libertarian*sense. In the beginning,
-the Internet had *libertarian**'**wild-west**'***characteristics, but
-soon it was capitalized. The main idea of cyberspace was communicated as
-a technology that connects humans, and therefore is radically different
+the Internet had *libertarian 'wild-west'* characteristics, but soon
+it was capitalized. The main idea of cyberspace was communicated as a
+technology that connects humans, and therefore is radically different
 from exploitative industrial technology. Now it is clear that this kind
 of utopic cyberspace does not exist – there is no unified Internet,
 but mostly various corporate surfaces or spaces. It could be seen as a
@@ -139,10 +130,7 @@ processed in data centers that are owned by private corporations.
 
 > Because the actual technological shape of the system is uncertain, 
 > whoever controls its first stages could decisively influence its future 
-> evolution. 
-
-– Christopher Steiner, Automate This: How Algorithms Came to Rule Our
-World [3]
+> evolution. [@steiner:2012:automate] 
 
 The most important aspect of *The Formation of Clouds* is that it reveals
 the competition between companies to gain the best possible position in
@@ -158,10 +146,7 @@ about the concept of knowledge and its role:
 
 > Knowledge, information, and specialized education are just as much 
 > parts of capital. 'Knowledge capital' as is the most elementary labor or 
-> the worker. 
-
-– Gilles Deleuze and Félix Guattari, Anti-Oedipus. Capitalism and
-Schizophrenia, Continuum *[4]*
+> the worker. [@d+g:1972:oedipus] 
 
 Anti-Oedipus: Capitalism and Schizophrenia was first published in 1972, when
 major restructualization was just getting underway, and knowledge-based
@@ -174,9 +159,7 @@ took place in the mid-70s and early 80s, as Manuel Castells writes:
 > throughout the world. … Thus, to some extent, the availability of new 
 > technologies constituted as a system in the 1970s was a fundamental 
 > basis for the process of socioeconomic restructuring in the 1980s. 
-
-– Manuel Castells, The Rise of the Network Society: Economy, Society
-and Culture (Information Age)*, pg. 60 [5]*
+> [@[p.60]castells:1996:networksociety] 
 
 It is important to notice that the changes to immaterial knowledge
 and information were directly dependent on the material developments
@@ -186,10 +169,7 @@ principal fields:
 
 > The new economy emerged in a given time, the 1990s, a given space, the 
 > United States, and around/from specific industries, mainly information 
-> technology and finance. 
-
-– Manuel Castells, The Rise of the Network Society: Economy, Society
-and Culture (Information Age), *pg. 147 [5]*
+> technology and finance. [@[p.147]castells:1996:networksociety] 
 
 There is a strong interrelation between the global financial system and
 information technology: could the former was able to develop through
@@ -200,10 +180,7 @@ youth. Origins of this idea – the adolescent as a perfect consumer –
 lay in US counterculture, as Fred Turner writes:
 
 > Counterculture opened the doors of the youth movement to the complex 
-> delights of consumer culture. 
-
-– Fred Turner, From Counterculture to Cyberculture: Stewart Brand,
-the Whole Earth Network, and the Rise of Digital,*pg. 32 [6]*
+> delights of consumer culture. [@[p.32]turner:2006:c2cculture] 
 
 The discovery or rather production of consumerism by various business
 enterprises created gigantic profits for them. According to Fred Turner,
@@ -222,9 +199,7 @@ two principal ideas, which had a huge influence later:
 
 > corporation as site of revolutionary social change and interpersonal 
 > and information networks as tools and emblems of that change. 
-
-– Fred Turner, From Counterculture to Cyberculture: Stewart Brand,
-the Whole Earth Network, and the Rise of Digital Utopianism*, pg. 194 [6]*
+> [@[p.194]turner:2006:c2cculture] 
 
 Accompanied by:
 
@@ -233,26 +208,22 @@ Accompanied by:
 > networks as 'virtual communities', and cyberspace itself as the digital 
 > equivalent of the western landscape into which so many communards set 
 > forth in the late 1960s, the 'electronic frontier'. 
-
-– Fred Turner, From Counterculture to Cyberculture: Stewart Brand,
-the Whole Earth Network, and the Rise of Digital Utopianism, pg. 6 [6]
+> [@[p.6]turner:2006:c2cculture] 
 
 These two notions – the corporation as a site for social change and the
 'personalization' of technology – influenced a clear move from politics to
 consumerism, from citizen to consumer, and from state to corporation. The
 main ideology of this movement is that one must liberate oneself. It is
 tricky, because one is never finished, therefore she/he must constantly
-develop themselves to achieve 'liberation'. As Deleuze clearly states in
-'*Postscript on Societies of Control**'*:
+develop themselves to achieve 'liberation'. As Deleuze clearly states
+in*'Postscript on Societies of Control'*:
 
 > In the disciplinary societies one was always starting again (from the 
 > school to the barracks, from the barracks to the factory), while in the 
 > societies of control one is never finished with anything – the 
 > corporation, the educational system, the armed services being metastable 
-> states coexisting in one and the same modulation. 
-
-– Gilles Deleuze, 'Postscript on Societies of Control', October,
-Vol. 59.*[7]*
+> states coexisting in one and the same 
+> modulation.[@deleuze:1992:postscript] 
 
 One is never finished and must always modulate him/herself through the
 expression of her/his individuality. Bluntly said, nowadays consuming the
@@ -264,9 +235,7 @@ have found a clever term for this – DIY servitude:
 > decision-making are in fact decisions made in advance. They were 
 > ready-made well before the individual was confronted with the duty 
 > (presented as an opportunity) to decide. 
-
-– Zygmunt Bauman and David Lyon, Liquid Surveillance. A Conversation*,
-pg. 34 [8]*
+> [@[p.34]baumanlyon:2013:liquidsurveillance] 
 
 The 'personal technology' one uses is never finished, it needs constant
 development. It is made for persons who are supposed to be making themselves
@@ -276,11 +245,9 @@ them with information. As Bauman and Lyon clarify:
 
 > All those technical gadgets are, we are told, 'user friendly' – though 
 > that favourite phrase of commercial copy means, under closer scrutiny, a 
-> product that is incomplete without the user's labour … not a voluntary, 
-> but a DIY servitude... 
-
-– Zygmunt Bauman and David Lyon, Liquid Surveillance. A
-Conversation,*pg. 22 [8]*
+> product that is incomplete without the user's labour**…**not a 
+> voluntary, but a DIY servitude... 
+> [@[p.22]baumanlyon:2013:liquidsurveillance] 
 
 The system is based on clever mimicry – free labor for corporations is
 masked as personal development – DIY, finding one's own liberation. One
@@ -310,10 +277,7 @@ record of an actual event (textual, biological, chemical, geological)
 the potential problem:
 
 > Data double tends to be trusted more than the person, who prefers to 
-> tell their own tale. 
-
-– Zygmunt Bauman and David Lyon*,*Liquid Surveillance. A
-Conversation,*pg. 8 [8]*
+> tell their own tale.[@[p.8]baumanlyon:2013:liquidsurveillance] 
 
 Data double is an abstraction that exists only in an anthropocentric
 view. But as a useful abstraction it has valuable qualities. Talking,
@@ -327,10 +291,7 @@ is happening in many domains, as Mayer-Schönberger and Cukier write:
 
 > 'Big-data consciousness' - presumption that there is quantitative 
 > component to all that we do, and that data is indispensable for society 
-> to learn from. 
-
-– Viktor Mayer-Schonberger and Kenneth Cukier, Big Data. A Revolution
-That Will Transform How We Live, Work and Think,*pg. 97 [9]*
+> to learn from. [@[p.97]mayercukier:2013:bigdata] 
 
 Since quantities are fixed categories, mostly based on events that have
 already happened, it is easy to justify them through their existence. Big
@@ -356,49 +317,29 @@ order and optimize the messy physical world.
 > discover patterns and correlations … The correlations may not tell us 
 > precisely why something is happening, but they alert us that it is 
 > happening. Big data is about what, not why. 
+> [@[p.14]mayercukier:2013:bigdata]
 
-*–*Viktor Mayer-Schonberger and Kenneth Cukier Big Data: A Revolution
-That Will Transform How We Live, Work, and Think, pg. 14 [9]
 
-Bibliography
+% Bibliography
+% ----------------
+% Bruno Latour, Reassembling the Social: An Introduction to Actor-Network-Theory, New York: Oxford University Press, (2005) 2007, 10.
+% Peter Ludlow, Crypto Anarchy, Cyberstates, and Pirate Utopias. Collection of essays, Cambridge, MA: The MIT Press 2001.
+% Christopher Steiner, Automate This: How Algorithms Came to Rule Our World, New York: Portfolio/Penguin, 2012, 395.
+% Gilles Deleuze and Félix Guattari, Anti-Oedipus. Capitalism and Schizophrenia, London: Continuum (1972) 2004, 255.
+% Manuel Castells, The Rise of the Network Society: Economy, Society and Culture (Information Age), Oxford: Blackwell Publishers Ltd (1996) 2000.
+% Fred Turner, From Counterculture to Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of Digital Utopianism, Chicago: The University of Chicago Press 2006.
+% Gilles Deleuze, 'Postscript on Societies of Control', October, Vol. 59. (Winter, 1992), 3-7.
+% Zygmunt Bauman and David Lyon, Liquid Surveillance. A Conversation, UK: Polity Press 2013, 34.
+% Viktor Mayer-Schonberger and Kenneth Cukier, Big Data. A Revolution That Will Transform How We Live, Work and Think, London: John Murray Publishers 2013.
 
-[1] Bruno Latour, *Reassembling the Social: An Introduction to
-Actor-Network-Theory*, New York: Oxford University Press, (2005) 2007, *10.*
 
-[2] Peter Ludlow, *Crypto Anarchy, Cyberstates, and Pirate
-Utopias*. Collection of essays, Cambridge, MA: The MIT Press 2001.
+% BIOGRAPHY: -------------------------------------
 
-[3] Christopher Steiner, *Automate This: How Algorithms Came to Rule Our
-World*, New York: Portfolio/Penguin, 2012, 395.
-
-[4] Gilles Deleuze and Félix Guattari, Anti-Oedipus. Capitalism and
-Schizophrenia, London: Continuum (1972) 2004, *255.*
-
-[5] Manuel Castells,***The Rise of the Network Society: Economy, Society and
-Culture (Information Age)*, Oxford: Blackwell Publishers Ltd (1996) 2000*.*
-
-[6] Fred Turner, *From Counterculture to Cyberculture: Stewart Brand,
-the Whole Earth Network, and the Rise of Digital Utopianism*, Chicago:
-The University of Chicago Press 2006.
-
-[7] Gilles Deleuze, *'**Postscript on Societies of Control'*, October,
-Vol. 59. (Winter, 1992), 3-7.\*\*
-
-[8] Zygmunt Bauman and David Lyon,***Liquid Surveillance*. A Conversation,
-UK: Polity Press 2013,*34.*
-
-> [9]*Viktor Mayer-Schonberger and Kenneth Cukier, Big Data. *A 
-> Revolution That Will Transform How We Live, Work and Think*, London: 
-> John Murray Publishers 2013*. 
-
-% --Biography -------------------------------------
-
-**Ivar Veermäe****'s**\*\*\*\*(ES/DE) work circles around questions of
-public space, networks and new technologies. As a result of long-term
-artistic research by means of photography, film and sound, his works
-are presented in versatile ways (such as video, on-site installations,
-interactive works and performances, also in public space). Ivar
-Veermäe aims to document and analyze the infrastructure underlying
-our contemporary culture of data and information. His projects show
-a processual, still evolving and therefore non-finite character that
-enables further discussions.
+**Ivar Veermäe's** (ES/DE) work circles around questions of public space,
+networks and new technologies. As a result of long-term artistic research
+by means of photography, film and sound, his works are presented in
+versatile ways (such as video, on-site installations, interactive works
+and performances, also in public space). Ivar Veermäe aims to document
+and analyze the infrastructure underlying our contemporary culture of
+data and information. His projects show a processual, still evolving and
+therefore non-finite character that enables further discussions.
