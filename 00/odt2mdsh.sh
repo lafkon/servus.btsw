@@ -18,7 +18,7 @@
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
-  for ODT in `ls $ODTDIR/*.odt | grep ivar`
+  for ODT in `ls $ODTDIR/*.odt`
    do
       MDSH=$MDSHDIR/`basename $ODT | #
                      cut -d "." -f 1`.mdsh
