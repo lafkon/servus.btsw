@@ -39,7 +39,7 @@
   soffice --headless --convert-to html:HTML --outdir $TMPDIR ${TMP}.odt
  
   cat ${TMP}.html                        | # PIPE STARTS
-  sed 's/<span/ &/gI'                    | # CORRECT MALFORMAT HTML
+ # CHECK: tidy - HTML syntax checker and reformatter
   pandoc --no-wrap -r html -w markdown   | # FROM HTML TO MARKDOWN WITHOUT WRAP
   sed '/^\\$/d'                          | # DELETE LINES WITH BACKSLASH ONLY
   sed "/^%/s/ /$S/g"                     | # PROTECT SPACES FOR COMMENTS
