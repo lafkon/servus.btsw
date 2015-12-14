@@ -1,0 +1,281 @@
+**Strategies of Net-activists Against Phishing and
+
+Fake Business Websites** 
+==================================================== 
+
+% BY: KairUs - Linda Kronman and Andreas Zingerle****
+
+This essay is part of our artistic research into vigilante online
+communities and Internet fraud. Online communities of so called scambaiters
+try to identify, block and report Internet crime activities. For
+this they have developed various strategies, ranging from creating
+warning platforms to collecting fake checks or blocking bank accounts,
+and they organize themselves in different forums[^]{Zingerle, Andreas
+and Linda Kronman. “Humiliating Entertainment or Social Activism:
+Analyzing Scambaiting Strategies Against Online Advance Fee Fraud.”
+in *Cyberworlds* (CW), 2013 International Conference on. IEEE, 2013,
+pp. 352-355.}. One of these subgroups call themselves “Artists against
+419” and host the biggest open-access database of fake websites. As
+of November 2015, there are over 4800 registered users and on average
+about 35 websites are added to the database each day. They use “passive
+reconnaissance” and “open source intelligence” (osint) tools to
+gather information, so that they can file reports to the hosting provider
+to get the websites taken off the web. Since 2007, the group members have
+discontinued using web programs such as “Lad Vampire” or “Muguito”
+to run “Denial of Service” attacks against the websites[^]{Brenner,
+Susan W. “Private-public sector cooperation in combating cybercrime:
+In search of a model.” *J. Int'l Com. L. & Tech.* 2 (2007): 58.} and
+instead use online tools and written reports to maintain good relations
+with hosting providers and law enforcement[^]{Cain, Patrick. “Scam
+trap.” *The Toronto Star, http://www. thestar. com, referenced March*
+21 (2004): 2011.}. In the following paragraphs we want to present one of
+their work-flow strategies to track and report fake websites.
+
+Scambaiters use various vernacular tools and social engineering techniques
+in order to run background checks on suspicious business websites. Open
+source intelligence (osint) refers to intelligence that has been derived
+from publicly available sources both on- and offline. These tools are
+used in “ethical passive reconnaissance[^]{Glassman, Michael, and Min
+Ju Kang. “Intelligence in the internet age: The emergence and evolution
+of Open Source Intelligence (OSINT).” *Computers in Human Behavior*
+28 (2012): 673-682.}” to gather as much information about the target
+as possible. In this version, passive reconnaissance is perpetrated by
+activists and hacktivists who are trying to gain information that will
+support their political causes or other such ethical motivations. Law
+enforcement officials may also use passive reconnaissance as part of a
+criminal investigation. Ethical or not, passive reconnaissance is always
+done without the authorization of the person or organization that is being
+targeted[^]{Bansal, Akanksha, and Monika Arora. “Ethical Hacking and
+Social Security.” *Radix International Journal of Research in Social
+Science* 1, no. 11 (2012).}.
+
+This leads to an effective combination of classical social
+engineering attacks on the target, which in turn can be
+used to harvest more information. The following chapter
+summarizes the hands-on part of a workshop called “Credible
+fictions – Deceptive realities”[^]{“Credible
+Fiction – Deceptive Realities” Workshop notes:
+http://www.andreaszingerle.com/credible-fictions-deceptive-realities/}. In
+the workshop the *Megacorp.* installation served as a point of departure
+to further investigate Internet activism, resurfacing fake websites and
+osint tools. The online tools were presented to the group of participants,
+who gathered and discussed information using the collaborative writing
+tool “piratepad”.
+
+As an example website we want to focus on www.start-office.biz. According
+to their website, start-office.biz is an international company specializing
+in organizing virtual offices. They are located at the Wienerberg Twin
+Towers in Vienna, Austria, and currently offer jobs to local agents who
+should “provide relevant information online for direct clients and
+other relevant stakeholders through through popular social networking
+sites”. In the following paragraphs, we will use the osint tools to
+analyze the website and raise suspicion about the legitimacy of the website.
+
+Look and Feel 
+------------- 
+
+Every website is designed differently. Over the years certain trends in
+usability set standards for web designers. You can always ask yourself,
+how coherent is the web design? Does a photo with the company logo have a
+pixelated, poor quality, whereas all other photos are crisp and sharp? Does
+the logo look badly manipulated into an image?
+
+On the front page of our example website we see the dark black logo of
+start-office.biz. Font type and size of the logo look misplaced and don’t
+fit the overall dominant gray and dark blue color combination. In one of the
+header images the logo is clearly squeezed in the image. The company’s
+headquarter is supposedly located in Vienna, Austria. The website claims
+to operate on a global scale and runs hundreds of offices in the USA
+and Canada. The page language is English and there is no translation to
+German available. On the “testimonials” page we find a review from
+a person called ‘Michel’ from France, who refers positively to a
+different company:
+
+> Sunex’s virtual office allows me to service these clients from anywhere 
+> in the world, while maintaining a presence in Texas. 
+
+So it seems that this review was copied from another website and
+the company’s name was not changed. The “career” page offers an
+application form to apply for the “local agent” position. The salary
+is stated in USD and is paid on a weekly basis, which is also a very
+uncommon practice in Austria.
+
+Crosslinks 
+---------- 
+
+You can check how many other websites link to your targeted
+website. In search engines like Google or Waybackmachine, type “link:
+www.start-office.biz” or use online search tools like backlinkwatch to
+figure out how many websites link to your website in question. Both tools
+report no backlinks. It is not a criminal act to have no websites linking
+to your website, but it still looks suspicious, when a page claims to be
+a global player and no customers link to them.
+
+Contact Information 
+------------------- 
+
+Every page has to provide a possibility to contact the website owner. Is
+the contact email the same as the domain name, or is it a free-to-use
+webmail service. Is the postal address a valid address? This can easily
+be checked through online streetmap services. Also phone numbers can
+be checked to see whether the area code belongs to a local number or if
+it is part of a call forwarding program. What happens when you call the
+number? Is the line in use during office hours?
+
+In our example the company’s address is the Twin Towers in Vienna,
+although it doesn’t provide a floor number. The phone number has the
+correct country code “+43” for Austria and “1” as a city code for
+Vienna. A quick search in the local online telephone database ensures
+that the telephone number is registered at the state telecommunication
+company A1, but there is no name entry to be found.
+
+There are two email addresses on the website: support@start-office.biz and
+hr@start-office.biz. An alter ego personality contacted both addresses
+and claimed to be looking for a job in Vienna. A person called Thomas
+Anderson replied as a representative of the company, sent me his Skype
+account details and three pdfs that I should read through, fill out and
+return in time. The three documents included an application for employment,
+a confidentiality agreement and a job offer signed by a Michael Adams,
+Director of Start-Office.biz. By using an IP tracker it is possible to
+analyze the email header and obtain the IP address from where the email
+was sent. In case of the email from Michael Adams, the email provider is
+Telmex Colombia S.a. in Barranquilla, Colombia.
+
+Imprint 
+------- 
+
+Depending on the country in which the company operates, a trade
+registry number, VAT number, company address, and other legal
+metadata and terms of use have to be published as a “Site notice”,
+“Legal notice” or “Legal disclosure”. This information can be
+double-checked on pages like VIES/VAT number validation from the EU
+Commission[^]{http://ec.europa.eu/taxation_customs/vies/} or the BBB –
+Better Business Bureau[^]{http://www.bbb.org/}. According to E-Commerce
+law, Austrian commercial companies have to have a legal notice on their
+webpage. In the contact section of our example website, there is no legal
+notice or VAT number published.
+
+-
+
+Domain Whois 
+------------ 
+
+WHOIS[^]{http://www.whois.net/} stands for “Who is?” and is a
+web-utility used to look up information on domain names, contact information
+as well as some technical information such as the domain’s name servers
+(DNS). Every domain owner has to provide valid contact information. This
+is part of the registration agreement and providing false information can
+result in your domain name being deleted, although some types of domains
+do allow you to have placeholder information from another company as the
+domain owner. By doing a whois look up on a targeted domain, you can see
+when a domain was registered, last updated, and how long this registration
+is valid. Often, scammers use the minimum period of one year to register
+their domain, since they are sure they will only be operating for a few
+months, and then they open another domain. Further important information one
+can gather is the hosting provider’s name and contact information. This
+to contact the hosting provider and report the fraudulent website. It is
+also possible to track down inconsistencies, e.g. different addresses or
+website owner from what is stated on the website.
+
+In our example the registrant contact is a Mr. Fred Bohnsack, living at
+2775 Holdom Avenue in Surrey, B.C., Canada. The website is hosted with
+hostgator.com and is registered for one year.
+
+Reverse IP lookup 
+----------------- 
+
+Using a reverse IP Address lookup tool[^]{http://reverseip.domaintools.com/}
+it is possible to gain more insight into all the different websites and
+domains hosted on that IP-address. Often scammers run several websites
+at once, and it is just easier, cheaper and more convenient to host them
+under the same provider. This way, it is often possible to observe the
+working methods of a group of scammers who operate several websites at once.
+
+HTML code and text analyzer 
+--------------------------- 
+
+Scammers often reuse their website templates. Once their websites are
+taken off the Internet, they make small changes, e.g. the business name,
+address, the logo or in the written text, and register a different domain
+and upload the site again. To be able to more quickly track down the website
+once it re-surfaces again, anti-scam activists use online services like
+‘Talkwater alerts’ and ‘Google alerts’. With these services one
+can search for certain keywords or phrases and get instant alert messages
+when the website is indexed. Activists specialize in certain businesses
+and build up alert clusters.
+
+Another toolset that can be used to track copied content on the
+web are online plagiarism detection services like “citeliner” or
+“copyscape”. Once you copy/paste phrases of the website’s text into
+the searchbox, the services use the Google API to return websites that
+use the same or similar text. This way it is possible to detect websites
+that are clones of other websites, and with our example website we found
+three other fake websites and also the “real” source company, from
+which the content for the other websites was copied.
+
+In addition to analyzing the text on the website, when we look into
+the HMTL code we find a reference that the website was “mirrored from
+sunexsolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 11 Oct
+2014 06:46:46 GMT”. This reveals that the website “start-office.biz”
+is a clone from “sunexsolutions.com”. The sunexsolutions was amongst
+the *Megacorp*. business websites that were scraped and analyzed.
+
+The Megacorp. Business Conglomerate 
+----------------------------------- 
+
+The research of the scambaiting community “Artists against 419” led
+to a deeper investigation into how this community tracks fake business
+websites and reports them. We wanted to visualize the database, so our idea
+was to look at all these fake companies as though they were one big evil
+corporate conglomerate that wants to take over the world. This so called
+*Megacorp*. is inspired by its equally powerful counterparts in science
+fiction. The term was coined by William Gibson and inspired many other
+authors of the dystopian cyberpunk science fiction genre to create megacorps
+in their fiction, amongst others the Tyrell corp. (*Do Androids**D**ream
+of Electric**S**heep*), Encom corp. (*Tron*), Weyland-Yutani (*Alien*
+series), Cyberdyne Skynet Systems (*Terminator*).
+
+The artwork is based on a collection of 1000 fake websites scraped from
+Internet. The creation of the *Megacorp*. serves as an umbrella company
+that depicts the overall business segments and countries where these fake
+businesses are present. An interim report was published for the exhibition,
+and visitors have an opportunity to browse locally through the network of
+fake websites. Additionally a corporate presentation video and a location
+reconnaissance video reflect both the imaginary and the real world outreach
+of the *M**egacorp*.
+
+The data gathering process took several months. From September 2014 to April
+2015. The aa419-database was visited on a daily basis and websites were
+automatically downloaded using a site scraper tool. The scraped websites
+were analyzed and categorized according to business segment, street address,
+most prominently used color on the webpage, registered city and country.
+
+The findings are best described in the report, yet following some
+key figures and reflections extracted from the CEO’s Letter
+(*Megacorp*. Interim report: First 1000 companies):
+
+*“... We have divided our enterprise into 10 business segments, of which
+the biggest are ‘Transport and Logistics’ (32.6%), ‘Banking and
+Finance’ (21.9%) and ‘Online Merchandise and Trade’ (14.2%). It
+may come as a surprise that the ‘Pet Shops and Animal Transport’
+(6.9%) segment has a good chance of being the fourth largest business
+segment. ... As mentioned, our company language is currently restricted
+to English, and this might limit our presence on some continents,
+especially Asia’s lucrative market, while apparently the Chinese
+phishers are responsible for 85% of the domain names that were registered
+for phishing”.*
+
+The full report and screenshots from the websites can be found on the
+website [www.megacorp.kairus.org](http://www.megacorp.kairus.org/)
+
+% --Biography -------------------------------------
+
+**KairUs** is a collective of two artists, Linda Kronman (FI) and
+Andreas Zingerle (AT). Our work focuses on human computer and computer
+mediated human-human interaction with a special interest in transmedia
+and interactive storytelling. Since 2010 we have worked with the theme
+of Internet fraud and online scams, constantly shifting our focus and
+therefore approaching the theme from a number of perspectives, such as
+data security, data privacy, ethics of vigilante communities, narratives
+of scam e-mails, and technologies in relation to fraud.
+

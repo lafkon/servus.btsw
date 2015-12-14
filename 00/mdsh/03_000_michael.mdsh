@@ -1,0 +1,557 @@
+Third Person Data 
+================= 
+
+% BY: Dr. Michael Sonntag
+
+What is “Third Person Data”? 
+---------------------------- 
+
+Data about a person may exist at various locations: if we think about
+our own personal data, e.g. our preferences in communication (who we send
+E-mails to or receive from), interests (what we “like” on Facebook)
+or habits (which websites we visit regularly), then many persons know
+about these things. Obviously we know about ourselves quite a lot (but
+take care: you might be able to name your favorite E-Mail contacts,
+but could you correctly identify all topical areas you “liked” in
+the past?). Comparatively easy to identify are persons or corporations
+we gave the data to directly: our E-Mail provider, the social networking
+platform, and the websites we visit regularly. We might not always like
+that they know, but this is difficult to avoid and data protection laws
+provide not only theoretical but at least partly also effective limits
+and remedies against data misuse.
+
+Much more difficult to “take care” of are third persons knowing about
+our data: not only would you have to know about their existence and what
+they actually collect and store, but they can also be located anywhere
+and you do not have any contract with them – or they would not be third
+persons. Examples of such third persons and third person data are:
+
+- Advertisement networks: They place advertisements on various 
+    websites. Through their own cookies they track users across all 
+    websites where one of their ads is displayed. Note that the owner’s 
+    influence is limited to the advertisement area– everything else is 
+    under direct control of the advertiser and cannot be hindered or 
+    prevented by the site. If at one place they can identify the person 
+    (e.g. through login and data sharing by the website operator), then 
+    all collected data from all sites can be attributed to this person. 
+
+- Intelligence agencies: Monitoring Internet lines, especially at the 
+    backbone level, allows collecting data on many users and in detail. 
+    Even encryption only partially helps, as e.g. the IP address (source 
+    computer and destination web server, for instance) cannot be hidden 
+    in that way. The only advantage for users is that the amount of data 
+    is so large that only small parts can be stored for a longer time: 
+    complete data is collected only in case you are individually 
+    targeted (for whatever reason). 
+
+- Platform participants: Platforms like Facebook, eBay, or Amazon know 
+    you, which is obvious. Not immediately apparent is that many 
+    elements on these platforms, e.g. products, games, or additional 
+    services, might be provided by third parties. While their name is 
+    often accessible or even shown, they may collect significant data on 
+    a user’s behavior or interests without clearly appearing as someone 
+    else: they look like an integral part of the platform. Often they 
+    can access data other than that which directly collected in their 
+    “parts” through the platform, e.g. the user profile or parts 
+    thereof. Typically the default configuration allows extensive 
+    access. 
+
+- Identity providers: Logging in through a single central account may 
+    be simple and convenient, but simultaneously the identity provider 
+    can collect a list of when the person has authenticated where. 
+    Additional information may be disclosed too, e.g. if different 
+    verification levels exist or if the site where authentication is 
+    performed provides details like where in the site authentication is 
+    requested, for instance creating a new account, checking out, or 
+    performing specific actions requiring enhanced verification. These 
+    are third parties only in respect to logins; they may collect 
+    additional data directly as well. 
+
+- Video surveillance: Whenever you walk through a city, you will be 
+    recorded by video cameras. These could either be officially 
+    installed and operated e.g. by the police, or be privately used (but 
+    still covering public or semi-public locations – e.g. streets or 
+    shops). Usually there is no direct information at all regarding who 
+    collects data, storage duration, who has access to it when, etc. 
+    Each camera alone is typically not very interesting, but if the data 
+    of many is combined and becomes available, the person can be 
+    identified (e.g. by facial recognition, detailed accounts of the 
+    locations a person visits when). Another example for gathering data 
+    are automated toll collection systems and section controls. Most 
+    operate by license plate recognition, which works very reliably on a 
+    technical level. Also, in some countries such systems are built into 
+    tow trucks driving through cities and scanning for cars suitable for 
+    repossession. Naturally most of the license plates scanned will be 
+    useless, but technically there is no problem at all storing this 
+    information in a database, associated with a timestamp and a 
+    geolocation, for future use (building profiles, selling etc). 
+
+- Storage reuse: Old data media might be securely erased or destroyed, 
+    but very often that is not the case and they end up on auction 
+    websites as “used/second hand”, or through shops as “refurbished”. 
+    Sometimes they are shipped to third-world countries for recycling or 
+    disposal. In all these cases data on the media may remain 
+    accessible, because with modern harddisks, for example, securely 
+    erasing the content but leaving it in working order is complicated 
+    and requires a long time. For other mediums (like SSDs or memory 
+    sticks) this may be even more complicated. Hence the data may end up 
+    somewhere else, although it has officially been destroyed – it is 
+    just that nobody actually took care of this. While targeted attacks 
+    are not possible, the results can be problematic for those unlucky 
+    persons whose data can be recovered. 
+
+- Second persons “Plus”: Even those we do have a contract with or 
+    freely give data to might change to third persons. When data is 
+    aggregated with other information (e.g. statistical data), used for 
+    a different purpose or passed on to someone else, the lines become 
+    blurred. Is this still the original data we gave to them? Who now 
+    physically controls it? What are they going to do with it? What if 
+    the recipient of data passes it on again – will you ever know who 
+    now has your data and what it will be used for? The end result 
+    therefore closely resembles the situation when a third party 
+    collects data itself. 
+
+- Data theft: Hacking systems is not fun anymore but business. 
+    Therefore data stolen from large websites is a valuable commodity 
+    and will be used and resold. Many times this takes place without the 
+    affected persons knowing this fact, as such hacks/data thefts are 
+    denied and kept secret as long as possible: admitting them would 
+    cause bad press, liability and increased security measures in the 
+    future for the company they were entrusted to. 
+
+Third person data can therefore be defined as data about a person which
+is stored, collected, or used by someone the person does not know is
+doing this (a third person), and where therefore no direct control or
+verification/supervision is possible.
+
+Implications for Computer Forensics 
+----------------------------------- 
+
+For computer forensics, which can be roughly defined as the investigation
+of digital data in the context of legal proceedings, third person data can
+be invaluable, but also very problematic. Invaluable because this is data
+collected by someone who is not involved and therefore trustworthy. The
+suspect might have deleted his browser history, but the advertisement
+network still knows where he has been when (at least partially). But it
+can be problematic as well, because by default (i.e. in most cases) the
+investigator does not know who might have such data in her possession, and
+if they do, how to obtain access to it. Additionally there is no guarantee
+that data exists, that it is complete, of good quality, reliable etc.
+
+How to know that data exists at all – and where 
+----------------------------------------------- 
+
+The first and most simple option is just to know who collects which
+data. While this is a good approach for experts and in narrow areas, this
+obviously cannot be a general solution. Still it should not be omitted
+as computer forensics is something only experts should perform and these
+might then know potential owners of additional data. Such knowledge can be
+obtained or expanded through investigations. If e-mails are of interest,
+for example, then the layperson will see the sender (“Sent” mailbox)
+and the recipient (“Inbox”) as those possessing data about the time of
+sending/receiving the mail. But experts know that additional header lines
+(normally not shown!) exist, creating a trace of servers the mail traversed
+on its way from source to destination. And every server appearing in
+there might (or should, unless it was not saved or already deleted) have
+some third person data referencing this mail and can therefore confirm
+or refute certain aspects about it. This means that investigations may
+uncover potential holders of additional data usable as evidence.
+
+Another option to discover third person data is to perform the same
+activities as the person suspecting the existence of such data, but
+simultaneously and explicitly looking for any signs of surveillance or
+even employing tools actively scanning for them. This is suitable for open
+video monitoring, for example: normally we don’t notice any cameras,
+but when we explicitly look for them, they are easy to see. Hidden (or
+temporary: see tow truck example above) cameras are more difficult to
+catch, but with enough experience and diligence these might be discovered
+at least sometimes. Also wireless connections can be detected easily (but
+not necessarily their content), leading to processing devices which might
+collect some data (or not). On the Internet this is easier, as it is trivial
+to monitor all network traffic of your computer in detail. When visiting
+a webpage it is then possible to identify where the computer connects to,
+what cookies it sends out and receives, etc. But passing data on by the
+server or changes between the original incident and the investigation
+(new advertisement partner) pose significant problems.
+
+If such third parties collecting data have been hacked, their data might
+have been published on the Internet. Based on this information, it can
+be assumed what these (or similar) parties are observing. So if you are
+not part of the data disclosed, some conclusions can still be drawn. The
+Snowden disclosure can serve as an example here. The capabilities of
+one specific secret service have been published, but it must be assumed
+that similar services in other countries are mostly capable of the same
+actions. Additionally, it is possible to identify what someone else
+with the same access might be able to do – and therefore is doing with
+some probability.
+
+This leads to the next, and rather pessimistic, category: when someone
+possesses the technical capabilities to monitor and collect data, he
+will. This is not necessarily true, but at least in countries with weak
+privacy laws this must be assumed. There data will be collected just in
+case and quickly be sold to others, if they show interest and are willing
+to pay. So this approach is better suited to identifying what kind of
+data might be third party data than who the third party is.
+
+Definite third party holders of data are all kinds of “upstream
+providers” of services. AirBnB does not own any servers, for example,
+instead they use Amazon web services. So Amazon obviously does have
+physical access to all of their data. They might not be allowed to look at
+it (contract), but they can access it, e.g. in case of emergencies or on
+request of third parties. While direct data access seems unlikely, using
+the data for calculating statistics is quite probable. Physical access is
+especially interesting if the company gets into financial difficulties, as
+Amazon might use their data as security, preventing any access by them or
+you, the actual owner, or as compensation for unpaid invoices (e.g. through
+selling to someone else; similar to utilizing domain names in bankruptcy).
+
+The last useful option is inserting incorrect data and waiting for it
+to come up somewhere again. For instance an arbitrary e-mail address
+might be created and disclosed to a single provider (creating a new
+one for each target is no difficulty). Whenever someone contacts you on
+this address, you know one person to whom your data (or at least parts
+of it) was disclosed too – and from which source. This is obviously
+time-consuming and works only if data usage is observable (e.g. difficult
+with video surveillance). Also, “storing for future use/reference”
+cannot be detected in this way.
+
+Finally you could perform illegal actions where the only evidence
+is the potentially monitored behavior and wait to be arrested (which
+resembles the previous approach). While this method is very reliable,
+as the police/prosecutor will have to disclose how they found you and
+present the evidence in court at the latest (hence the behavior must be
+the only evidence existing at all), this cannot be recommended. Still
+it is useful regarding other persons (e.g. criminals performing illegal
+activities for other reasons), as verifying what has been used as evidence
+in the past can be assumed as a lower limit of what is possible today.
+
+As an overview, the methods described above are presented here briefly
+in a table with some properties: time required to obtain information,
+reliability (wrongly assumed to possess data or incorrectly seen as
+having no data), completeness (will we find all such third parties) and
+associated costs (not necessarily monetary, but also effort required or
+“drawbacks” experienced).
+
+> *Source of knowledge* 
+
+> *Time required* 
+
+> *Reliability* 
+
+> *Completeness* 
+
+> *Costs* 
+
+Just know
+
+None, but long preparation
+
+Medium-Very good; depends on sources
+
+Medium-Very good; depends on sources
+
+Low; most sources are free
+
+Do again and observe
+
+Low/as long as the original
+
+Good; wrong identification is unlikely
+
+Medium; depends on observer
+
+Low
+
+Third party sources
+
+None, but long preparation
+
+Medium; disclosed data is correct, mere reports not necessarily
+
+Low; only what actually occurred and was published
+
+Low-Medium; many sources are free
+
+Technical capabilities
+
+Medium; investigation who+capabilities required
+
+Low; not everyone who can, actually does
+
+Good, but not every party can be identified
+
+Low
+
+Upstream providers
+
+Low
+
+Good; services can be bought (=tested)
+
+Low; often not disclosed
+
+Low-Medium; depends on data provided/testing
+
+Publish traps
+
+Medium-Long
+
+Very good; actual use is observed
+
+Medium; depends on time and observability
+
+Low-Medium; providing data is free, but active tests might cost
+
+Illegal activity + wait
+
+Medium; investigation will take some time
+
+Very good
+
+Very good; limited to certain groups (enforcement)
+
+Very high
+
+-
+
+Obtaining access to third-person data 
+------------------------------------- 
+
+If somebody wants to know what a third person knows about them, several
+options exist. However, it must be considered that this party might
+possess the data illegally (or exceeding legal permissions) or are simply
+not interested in disclosing this fact (only bad press, but no additional
+revenue). Therefore replies may be slow or non-existing. From the computer
+forensic view, at least in “official” cases, e.g. court proceedings,
+several additional options do exist. Moreover, cooperation of the data
+holder might then be enforceable (at least within a country).
+
+First, the person can request access to her/his own data. This only
+works for personal data according to privacy laws, explicitly granting
+this right. Outside the EU, someone possessing data because of a contract
+is not necessarily required to provide such data. This situation is very
+problematic with third parties, as they are usually unwilling to provide it
+voluntarily. Also, while the person might have a contract with company A,
+and this company a contract with company B, this does not automatically
+mean that data at B must be disclosed to the person. Any court case is
+between the person and A, for example, so B is an “innocent bystander”
+and unaffected by these proceedings. Only A might be ordered to rely on
+some contract provisions it has with B to first obtain data and secondly
+disclose it. This requires the person to at least conclusively demonstrate
+that such data probably does exist and would help the case. Even then,
+especially in civil proceedings, access might be difficult, as B could
+argue that this would adversely impact trade secrets. Only in case of
+criminal proceedings is such transitive disclosure easier, because the
+police can also search/impound data located at third parties (after
+obtaining appropriate permissions, typically from a judge).
+
+> Indirectly this third person data might be obtained through 
+> information from the second party: what is stored there could have 
+> been passed on to third parties, and, if logs are available, the 
+> actual transfers might be reconstructed as well. While this seems to 
+> establish an “upper limit” (at most these items could have been 
+> transferred), that is not the case. The third party may have obtained 
+> separate additional data from other sources, combined it with such 
+> other information, or enriched it with previously anonymous data. So 
+> in reality, more or more detailed information may exist with the third 
+> party. Still this approach serves as a first approximation. 
+
+> An illegal method to obtain access is hacking the data custodian. This 
+> could be the actual owner or someone else, e.g. a cloud provider, with 
+> physical access. While this is obviously illegal, in case of 
+> sufficient knowledge/resources, it is a quite promising method. 
+> Advantageous is that no owner consent is required and that 
+> internationality is not a problem but rather a boon. However, hacking 
+> is typically not that easy and there is no guarantee of success. Often 
+> only a webserver can be compromised and other servers, where 
+> third-party data might be expected, are more difficult to reach. 
+
+> As third-party data is only rarely collected for the purpose of merely 
+> owning it, but rather for deriving monetary benefits, offering to buy 
+> it is another chance for retrieval. It might be necessary to pose as 
+> someone else (typically a company intending to use the data), as well 
+> as to obtain a larger part of the dataset (e.g. all Austrian users). 
+> This may obviously be costly and/or illegal, especially if data of 
+> other persons must be acquired too or false statements (“I am a 
+> company”) are involved. 
+
+Problems of third-person data 
+----------------------------- 
+
+While the person the data is about typically desires access to it and
+simultaneously wants to keep it secret (i.e. the owner of the data should
+not be allowed to use it or pass it on further), this is not necessarily
+the case. Sometimes the owner would be interested in publishing the data,
+e.g. to be able to provide an alibi. This may contradict interests of
+the third party: data is only valuable if it is not generally available,
+and moreover its legality might be questionable. But even if the person
+obtains the data, owners might retain some rights to it, especially if
+the original data (collected or received) has been enhanced or combined
+with data collected by them. This is comparable to the problem of
+credit-worthiness checks: while data access is granted (and the person
+could then publish it), the algorithm for calculating the score remains
+secret and need not be disclosed. Additional persons might be involved too,
+such as telephone call records, which can create further difficulties:
+any party might obtain access, but publication must consider rights of
+other communication participants too.
+
+While third person data can be difficult to access legally for the
+persons affected, this is not equally true for data owners – collecting
+or buying it is legal in many jurisdictions. Even then – and more
+so when ownership is not perfectly legal – such data is typically
+kept “secret”. So knowing about it becomes difficult, reducing the
+acceptance of such data by the persons affected. However, this effect
+should not be overestimated. Considering the existing public registers of
+applications using/storing personal data (mandatory within the EU), little
+effect on the general population is observable, which rarely even knows
+of their existence. From this it can be concluded that public registers
+or general availability of data categories stored by someone are unlikely
+to significantly improve the situation. And individual rights to retrieve
+such information would be enough for e.g. investigative journalists.
+
+Legally, third person data is difficult to regulate: by definition
+there is no direct contact or contract between data subject and data
+owner. Therefore all rights of both parties depend either on the law
+or a chain of contracts, which might be enforceable by third parties
+– or not (legally possible, but restricted in scope and difficult in
+practice). Combined with the typical internationality of electronic data
+this further complicates matters, as normal contracts are much easier to
+enforce across borders than such contract chains. Also, national laws
+obviously differ and then the only hope are the EU or international
+treaties: harmonized rules applying to many countries. The problem of
+international relations in personal data was recently tackled by the ECJ,
+who ruled that “Safe Harbor” provisions allowing the export of personal
+data to the USA are invalid. Another example is that the collection and
+export of personal data might be illegal in the “source” country, but
+gathering and importing it can be perfectly legal in the “destination”
+country. While in “real” life such trans-border situations are hardly
+applicable (using a telescope to watch persons across borders), this is
+the typical situation on the Internet.
+
+Another issue of third person data is correctness: how does someone
+(i.e. the person it is attributed to, but similarly the third party
+itself) know, whether data is correct or not? It could lack important
+details, contain old values now invalid, or include calculated data
+which was correct enough for the original purpose but is not for the
+new one. Also, third person data might just be invented. An example for
+the latter are fake profiles identified in the Ashley-Madison website
+hack. While it is unlikely that names/e-mail addresses of real persons
+have been used, e.g. for pictures or other data, often actual profiles
+are harvested from other dating websites or scraped from social media
+platforms. Re-identification could therefore lead to real persons,
+for whom it can be difficult to explain that it was not them using a
+fake name and an anonymous e-mail account. Verification of third person
+data is complicated by the fact that it was not obtained from the persons
+directly, so modifications or additions might have been introduced at any
+intermediary point the data passed through – typically without information
+where exactly. Another source for incorrectness or inconsistencies is that
+such data is often collected solely indirectly (i.e. not through asking
+the person but observing and drawing conclusions). For instance devices
+might be shared (especially common with PCs and tablets, which the whole
+family might use; less so mobile phones), but any data collected through
+it is attributed to the “one and only” owner. For instance, when a
+father allows his children to use his tablet they might contact their
+friends, e.g. through chats, visiting social media profiles, posting
+messages and so on. Therefore obviously this adult male is strangely
+interested in small children, contacts them, and must be a pedophile in
+the eyes of someone observing data only indirectly, e.g. through trackers
+in advertisements. Such danger is much higher for third-parties, as they
+typically do not interact directly with the person they are collecting
+data about and therefore have few chances for noticing a different user,
+for instance, as in the example.
+
+When considering the difficulties of deleting e.g. revenge porn or any
+other data from the Internet, it becomes clear, that the existence of
+third person data is problematic. This is exemplified by the possibility
+of “removing” data from Google search results. The data itself remains
+on the Internet, is still indexed, will continue to show up in search
+results etc – only searches for “name” or “name + topic” will not
+contain this specific link (searches for “topic” will!). In relation
+to Google this is again third person data, and while rendering it a bit
+more difficult to find is commendable, this cannot be considered a real
+solution. Either the data needs to (or may) remain publicly accessible,
+or it should be deleted. Otherwise we create classes of people: those
+who possess the tools or the knowledge to find things, and the “dumb
+masses” who do not. The latter will then have no control over their own
+data and not be able to find it, while the “privileged” can access all
+data (their own and others), therefore creating an artificial distinction
+and partial immunity, as they can hide their misdeeds, while others cannot.
+
+Outlook 
+------- 
+
+Third person data will increase in the future, as much more data is
+being collected and will be retained. And what is stored will be used and
+transferred on to maximize profit. Especially problematic in this context
+is the “Internet of Things”, where many small devices are equipped
+with computing power and communication possibilities. Here easily even
+the vendor could become a third party – no permanent contract is really
+needed for a coffee machine, but “outsourcing the evaluation of the data
+to the cloud for better brewing of coffee” is going to be a reality:
+see for instance Nest thermostats, which send a lot of information to the
+cloud in the hope of slightly improving comfort or reducing heating costs
+(where energy savings might be offset by the additional energy required
+for communication and cloud servers!). Who exactly receives this data and
+what is or will be done with it later remains unclear. Regarding future
+developments, similar considerations apply to cars (mandatory eCall:
+an automatic telephone call is placed to an emergency number in case
+of a crash; a continuous mobile phone connection is optional for this
+application, but added-value services are envisaged – then a third party,
+the mobile phone operator, will be able to continuously locate any car,
+at least if in use), or fitness trackers (e.g. sending data to health
+insurance companies for lower payments).
+
+What options exist to improve the situation or reduce problems? Some
+approaches could be:
+
+- Transparency: Publication of who possesses which data, perhaps with 
+    automated abilities to check whether you are included. Based on past 
+    experience, only few people would actually use such a system. On the 
+    other hand it is complicated and expensive to set up and could 
+    easily open up security holes, allowing other persons access to such 
+    data (effectively spreading data out even more!). 
+
+- Legal regulations: Restricting third party data and allowing it only 
+    in specific exceptional cases or when obtaining the data from the 
+    person directly (i.e. only direct data but no third party data). 
+    This seems unlikely and difficult to monitor, but should not be 
+    ruled out completely. Most business models on the Internet depend on 
+    directly collecting data and then “selling” it. While actually 
+    selling it would become difficult, limited, or forbidden, this would 
+    still allow “renting” it through placing targeted advertisements on 
+    the same site. Aggregation with data from other sites or independent 
+    sources, however, would be problematic. 
+
+- Restricted disclosure: Probably the most effective solution is to 
+    restrict the amount of data passed on to others. As soon as someone 
+    else knows it, restricting its further distribution is becoming ever 
+    more difficult through internationality, electronic communication, 
+    and data sharing. Therefore everyone should carefully select whom to 
+    disclose what data to. Is the person trustworthy? What will she do 
+    with the data? Whom will she pass it on to? As a supplement, 
+    gathering data should be regulated more tightly, as secretly 
+    gathering data reduces such “data autonomy”. Verification is 
+    difficult, but as soon as someone knows about the existence of data, 
+    the onus would be on the data owner to prove direct collection 
+    instead of receiving it from someone else. 
+
+- Extended deletion rights: Whenever someone controls data which is 
+    not explicitly allowed by law (e.g. public registers) or a contract, 
+    the affected person could have an unequivocal right of deletion, 
+    independent of the interests of the data owner. So whenever the 
+    existence of data becomes public, everyone could request deletion of 
+    their data – regardless of whether it was acquired legally or not. 
+    This would, however, require effective supervision to ensure such 
+    deletion actually takes place. Closely related would be mandatory 
+    “data decay”, i.e. mandatory deletion after some time has elapsed, 
+    unless the data has been “re-acquired” in the meantime. 
+
+% --Biography -------------------------------------
+
+**Mag. Dipl.-Ing. Dr. Michael Sonntag** (AT) is associate professor at
+the Johannes Kepler University in Linz at the Institute for Networks and
+Security. He studied both computer science and law and is researching and
+teaching in the areas of smart home and web security, computer forensics,
+and IT law. In addition to the Universities of Linz and Graz, he also
+regularly teaches at the ELTE in Budapest and the University of Economics
+in Prague.
