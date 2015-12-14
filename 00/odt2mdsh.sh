@@ -18,7 +18,7 @@
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
-  for ODT in `ls $ODTDIR/*.odt`
+  for ODT in `ls $ODTDIR/*.odt | grep ivar`
    do
       MDSH=$MDSHDIR/`basename $ODT | #
                      cut -d "." -f 1`.mdsh
@@ -38,8 +38,9 @@
   cp $ODT ${TMP}.odt
   soffice --headless --convert-to html:HTML --outdir $TMPDIR ${TMP}.odt
  
-  pandoc --no-wrap \
-         -r html -w markdown ${TMP}.html | # FROM HTML TO MARKDOWN WITHOUT WRAP
+  cat ${TMP}.html                        | # PIPE STARTS
+  sed 's/<span/ &/gI'                    | # CORRECT MALFORMAT HTML
+  pandoc --no-wrap -r html -w markdown   | # FROM HTML TO MARKDOWN WITHOUT WRAP
   sed '/^\\$/d'                          | # DELETE LINES WITH BACKSLASH ONLY
   sed "/^%/s/ /$S/g"                     | # PROTECT SPACES FOR COMMENTS
   pandoc -r markdown -w markdown         | # PANDOC JUST TO WRAP
@@ -49,7 +50,8 @@
   sed "s/${B}$//g"                       | # REMOVE LINEBREAKS AT LINEBREAKS
   sed "/^${B}\*.*\*$/s/$B/&> /g"         | # 'ALL ITALIC' PARAGRAPHS BECOME QUOTES
   sed "s/$B/\n/g"                        | # RESTORE LINEBREAKS 
-  sed "s/^> \*/> /" | sed "/^>/s/\*$//"  | # REMOVE MARKDOWN ITALIC FROM QUOTE LINES
+  sed "s/^>[ ]*\*/> /"                   | # ?? BUGGY!
+  sed "/^>/s/\*$//"                      | # REMOVE MARKDOWN ITALIC FROM QUOTE LINES
   sed "s/\\\\$/\n/"                      | # MAKE LINE BREAKS PARAGRAPHS
   tee > ${TMP}.mdsh
 
