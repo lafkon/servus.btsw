@@ -27,7 +27,7 @@
          [ `git ls-files $MDSH | wc -l` -lt 1 ] ||
          [ `git ls-files -m $MDSHDIR | #
             grep $MDSH | wc -l` -gt 0 ]; then
-            echo "$MDSH not commited"
+            echo "$MDSH not committed"
             echo "=> doing nothing"
       else
           echo "writing $MDSH"
