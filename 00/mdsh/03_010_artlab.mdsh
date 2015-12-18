@@ -1,19 +1,13 @@
-**Behind the Smart World ArtLab
+Behind the Smart World ArtLab -- artistic strategies for dealing with resurfacing data
+======================================================================================
 
-– artistic strategies****for****deal****ing****with resurfacing data**
-
-======================================================================= 
-
-% BY: KairUs - Linda Kronman and Andreas Zingerle****
+% BY: KairUs - Linda Kronman and Andreas Zingerle
 
 > Breaches of Western information security thanks to a rise in electronic 
 > waste circulation have been particularly pronounced in Ghana, where a 
 > certain cadre of citizens has taken to searching out information on 
-> Westerners’ old hard drives for extortive purposes. 
-
-– Jason Warner, Understanding Cyber-Crime in Ghana: A View from Below
-
-[1]
+> Westerners’ old hard drives for extortive 
+> purposes.[@warner:2011:cybercrime] 
 
 Since 2010 we as KairUs artist duo have focused on researching topics such
 as spam, scam and Internet fraud. In August 2014 our research had evolved
@@ -22,18 +16,17 @@ a considerable number of so called advance fee fraud originates. Rather
 than hunting down scammers in Internet cafés, we were interested to see
 which technological affordances or limitations the scammers were faced
 with in this part of the world . In our initial research we came across
-reports about an electronic waste dump called Agbogbloshie. In the middle
-of Ghana’s capital Accra, in this toxic wasteland by a lagoon, is where
-our electronics from developed countries are illegally dumped. Jennifer
-Garbys examines in her book *Digital Rubbish**[^]{Jennifer Garbys, Digital
-Rubbish: a natural history of electronics, (USA: University of Michigan
-Press, 2011, e-book edition).}* in detail how electronic waste ends up
-at e-waste dumps such as Agbogbloshie; first they linger in storage, from
-there high-grade machines might be resold, the dysfunctional machines are
-then shipped in containers to harbors in developing countries such as the
-one in Tema, where most of the e-waste enters Ghana. In Tema the containers
-are sold and transported to Agbogbloshie. The next step is the salvaging
-of components, copper, gold, iron, plastic, and anything else of value.
+reports about an electronic waste dump called Agbogbloshie. In the middle of
+Ghana’s capital Accra, in this toxic wasteland by a lagoon, is where our
+electronics from developed countries are illegally dumped. Jennifer Garbys
+examines in her book *Digital Rubbish*[@garbys:2011:digitalrubbish] in
+detail how electronic waste ends up at e-waste dumps such as Agbogbloshie;
+first they linger in storage, from there high-grade machines might be
+resold, the dysfunctional machines are then shipped in containers to
+harbors in developing countries such as the one in Tema, where most of
+the e-waste enters Ghana. In Tema the containers are sold and transported
+to Agbogbloshie. The next step is the salvaging of components, copper,
+gold, iron, plastic, and anything else of value.
 
 Electronics are made of minerals and chemicals, natural resources that
 are gleaned by organic laboring bodies, no matter whether this takes
@@ -44,24 +37,23 @@ the computers into mother boards, processors and hard drives and further
 for extraction of valuable metals and raw earth minerals. Components
 and materials salvaged at Agbogbloshie enter new cycles of production,
 reentering the consumption cycle, whereas the residues remain. Moore’s
-Law, a near golden law within the world of computing, predicted the
-computer revolution in which the rate of innovation within electronics has
-decreased to as little as 18 months[^]{Jennifer Garbys, Digital Rubbish:
-a natural history of electronics, p. 30.}. Creating something new will
-thus be followed by an another gadget turning old. These old electronics,
-dead media, or zombie media, as Jussi Parikka, names them leave fossilized
-traces of designed obsolescence and gadget-culture[^]{Jussi Parikka, A
-Geology of Media, 2015, (Minneapolis, USA: University of Minnesota Press),
-p. 60.}. At Agbogbloshie these materials are difficult to recycle; the
-toxic, unstable materials mix with the black ashes of burned cables and
-pieces of electronic fossils. They pile in indefinitely growing layers
-of obsolete technologies, if not directly washed through the lagoon
-into the sea, as we witnessed during a day of heavy rain. This is how:
-*“dead media creeps back as dangerous toxins into the soil or then
-as zombie media recycled into new assemblies”**[^]{Jussi Parikka, A
-Geology of Media, 2015, (Minneapolis, USA: University of Minnesota Press),
-p. 60.}*. Agbogbloshie, our electronic dystopia earned its nickname -
-Sodom and Gomorrah.
+Law, a near golden law within the world of computing, predicted the computer
+revolution in which the rate of innovation within electronics has decreased
+to as little as 18 months [@[p.30]garbys:2011:digitalrubbish]. Creating
+something new will thus be followed by an another gadget turning
+old. These old electronics, dead media, or zombie media, as Jussi
+Parikka, names them leave fossilized traces of designed obsolescence
+and gadget-culture[@[p.60]parikka:2015:mediageology]. At Agbogbloshie
+these materials are difficult to recycle; the toxic, unstable materials
+mix with the black ashes of burned cables and pieces of electronic
+fossils. They pile in indefinitely growing layers of obsolete technologies,
+if not directly washed through the lagoon into the sea, as we witnessed
+during a day of heavy rain. This is how: *“dead media creeps back as
+dangerous toxins into the soil or then as zombie media recycled into**new
+assemblies”*[@[p.60]parikka:2015:mediageology]. Agbogbloshie, our
+electronic dystopia earned its nickname - Sodom and Gomorrah.
+
+% TEXINJECT: \scalefont{.99}
 
 Among other components, *“zombie”* hard drives also enter a new
 chain of value available at Agbogbloshie in stock for a negotiated
@@ -76,22 +68,20 @@ data for $40 in Africa, CBC News Posted: Jun 23, 2009, available at:
 http://www.cbc.ca/news/technology/b-c-students-buy-sensitive-u-s-defence-data-for-40-in-africa-1.803353}.
 Additionally we found articles describing how scammers abused data
 originating from hard drives collected at e-waste dumps in West
-Africa[^]{Jason Warner, Understanding Cyber-Crime in Ghana: A View from
-Below, 2011 International Journal of Cyber Criminology (IJCC) ISSN:
-0974 – 2891 Jan – July 2011, Vol 5 (1): p. 736–749.}. Therefore,
-when visiting Agbogbloshie we decided to buy twenty-two hard drives,
-curious to see whether dumped data would persist, and could it easily
-be recovered and would it be of potential value? Could the data be
-artistically reused and/or rather easily abused?
+Africa[@warner:2011:cybercrime]. Therefore, when visiting Agbogbloshie we
+decided to buy twenty-two hard drives, curious to see whether dumped data
+would persist, and could it easily be recovered and would it be of potential
+value? Could the data be artistically reused and/or rather easily abused?
+
+% RESETFONT:
 
 When we returned to Linz our plan was to follow media theorist Jussi
 Parikka's suggestion:
 
 > In the age of consumer electronics, the artist can also be thought of 
 > as an archaeological circuit bender and hacker, which links media 
-> archeology with the political agenda of contemporary media production. 
-
-– Jussi Parikka, A Geology of Media\*\*[2]
+> archeology with the political agenda of contemporary media 
+> production.[@[p.150]parikka:2015:mediageology] 
 
 Our plan was therefore to recover the data from the hard drives and
 offer the data and the hard drives as source material for artistic
@@ -182,10 +172,9 @@ the artist explains in an e-mail:
 
 > Before even starting to look at any of the files, I followed the 
 > standard procedure of running a virus scan. Which was interesting 
-> because at the end of the day, on the hard drives that have been 
-> recovered so far, there were 881 viruses 
-
-– Emöke Bada, email [3]
+> because at the end of the day, on the hard drives that have 
+> been recovered so far, there were 881 viruses
+> [^]{Emöke Bada, personal e-mail communication Jun 4, 2015} 
 
 Earlier viruses and malware were often destructive, even causing physical
 damage to the host, while today’s digital parasites hoard data and are
@@ -210,12 +199,12 @@ access to banking or shopping accounts, private images for blackmailing
 and harassment, or identity theft. This was the case with U.S. Congressman
 Robert Wexler. He was contacted and blackmailed with information from one of
 his discarded hard drives that was found in a second-hand computer market
-in Ghana [1]. By using DIY-data forensic methods combined with open source
-intelligent strategies and tools, it was also possible to confirm one of
-the owners of a hard drive with sensitive images. And another hard drive
-shows evidence of being used for romance scams. The potential abusing of
-data is therefore the focal point of these works, illustrating a number
-of “worst case scenarios” based on the recovered data. Even if there
+in Ghana[@warner:2011:cybercrime]. By using DIY-data forensic methods combined
+with open source intelligent strategies and tools, it was also possible to
+confirm one of the owners of a hard drive with sensitive images. And another
+hard drive shows evidence of being used for romance scams. The potential
+abusing of data is therefore the focal point of these works, illustrating a
+number of “worst case scenarios” based on the recovered data. Even if there
 is nothing to hide, your deleted data might still return to haunt you.
 
 Shifting to the works that deal with the material aspects of the hard
@@ -259,17 +248,7 @@ dead media. Behind the shiny smart world of advertisers, another reality
 is revealed, unfolding the consequences of our datafied consumer culture,
 which is far from being sustainable or fair.
 
-Bibliography
-
-[1] Jason Warner, Understanding Cyber-Crime in Ghana: A View from Below,
-2011 International Journal of Cyber Criminology (IJCC) ISSN: 0974 –
-2891 Jan – July 2011, Vol 5 (1): p. 736–749.
-
-[2] Jussi Parikka, A Geology of Media, p. 150.
-
-[3] Emöke Bada, personal e-mail communication Jun 4, 2015.
-
-% --Biography -------------------------------------
+% BIOGRAPHY: -------------------------------------
 
 **KairUs** is a collective of two artists **Linda Kronman** (FI)
 and **Andreas Zingerle** (AT). Our work focuses on human computer and
@@ -279,4 +258,11 @@ the theme of Internet fraud and online scams, constantly shifting our
 focus and therefore approaching the theme from a number of perspectives,
 such as data security, data privacy, ethics of vigilante communities,
 narratives of scam e-mails, and technologies in relation to fraud.
+
+% Bibliography
+% Jason Warner, Understanding Cyber-Crime in Ghana: A View from Below, 2011 International Journal of Cyber Criminology (IJCC) ISSN: 0974 – 2891 Jan – July 2011, Vol 5 (1): p. 736–749.
+% Jussi Parikka, A Geology of Media, p. 150.
+% Emöke Bada, personal e-mail communication Jun 4, 2015.
+
+
 

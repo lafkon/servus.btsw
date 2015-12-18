@@ -5,7 +5,7 @@ What remains? The way we save ourselves
 
 > When it was announced that the Library contained all books, the first 
 > reaction was unbounded joy. All men felt themselves the possessors of an 
-> intact and secret treasure. [@borges:0000:library] 
+> intact and secret treasure. [@[p.69]borges:2000:fictions] 
 
 Never before in history have we been able to record ourselves in such
 great detail. A couple of photo albums and a box with old letters have
@@ -26,32 +26,28 @@ will be lost. Can we, by becoming our own Big Brother, reach a deeper
 understanding of ourselves, become better people, as suggested by the
 Quantified Self movement?
 
-Our hunger for information started with the shift in meaning of the
-word information itself[^]{Theodore Roszak, “Information, please”,
-in The Cult of Information: The Folklore of Computes and the True Art of
-Thinking, (New York: Pantheon Books, 1986), pp. 3 – 20.}. Information
-used to mean nothing more than a short statement of fact, such as a number,
-date or place. Nothing so special you would name an age or type of economy
-after. In the 1950s this changed with the advent of cybernetics, the study
-of feedback in self-regulating closed systems, where information was seen
-as the means to control a system, any system, be it mechanical, physical,
-biological, cognitive or social. Wiener, a mathematician and father of
-this then new field of research, stated “To live effectively, is to
-live with adequate information. Thus, communication and control belong
-to the essence of man’s inner life, even as they belong to his life in
-society”[^]{Norbert Wiener, The Human Use of Human Beings: Cybernetics
-and Society (Boston: Houghton Mifflin, 1950), p. 17.}, and only ten years
-later, in 1958, Artificial Intelligence researchers Simon and Newell
-wrote “the programmed computer and human problem solver are both species
-belonging to the genus ‘Information Processing System’”[^]{Joseph
-Weizenbaum, Computer Power and Human Reason (San Francisco: W.H. Freeman,
-1976), p. 169.}skyrocketing the value of both information and computers
-to a mythical height, implying both are able to bring us closer to the
-secret of human consciousness. In the seventies it was granted an even
-more powerful status, that of commodity. AT&T said it best: “Like it
-or not, information has finally surpassed material goods as our basic
-resource”[^]{AT&T advertisement in Kiplinger’s Personal Finance,
-October 1985, p.33.}. Bon apetit.
+Our hunger for information started with the shift in meaning of the word
+information itself [@[pp.3-20]roszak:1986:informationcult]. Information
+used to mean nothing more than a short statement of fact, such as a
+number, date or place. Nothing so special you would name an age or
+type of economy after. In the 1950s this changed with the advent of
+cybernetics, the study of feedback in self-regulating closed systems,
+where information was seen as the means to control a system, any system,
+be it mechanical, physical, biological, cognitive or social. Wiener,
+a mathematician and father of this then new field of research, stated
+“To live effectively, is to live with adequate information. Thus,
+communication and control belong to the essence of man’s inner life,
+even as they belong to his life in society”[@[p.17]wiener:1950:humanuse],
+and only ten years later, in 1958, Artificial Intelligence researchers
+Simon and Newell wrote “the programmed computer and human problem
+solver are both species belonging to the genus ‘Information Processing
+System’”[@[p.169]weizenbaum:1976:computerpower] skyrocketing the value
+of both information and computers to a mythical height, implying both
+are able to bring us closer to the secret of human consciousness. In
+the seventies it was granted an even more powerful status, that of
+commodity. AT&T said it best: “Like it or not, information has finally
+surpassed material goods as our basic resource”[^]{AT&T advertisement
+in Kiplinger’s Personal Finance, October 1985, p.33.}. Bon apetit.
 
 So here we are, more than half a century later, generating a deluge of
 digital information, the new gold. In fear of a digital dark age we cling
@@ -102,53 +98,45 @@ lightweight, natural. The Cloud metaphor hides the uglier and riskier
 reality of data centers filled with energy-consuming, heat-producing,
 maintenance-hungry servers. Other metaphors, such as Data mining and
 Data streams, compare data to naturally occurring physical resources,
-seemingly inexhaustible and ready for exploitation in the name of
-economic growth and private gain. They mask the human aspect of it, the
-fact that most of it is personal, something we would be more hesitant to
-have exploited[^]{Tim Hwang and Karen Levy, “‘The Cloud’ and Other
-Dangerous Metaphors, Contemporary ideas about data and privacy are tied
-up inextricably with language choices”, The Atlantic, January 20, 2015,
-http://www.theatlantic.com/technology/archive/2015/01/the-cloud-and-other-dangerous-metaphors/384518/.}.
-Other metaphors, such as open data and software transparency have strong
-connotations of trust. If everything is open and transparent, everyone will
-behave honestly. But the sheer amount of online scams show transparency
-is no guarantee, hiding in plain sight is easy in an environment where
-real and fake are indistinguishable. The Cloud, data mining, transparency
-and openness, these metaphors hide the darker effects of our obsession:
-the privacy we’ve lost, but also the fact that information is not
-immaterial, the waste we produce, the electricity that is consumed all
-have a real impact.
+seemingly inexhaustible and ready for exploitation in the name of economic
+growth and private gain. They mask the human aspect of it, the fact that
+most of it is personal, something we would be more hesitant to have
+exploited[@hwanglevy:2015:metaphors]. Other metaphors, such as open
+data and software transparency have strong connotations of trust. If
+everything is open and transparent, everyone will behave honestly. But
+the sheer amount of online scams show transparency is no guarantee,
+hiding in plain sight is easy in an environment where real and fake are
+indistinguishable. The Cloud, data mining, transparency and openness,
+these metaphors hide the darker effects of our obsession: the privacy
+we’ve lost, but also the fact that information is not immaterial, the
+waste we produce, the electricity that is consumed all have a real impact.
 
-Our connected and information-hungry lifestyles feel as clean as
-the design of our latest gadget, but that is only because we export
-many of the dirtier sides of it to the less privileged parts of the
-world, where labor is cheap and there is limited regulatory oversight
-into health, safety and environmental impact. Near Baotou in China,
-for instance, the effects are clearly visible and took the shape
-of an artificial toxic lake of black sludge, the result of mining
-to create our tech gadgets[^]{Tim Maughan, “The dystopian lake
-filled by the world’s tech lust”, BBC Future, April 2, 2015,
-http://www.bbc.com/future/story/20150402-the-worst-place-on-earth.}. China
-is also home to one of the largest dumps of e-waste in the world,
-which not coincidentally is also one of the most polluted places on
-earth: Guiyu. Despite strict regulations, loopholes have been found
-and illegal dumping of e-waste in countries such as Ghana and China is
-still happening under the guise of aid or second hand goods. In 2010
-as much as 75% of the 8.7 million tons of e- waste generated in the EU
-could not be accounted for, despite regulations. In the US the figure is
-said to have been about 80%[^]{Orish Ebere Orisakwe and Chiara Frazzoli,
-“Electronic revolution and electronic wasteland: The West/waste Africa
-experience”, Journal of Natural & Environmental Sciences, 2 October 2010,
-p. 45.}. Only because we’re running out of certain metals and mining
-them becomes increasingly costly, have we begun to recycle old hardware
-in the developed world. Initiatives like “Closing The Loop” are buying
-and recycling old mobile phones from the countries we previously used as a
-dump. After decades of poisoning, we are back at mining for gold, perhaps
-diminishing pollution, but keeping the economic inequality intact. From
-poor working conditions in electronics manufacturing plants and e-waste
-pollution to energy-hungry server farms and our loss of privacy, the
-disastrous effects of our lifestyles can be felt on so many levels it
-hurts to think about it, and that is probably why we don’t.
+Our connected and information-hungry lifestyles feel as clean as the
+design of our latest gadget, but that is only because we export many of
+the dirtier sides of it to the less privileged parts of the world, where
+labor is cheap and there is limited regulatory oversight into health,
+safety and environmental impact. Near Baotou in China, for instance,
+the effects are clearly visible and took the shape of an artificial
+toxic lake of black sludge, the result of mining to create our tech
+gadgets[@maughan:2015:dystopianlake]. China is also home to one of
+the largest dumps of e-waste in the world, which not coincidentally is
+also one of the most polluted places on earth: Guiyu. Despite strict
+regulations, loopholes have been found and illegal dumping of e-waste
+in countries such as Ghana and China is still happening under the
+guise of aid or second hand goods. In 2010 as much as 75% of the 8.7
+million tons of e- waste generated in the EU could not be accounted for,
+despite regulations. In the US the figure is said to have been about
+80%[@[p.45]orisakwefrazzoli:2010:revolutionwasteland]. Only because we’re
+running out of certain metals and mining them becomes increasingly costly,
+have we begun to recycle old hardware in the developed world. Initiatives
+like “Closing The Loop” are buying and recycling old mobile phones from
+the countries we previously used as a dump. After decades of poisoning,
+we are back at mining for gold, perhaps diminishing pollution, but keeping
+the economic inequality intact. From poor working conditions in electronics
+manufacturing plants and e-waste pollution to energy-hungry server farms
+and our loss of privacy, the disastrous effects of our lifestyles can be
+felt on so many levels it hurts to think about it, and that is probably
+why we don’t.
 
 We consume information at high speed but forget even faster, repeating
 the same behavior as if the news has been overwritten with Internet memes
@@ -161,15 +149,31 @@ is left of the machines we’ve build to keep our treasure. They might
 analyze what is left of the data we’ve produced. One idea of our time
 will surely remain, our information fetishism.
 
-% --Biography -------------------------------------
+% BIOGRAPHY: -------------------------------------
 
-**
+**Marloes de Valk** (NL) is a software artist and writer in the post-despair
+stage of coping with the threat of global warming and being spied on by
+the devices surrounding her. Surprised by the obsessive dedication with
+which we, even post-Snowden, share intimate details about ourselves to an
+often not too clearly defined group of others, astounded by the deafening
+noise we generate while socializing with the technology around us, she
+is looking to better understand why.
 
-****Marloes de Valk** (NL) is a software artist and writer in the
-post-despair stage of coping with the threat of global warming and being
-spied on by the devices surrounding her. Surprised by the obsessive
-dedication with which we, even post-Snowden, share intimate details about
-ourselves to an often not too clearly defined group of others, astounded
-by the deafening noise we generate while socializing with the technology
-around us, she is looking to better understand why.
+% Jorge Luis Borges, Fictions (London: Penguin Books, 2000), p. 69.
+
+% The Quantified Self is an international collaboration of users and makers of self-tracking tools.
+
+% Theodore Roszak, “Information, please”, in The Cult of Information: The Folklore of Computes and the True Art of Thinking, (New York: Pantheon Books, 1986), pp. 3 – 20.
+
+% Norbert Wiener, The Human Use of Human Beings: Cybernetics and Society (Boston: Houghto Mifflin, 1950), p. 17.
+
+% Joseph Weizenbaum, Computer Power and Human Reason (San Francisco: W.H. Freeman, 1976), p. 169.
+
+% AT&T advertisement in Kiplinger's Personal Finance, October 1985, p.33.
+
+% Tim Hwang and Karen Levy, “'The Cloud' and Other Dangerous Metaphors, Contemporary ideas about data and privacy are tied up inextricably with language choices”, The Atlantic, January 20, 2015, [http://www.theatlantic.com/technology/archive/2015/01/the-cloud-and-other-dangerous-metaphors/384518/](http://www.theatlantic.com/technology/archive/2015/01/the-cloud-and-other-dangerous-metaphors/384518/).
+
+% Tim Maughan, “The dystopian lake filled by the world’s tech lust”, BBC Future, April 2, 2015, [http://www.bbc.com/future/story/20150402-the-worst-place-on-earth](http://www.bbc.com/future/story/20150402-the-worst-place-on-earth).
+
+% Orish Ebere Orisakwe and Chiara Frazzoli, “Electronic revolution and electronic wasteland: The West/waste Africa experience”, Journal of Natural & Environmental Sciences, 2 October 2010, p. 45.
 

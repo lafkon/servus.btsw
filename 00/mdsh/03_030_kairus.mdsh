@@ -1,9 +1,6 @@
-**Strategies of Net-activists Against Phishing and
-
-Fake Business Websites** 
-==================================================== 
-
-% BY: KairUs - Linda Kronman and Andreas Zingerle****
+Strategies of Net-activists Against Phishing and Fake Business Websites 
+=======================================================================
+% BY: KairUs - Linda Kronman and Andreas Zingerle
 
 This essay is part of our artistic research into vigilante online
 communities and Internet fraud. Online communities of so called scambaiters
@@ -155,8 +152,6 @@ law, Austrian commercial companies have to have a legal notice on their
 webpage. In the contact section of our example website, there is no legal
 notice or VAT number published.
 
--
-
 Domain Whois 
 ------------ 
 
@@ -220,20 +215,23 @@ sunexsolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 11 Oct
 is a clone from “sunexsolutions.com”. The sunexsolutions was amongst
 the *Megacorp*. business websites that were scraped and analyzed.
 
+
 The Megacorp. Business Conglomerate 
 ----------------------------------- 
 
+% SCALEFONT: .99
+
 The research of the scambaiting community “Artists against 419” led
 to a deeper investigation into how this community tracks fake business
-websites and reports them. We wanted to visualize the database, so our idea
-was to look at all these fake companies as though they were one big evil
-corporate conglomerate that wants to take over the world. This so called
-*Megacorp*. is inspired by its equally powerful counterparts in science
-fiction. The term was coined by William Gibson and inspired many other
-authors of the dystopian cyberpunk science fiction genre to create megacorps
-in their fiction, amongst others the Tyrell corp. (*Do Androids**D**ream
-of Electric**S**heep*), Encom corp. (*Tron*), Weyland-Yutani (*Alien*
-series), Cyberdyne Skynet Systems (*Terminator*).
+websites and reports them. We wanted to visualize the database, so our
+idea was to look at all these fake companies as though they were one
+big evil corporate conglomerate that wants to take over the world. This
+so called *Megacorp*. is inspired by its equally powerful counterparts
+in science fiction. The term was coined by William Gibson and inspired
+many other authors of the dystopian cyberpunk science fiction genre to
+create megacorps in their fiction, amongst others the Tyrell corp. (*Do
+Androids Dream of Electric Sheep*), Encom corp. (*Tron*), Weyland-Yutani
+(*Alien series*), Cyberdyne Skynet Systems (*Terminator*).
 
 The artwork is based on a collection of 1000 fake websites scraped from
 Internet. The creation of the *Megacorp*. serves as an umbrella company
@@ -242,7 +240,11 @@ businesses are present. An interim report was published for the exhibition,
 and visitors have an opportunity to browse locally through the network of
 fake websites. Additionally a corporate presentation video and a location
 reconnaissance video reflect both the imaginary and the real world outreach
-of the *M**egacorp*.
+of the *Megacorp*.
+
+
+% NEWPAGE:
+% TEXINJECT: \scalefont{.965}
 
 The data gathering process took several months. From September 2014 to April
 2015. The aa419-database was visited on a daily basis and websites were
@@ -251,24 +253,33 @@ were analyzed and categorized according to business segment, street address,
 most prominently used color on the webpage, registered city and country.
 
 The findings are best described in the report, yet following some
-key figures and reflections extracted from the CEO’s Letter
-(*Megacorp*. Interim report: First 1000 companies):
+key figures and reflections extracted from the CEO’s Letter:
+[^]{*Megacorp*. Interim report: First 1000 companies}
 
-*“... We have divided our enterprise into 10 business segments, of which
-the biggest are ‘Transport and Logistics’ (32.6%), ‘Banking and
-Finance’ (21.9%) and ‘Online Merchandise and Trade’ (14.2%). It
-may come as a surprise that the ‘Pet Shops and Animal Transport’
-(6.9%) segment has a good chance of being the fourth largest business
-segment. ... As mentioned, our company language is currently restricted
-to English, and this might limit our presence on some continents,
-especially Asia’s lucrative market, while apparently the Chinese
-phishers are responsible for 85% of the domain names that were registered
-for phishing”.*
+
+% TEXINJECT: \scalefont{.97}
+
+> ... We have divided our enterprise into 10 business segments, of which
+> the biggest are ‘Transport and Logistics’ (32.6%), ‘Banking and
+> Finance’ (21.9%) and ‘Online Merchandise and Trade’ (14.2%). It
+> may come as a surprise that the ‘Pet Shops and Animal Transport’
+> (6.9%) segment has a good chance of being the fourth largest business
+> segment. ... As mentioned, our company language is currently restricted
+> to English, and this might limit our presence on some continents,
+> especially Asia’s lucrative market, while apparently the Chinese
+> phishers are responsible for 85% of the domain names that were registered
+> for phishing.
+
+% TEXINJECT: \scalefont{1.03}
+
 
 The full report and screenshots from the websites can be found on the
-website [www.megacorp.kairus.org](http://www.megacorp.kairus.org/)
+website www.megacorp.kairus.org
 
-% --Biography -------------------------------------
+% NEWPAGE:
+
+% RESETFONT:
+% BIOGRAPHY: -------------------------------------
 
 **KairUs** is a collective of two artists, Linda Kronman (FI) and
 Andreas Zingerle (AT). Our work focuses on human computer and computer

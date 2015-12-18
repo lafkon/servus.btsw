@@ -1,5 +1,5 @@
-**Surveillance, McLuhan, and the Social Prosthesis: Examining the Construction and Presentation of Identity** 
-============================================================================================================= 
+Surveillance, McLuhan, and the Social Prosthesis: Examining the Construction and Presentation of Identity 
+========================================================================================================= 
 
 % BY: Leo Selvaggio
 
@@ -76,9 +76,7 @@ states:
 > as a research and communication instrument could enhance retrieval, 
 > obsolesce mass library organization, retrieve the individual’s 
 > encyclopedic function and flip it into a private line of speedily 
-> tailored data of a saleable kind. 
-
-– Marshal McLuhan, *The Gutenberg Galaxy* [1]
+> tailored data of a saleable kind. [@mcluhan:1962:gutenberg] 
 
 Especially eerie is McLuhan's prediction of this “private line of speedily
 tailored data of a saleable kind.” Recent news is flooded with reports of
@@ -86,14 +84,12 @@ companies such as Google, Facebook, and Microsoft selling user information
 to marketing firms. For example, in section three (titled “privacy”)
 of the terms of use for Xbox Live, a Microsoft affiliate, we find:
 
-*In particular, we may access or disclose information about you, including
-the content of your communications…. Personal information collected by
-Microsoft may be stored and processed in the United States or any other
-country or region in which Microsoft or its affiliates, subsidiaries, or
-service providers maintain facilities. You consent to any such transfer
-of information outside of your country or region.*
-
-– xbox.com [2]
+> In particular, we may access or disclose information about you, including
+> the content of your communications…. Personal information collected by
+> Microsoft may be stored and processed in the United States or any other
+> country or region in which Microsoft or its affiliates, subsidiaries, or
+> service providers maintain facilities. You consent to any such transfer
+> of information outside of your country or region.[@xbox:2011:tou]
 
 What Microsoft makes clear is that personal information – or aspects of
 identity – can be digitized, collected, and distributed via McLuhan's
@@ -108,9 +104,7 @@ analysis of the “like” button:
 > highly sensitive personal attributes including: sexual orientation, 
 > ethnicity, religious and political views, personality traits, 
 > intelligence, happiness, use of addictive substances, parental 
-> separation, age, and gender. 
-
-– Kosink et al [3]
+> separation, age, and gender. [@kosstigra:2013:private] 
 
 While it should be noted that one of the researchers is associated with
 Microsoft, and therefore stands to profit considerably from this study as a
@@ -132,9 +126,7 @@ Today: The Executive as Dropout*:
 > Paradoxically electronic man has no choice but to understand processes, 
 > if he is to be free…The only method for perceiving process and patterns 
 > is by inventory of effects obtained by the comparison and contrast of 
-> developing situations. 
-
-– Marshal McLuhan, *Take Today* [4]
+> developing situations.[@mcluhan:1972:taketoday] 
 
 Here, I would propose that McLuhan is advocating a subversion of digital
 technology’s reduction of our identities into quantifiable and categorical
@@ -175,25 +167,23 @@ unique “scoring” system:
 > to impact others has been democratized. Klout measures your influence 
 > based on your ability to drive action on social networks. The Klout 
 > Score is a single number that represents the aggregation of multiple 
-> pieces of data about your social media activity. 
+> pieces of data about your social media activity.[@klout:2013:score] 
 
-– Klout Score [5]
-
-A shocking example comes from the comparison of the Dali Lama and Perez
-Hilton’s Klout scores. The Dali Lama, beloved spiritual leader recognized
-around the world for his influence, has a Klout score of 86 (out of 100),
-with which he influences 758,000 followers via social media [6]. His
-score is pretty good – twice my own. However, self-made blogger Perez
-Hilton has a score of 90. The fact that Perez has a higher Klout score is
-just spectacle, but it does highlight the different spheres of influence
-that lend each figure his authority. While the Dali Lama’s influence
-is attached to his station as a spiritual leader, Hilton’s influence
-comes entirely from his skill at controlling social media. Hilton has a
-standard education – a BFA in theater. He did not come from money, and
-he represents a marginalized community as an openly gay, albeit white,
-man. His success comes solely from his ability to network within the
-blogosphere and to influence not only others’ perception of himself,
-but others’ perception of others as well.
+A shocking example comes from the comparison of the Dali Lama and
+Perez Hilton’s Klout scores. The Dali Lama, beloved spiritual leader
+recognized around the world for his influence, has a Klout score of 86
+(out of 100), with which he influences 758,000 followers via social
+media[@krishnan:2011:brandmetrics]. His score is pretty good – twice
+my own. However, self-made blogger Perez Hilton has a score of 90. The
+fact that Perez has a higher Klout score is just spectacle, but it does
+highlight the different spheres of influence that lend each figure his
+authority. While the Dali Lama’s influence is attached to his station
+as a spiritual leader, Hilton’s influence comes entirely from his skill
+at controlling social media. Hilton has a standard education – a BFA
+in theater. He did not come from money, and he represents a marginalized
+community as an openly gay, albeit white, man. His success comes solely
+from his ability to network within the blogosphere and to influence not only
+others’ perception of himself, but others’ perception of others as well.
 
 The presentation of identity is not only an invaluable skill, but an active
 task. It requires maintenance and constant production and distribution. As
@@ -222,41 +212,26 @@ free”, I offer the term social prosthesis: the total manifestation
 of one’s creation, navigation, and maintenance of relationships that
 comprise the web of that individual’s network of influence.
 
-Bibliography
+% Bibliography
 
-[1] McLuhan, Marshall. *The Gutenberg Galaxy; the Making of Typographic
-Man*. Toronto: University of Toronto, 1962. Print.
+% McLuhan, Marshall. The Gutenberg Galaxy; the Making of Typographic Man. Toronto: University of Toronto, 1962. Print.
+% “Xbox LIVE Terms of Use.” - Xbox.com. Microsoft.com, 01 Sept. 2011. Web. 04 May 2013.
+% Kosinsk, Michal, David Stillwell, and Thore Graepel. “Private Traits and Attributes Are Predictable from Digital Records of Human Behavior.” Proceeding of the National Academy of Science in the United States (2013): 1-4. Private Traits and Attributes Are Predictable from Digital Records of Human Behavior. 11 Mar. 2013. Web. 04 May 2013.
+% McLuhan, Marshall, and Barrington Nevitt. Take Today; the Executive as Dropout. New York: Harcourt Brace Jovanovich, 1972. Print.
+% “Klout Score.” Klout. N.p., n.d. Web. 05 May 2013. \<http://klout.com/corp/klout\_score\>.
+% Krishnan, Mythreyi. “Influence Metrics for B2C Brands.” The JamiQ Blog. JamiQ, 04 Aug. 2011. Web. 05 May 2013. \<http://blog.jamiq.com/commentary/influence-metrics-for-b2c-brands/\>.
 
-[2] “Xbox LIVE Terms of Use.” - Xbox.com. Microsoft.com, 01
-Sept. 2011. Web. 04 May 2013.
+% BIOGRAPHY: -------------------------------------
 
-[3] Kosinsk, Michal, David Stillwell, and Thore Graepel. “Private Traits
-and Attributes Are Predictable from Digital Records of Human Behavior.”
-Proceeding of the National Academy of Science in the United States (2013):
-1-4. Private Traits and Attributes Are Predictable from Digital Records
-of Human Behavior. 11 Mar. 2013. Web. 04 May 2013.
-
-[4] McLuhan, Marshall, and Barrington Nevitt. *Take Today; the Executive
-as Dropout*. New York: Harcourt Brace Jovanovich, 1972. Print.
-
-[5] “Klout Score.” Klout. N.p., n.d. Web. 05 May
-2013. \<http://klout.com/corp/klout\_score\>.
-
-[6] Krishnan, Mythreyi. “Influence Metrics for B2C Brands.”
-The JamiQ Blog. JamiQ, 04 Aug. 2011. Web. 05 May 2013.
-\<http://blog.jamiq.com/commentary/influence-metrics-for-b2c-brands/\>.
-
-% --Biography -------------------------------------
-
-***Leonardo Selvaggio\*\*\*\*\*\*(USA)**is a Chicago based
-interdisciplinary artist whose work examines the intersection of identity
-and technology. He has shown work internationally in France and Canada;
-domestically in New York, Chicago, Florida, and New Mexico. He has been
-awarded an Albert P. Weisman grant for his work,***URME Surveillance***and
-a DCASE IAP Professional Grant to present supporting research. That
-artistic intervention invites users to wear a photo-realistic prosthetic
-of his face as protection from pervasive facial recognition surveillance
-systems. URME has been selected for the Art Souterrain festival in
-Montreal, the ISEA conference in Vancouver, and the Saint-Etienne Design
-Biennial in France. In 2015,***URME Surveillance***was also adapted for
-television in an episode of CSI: Cyber titled “Selfie 2.0”.*
+**Leonardo Selvaggio** (USA) is a Chicago based interdisciplinary artist 
+whose work examines the intersection of identity and technology. He has 
+shown work internationally in France and Canada; domestically in New 
+York, Chicago, Florida, and New Mexico. He has been awarded an Albert P. 
+Weisman grant for his work, *URME Surveillance* and a DCASE IAP 
+Professional Grant to present supporting research. That artistic 
+intervention invites users to wear a photo-realistic prosthetic of his 
+face as protection from pervasive facial recognition surveillance 
+systems. URME has been selected for the Art Souterrain festival in 
+Montreal, the ISEA conference in Vancouver, and the Saint-Etienne Design 
+Biennial in France. In 2015, *URME Surveillance* was also adapted for 
+television in an episode of CSI: Cyber titled “Selfie 2.0”.

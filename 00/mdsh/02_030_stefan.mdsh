@@ -1,5 +1,5 @@
-Technology-based Art and Destruction - Exhibiting Malfunctions 
-============================================================== 
+Technology-based Art and Destruction -- Exhibiting Malfunctions 
+=============================================================== 
 
 % BY: Stefan Tiefengraber
 
@@ -7,8 +7,8 @@ Easy, uncomplicated interaction with interactive art installations
 and an entertaining approach to attract visitors opens up room
 to learn the story behind the art. These are the main goals
 of my projects and a big part of the two introduced works *User
-Generated Server Destruction**[^]{User generated Server destruction,
-www.ugsd.net}***and *your unerasable text*[^]{Your unerasable text,
+Generated Server Destruction*[^]{User generated Server destruction,
+www.ugsd.net} and *your unerasable text*[^]{Your unerasable text,
 www.stefantiefengraber.com/yourunerasabletext.php}. Both works invite
 visitors to destroy something. One time a text message is printed out and
 shredded, and the other time it is the destruction of a server by the force
@@ -27,8 +27,8 @@ fun and interactivity, the user is invited to question the background
 of these technologies. Why do the pieces work this way? What data is
 generated? Who has access to it? Where is the data?
 
-**User Generated Server Destruction****–** 2013 
------------------------------------------------ 
+User Generated Server Destruction -- 2013 
+----------------------------------------- 
 
 Visitors of the website www.ugsd.net can trigger six hammers and drop them
 onto a server that is located in the exhibition. This server hosts the
@@ -38,7 +38,7 @@ installation ends, once the server is destroyed and can therefore no
 longer host the website.
 
 If you are connected and looking at a website like this, it seems to appear
-out of nothing. But there is data – zeros and ones compiling an image,
+out of nothing. But there is data -- zeros and ones compiling an image,
 text or a video. It is tempting to think there is no physical connection
 to any hardware. The physical, sculptural attendance of the work *User
 Generated Server Destruction* typifies the coincidence of the virtual,
@@ -105,8 +105,8 @@ the first, and maybe already final, hit on the server. A lot of people
 waited to finally hear the sound of the 800 grams heavy sledgehammers
 smashing the metal cover of the computer.
 
-**your unerasable text** - 2011/12 
----------------------------------- 
+your unerasable text -- 2011/12 
+------------------------------- 
 
 *your unerasable text* is an interactive installation dealing with the
 topics of data storage and elimination. The installation can be placed
@@ -124,7 +124,7 @@ a few moments and is then destroyed. The shredded paper forms a visible
 heap of paper on the floor, growing with every message.
 
 *your unerasable text* works via SMS, as it is the easiest and most
-comfortable way for the participant – and almost everybody owns a mobile
+comfortable way for the participant -- and almost everybody owns a mobile
 phone. The standard for the short message service was implemented in
 the early 1990s and is still used and integrated in every mobile phone,
 even in smart phones. Another advantage is that users don’t have to be
@@ -148,6 +148,9 @@ the “Staatsschutzgesetz” (state protection law) including points
 to bring back the previously overturned “Vorratsdatenspeicherung”,
 under the guise of this new law.
 
+% HYPHENATE: Vorratsdatenspeicherung Vorrats-datenspeicherung
+% H!YPHENATE: Vorratsdatenspeicherung Vor-rats-daten-spei-che-rung
+
 Also very recently, the Safe Harbor law was declared illegal by the Court
 of Justice of the European Union, creating the need for re-negotiation
 between the EU and the US to change this law.
@@ -164,11 +167,14 @@ high frequency of usage, 27 servers have already been shown and destroyed
 in 10 exhibitions. By November 2015 more then 27.400 short messages
 were collected.
 
-% --Biography -------------------------------------
+% B!IOGRAPHY: -------------------------------------
 
-**S****tefan Tiefengraber****’****s** (AT) artworks go from performances
-to interactive installations to sound art and time based media such as
+% VFILL:
+% TEXINJECT: \scalefont{.75}
+
+**Stefan Tiefengraber**’s (AT) artworks go from performances to
+interactive installations to sound art and time based media such as
 experimental video and documentaries. These works have been exhibited
 at Ars Electronica Festival 2014 (Linz/Austria), O'NewWall Gallery
-(Seoul/Korea), 16th Media Art Biennale WRO 2015 (Wroclaw/Poland), …
+(Seoul/Korea), 16th Media Art Biennale WRO 2015 (Wroclaw/Poland), ...
 

@@ -1,7 +1,7 @@
-'Behind the Smart World' - Introduction 
-======================================= 
+'Behind the Smart World' -- Introduction 
+======================================== 
 
-%BY: KairUs - Linda Kronman and Andreas Zingerle
+% BY: KairUs - Linda Kronman and Andreas Zingerle
 
 The smart world. Created by policymakers, the advertising world, creative
 industries, and persuasive UX-designers that portray to us a world of
@@ -99,7 +99,8 @@ the seemingly immaterial information, the ones and zeros of our data,
 to their material containers. Whereas the cloud suggests an unlimited
 capacity of storage space, one wonders where do the data centers go to die?
 
-Part 3: Resurfacing Data
+Part 3: Resurfacing Data 
+------------------------ 
 
 As the prior parts of the publication show, we live in a time when
 everything is saved, and this data is very hard to delete. When we share
@@ -137,16 +138,16 @@ published for different motives. Most of us would agree that spam mails
 and fake websites used for fraud should be categorized as the junk of
 Internet traffic. It is estimated that fake websites make up around 20%
 of the entire World Wide Web, and they are often clones and copies of
-sites published elsewhere. This type of resurfacing data is the focus
-of the last article *Strategies of Net-activists**A**gainst**P**hishing
-and**F**ake**B**usiness**Websites*, in which we illustrate how open source
-intelligence tools can be used to report websites suspected for fraud and
-eventually have them blocked by their hosting providers. Nevertheless, when
-one domain is blocked, the same website often resurfaces under yet another
+sites published elsewhere. This type of resurfacing data is the focus of
+the last article *Strategies of Net-activists Against Phishing and Fake
+Business Websites*, in which we illustrate how open source intelligence
+tools can be used to report websites suspected for fraud and eventually
+have them blocked by their hosting providers. Nevertheless, when one
+domain is blocked, the same website often resurfaces under yet another
 slightly different domain name. This phenomena is also clearly visible in
 the artwork *Megacorp.* that visualizes a collection of 1000 fake companies.
 
-% --Biography -------------------------------------
+% BIOGRAPHY: -------------------------------------
 
 **KairUs** is a collective of two artists, Linda Kronman (FI) and
 Andreas Zingerle (AT). Our work focuses on human computer and computer

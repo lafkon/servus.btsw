@@ -1,19 +1,21 @@
-**Deleted file information is like a fossil...**\*\*\*\*\*\*– interview
-with\*\*\*\*Michaela Lakova\*\*
-
+Deleted file information is like a fossil... – interview with Michaela Lakova 
+============================================================================= 
 % BY: by Andreas Zingerle
 
-Andreas Zingerle (**AZ**): In your practice based research project *DEL?No,
-wait!REW* you contextualize the process of data recovery in a forensic
-approach to a collection of discarded hard drives. In the installation,
-the audience is asked to either delete a recovered file or to publish
-it online. Can you tell a little bit more about this work? Where did you
-get the hard drives from? Can you describe the installation setup?
 
-Michaela Lakova (**ML**): The installation *DELETE?No, wait!REWIND* aims
-to explore the notion of “deletion”, confronting the audience with
-larger questions of how to secure deletion of data from a magnetic medium,
-data ownership and the ethics of data recovery.
+(% AZ:) (% TEXINJECT: \hfill) In your practice based research project
+% TEXINJECT: \newline
+*DEL?No, wait!REW* you contextualize the process of data recovery in a 
+forensic approach to a collection of discarded hard drives.
+In the installation, the audience is asked to either delete a recovered
+file or to publish it online. Can you tell a little bit more about this
+work? Where did you get the hard drives from? Can you describe the
+installation setup?
+
+(% ML:) The installation *DELETE?No, wait!REWIND* aims to explore the
+notion of “deletion”, confronting the audience with larger questions
+of how to secure deletion of data from a magnetic medium, data ownership
+and the ethics of data recovery.
 
 The installation setup consists of three core elements: display screens
 showing the graphical user interface (GUI); a tangible physical interface,
@@ -31,10 +33,11 @@ an online gallery. Saved files are projected on Display Screen No. 3. The
 physicality of the hard drives, the source of the data recovery procedure,
 is present in the exhibition space.
 
-**AZ**: Were there any reactions from the audience? If so, what kind of
+
+(% AZ:) Were there any reactions from the audience? If so, what kind of
 feedback did you receive?
 
-**ML**: People are sensitive about their personal data, but they lack
+(% ML:) People are sensitive about their personal data, but they lack
 technological knowledge about the structuring, storing and deletion of
 their electronic data. Another insight, which can be concluded based on
 participants’ interaction, is that often the viewers associate themselves
@@ -43,13 +46,13 @@ sense the installation achieved a greater awareness, which in some cases
 makes participants rethink the fallibility of technology and what happens
 when they trash their hard drives or files into their digital recycle bins.
 
-**AZ**: Your work calls the ownership of the data into question. It raises
+(% AZ:) Your work calls the ownership of the data into question. It raises
 questions like: Who actually owns that data? Is the creator, the audience,
 or are you the owner of the data?
 
 How do you reflect on these questions?
 
-**ML**: The notion of ownership is polemic. The work is confrontational
+(% ML:) The notion of ownership is polemic. The work is confrontational
 in that it creates a moral dilemma. On one hand I became the owner by
 purchasing a collection of hard drives with a legal transaction. So the
 physical carrier and the accompanying content become mine in a sense. Then I
@@ -62,7 +65,7 @@ which is present in the exhibition space. Because of the slippery nature of
 the digital information, I think that the notion of ownership is blended
 out. In other words there are multiple owners of the same content.
 
-**AZ**: In your work *Estimated Time to Recovery* you created an automatized
+(% AZ:) In your work *Estimated Time to Recovery* you created an automatized
 system, which recovers and deletes files without the consent or the
 knowledge of the previous owners.
 
@@ -70,7 +73,7 @@ What were the ideas you wanted to bring forth with this work? Can you
 reflect on the development phrase of the work and how you came up with
 the automatized installation format?
 
-**ML**: The work proposes an insight to processes which often remain
+(% ML:) The work proposes an insight to processes which often remain
 hidden and run in the background on our machines, *Estimated Time to
 Recovery* is an automatized system or a feedback loop of recovery and
 deletion as an attempt to display these processes, over which the users
@@ -83,11 +86,11 @@ procedure is finished the machine starts the reverse process of erasing
 the recovered data. The choice to enclose all the hardware in a box is
 a metaphor of the black box of our general understanding of the machines.
 
-**AZ**: If files are deleted and recovered over and over again, could
+(% AZ:) If files are deleted and recovered over and over again, could
 you observe whether this affects the recovery or deletion? Do the images
 alter through the process, e.g. become glitchy or un-recoverable?
 
-**ML**: *“Deleted file information is like a fossil – its skeleton
+(% ML:) *“Deleted file information is like a fossil – its skeleton
 may be missing a bone here or there, but the fossil remains, unchanged,
 until it is completely overwritten.”*A beautiful quote from Dan Farmer
 and Wietse Venema, *Forensic-Discovery* serves for the purpose.
@@ -100,36 +103,36 @@ could be assigned as “un-recovered”. Their content was blank. This
 also caused some technical issues with my installation, so I decided to
 deliberately avoid them.
 
-**AZ**: In the first installation you give the visitor a choice to delete
+(% AZ:) In the first installation you give the visitor a choice to delete
 or recover data, whereas in the second work the deletion and recovery
 process is automatized. Can you reflect on how this human interaction
 or lack of interaction changes the interpretation of the recovery and
 deletion processes?
 
-**ML**: In the first work *DEL?No, wait!R**E**W* installation, the viewer
+(% ML:) In the first work *DEL?No, wait!REW* installation, the viewer
 becomes an active participant, to whom a certain choice has been given,
 but this choice is still very much determined by an algorithm. In my second
 work *Estimated time to recovery*, on the other hand, the visitor becomes
 merely a witness of the process with no possibility for interaction. I
 think both of these roles resonate in our current media realm.
 
-**AZ**: Another of your works is called *Cold**S**torage* and consists of
+(% AZ:) Another of your works is called *Cold Storage* and consists of
 enlarged transparent prints and five glass cubes that display the circuit
 boards. Can you tell a bit more about the work ?
 
 Can you describe your research for the work and describe your aesthetic
 choices?
 
-**ML**: The *Cold**S**torage* installation was made in the context of
-the group show entitled “What remains – Strategies of Saving and
-Deleting” at esc (medien kunst labor) in Graz. Together with four other
-artists I was invited to explore themes of storage, data, reliability,
-and the loss of materiality and values. I started my research by looking at
-digital forensics and data erasure as main themes. However, the direction
-of my research shifted towards an investigation into data storage, macro
-chips, circuit boards, integrated circuit (IC) diodes, and the process
-of zooming into their macro structures. Eventually that was reflected in
-the final work and its aesthetics choices.
+(% ML:) The *Cold Storage* installation was made in the context of the group
+show entitled “What remains – Strategies of Saving and Deleting”
+at esc (medien kunst labor) in Graz. Together with four other artists I
+was invited to explore themes of storage, data, reliability, and the loss
+of materiality and values. I started my research by looking at digital
+forensics and data erasure as main themes. However, the direction of my
+research shifted towards an investigation into data storage, macro chips,
+circuit boards, integrated circuit (IC) diodes, and the process of zooming
+into their macro structures. Eventually that was reflected in the final
+work and its aesthetics choices.
 
 The installation consisted of enlarged transparent prints containing
 macro photos of the most common memory devices (USB stick, SD memory
@@ -150,22 +153,22 @@ of memory, asking what is the future of digital storage? Is it *“a glass
 cold memory which lasts forever”*or an imperfect storage technology
 that can impart its contents?
 
-**AZ**: So far in your works the owner is always separated and distant from
+(% AZ:) So far in your works the owner is always separated and distant from
 the data rather than involved in a participatory act. Is this a direction
 you plan to continue or what are your upcoming steps in your research?
 
-**ML**: In most of the cases is quite difficult to trace back the original
+(% ML:) In most of the cases is quite difficult to trace back the original
 owner(s). But even then I am not interested in personifying that data,
 which might center my works around the relationship with the actual
 owner. Instead, I try to keep it open for different interpretations. My
 next step is producing a small publication, based on my research and the
 collection of thoughts and images I have gathered.
 
-**AZ**: So based on your research and your artworks, did this process
+(% AZ:) So based on your research and your artworks, did this process
 make you more sensitive about how you handle data, or how do you deal
 with your data both on- and off line?
 
-**ML**: I learned a lot throughout the research and the process, but there
+(% ML:) I learned a lot throughout the research and the process, but there
 are still many technical aspects, which I do not fully understand. I
 am sensitive about my data, but I am also not super cautious about
 it. Otherwise I would have to become a monk. My background is not in
@@ -173,13 +176,11 @@ computer science, so my perspective is purely subjective and artistic. With
 this body of work I also attempt to showcase and discuss open themes that
 interest me.
 
-% --Biography -------------------------------------
+% BIOGRAPHY: -------------------------------------
 
 **Michaela Lakova** (BG) is a visual artist and researcher based in
-Rotterdam.
-
-Subjects of interest are errors, systems malfunction and the
-inevitable generation of data traces and its problematic resistance
+Rotterdam. Subjects of interest are errors, systems malfunction and
+the inevitable generation of data traces and its problematic resistance
 to deletion. Currently she is investigating digital forensics and the
 disappearance of hardware. She completed a Master's program in Media
 Design and Communication at Piet Zwart Institute in 2014.
