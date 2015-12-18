@@ -1,0 +1,613 @@
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+# --------------------------------------------------------------------------- #
+# S H A R E D
+# =========================================================================== #
+  XLINKID="xlink:href"
+
+# --------------------------------------------------------------------------- #
+  function svglayers2pdfpages() {
+
+   CROP=10.63 # 3mm in px
+
+     SVGLAYER=$1
+     PDFPAGES=$2
+     SUPERTMP=${TMPID}.`echo $SVGL | md5sum | cut -c 1-4`.tmp
+ 
+     CANVASWIDTH=`sed ":a;N;\$!ba;s/\n//g" $SVGLAYER | # SVG WITHOUT LINEBREAKS
+                  sed 's/width=/\n&/g'               | # EXTRACT WIDTH
+                  grep "^width="                     | # EXTRACT WIDTH
+                  cut -d "\"" -f 2                   | # EXTRACT WIDTH VALUE
+                  head -n 1`                           # FIRST WIDTH ONLY
+      LAYERNAMES=`sed ":a;N;\$!ba;s/\n//g" $SVGLAYER | # SVG WITHOUT LINEBREAKS
+                  sed 's/nkscape:label/\n&/g'        | # EXTRACT LAYER NAME
+                  grep "^nkscape:label"              | # EXTRACT LAYER NAME
+                  cut -d "\"" -f 2                   | # EXTRACT LAYER NAME
+                  grep -v XX_                        | # IGNORE XX_LAYERS
+                  sort -u`                             # SORT AND UNIQ
+ 
+     BFOO=NL`echo ${RANDOM} | cut -c 1`F00
+     SFOO=SP`echo ${RANDOM} | cut -c 1`F0O
+   # ----------------------------------------------------------------------- #
+   # MOVE LAYERS ON SEPARATE LINES (TEMPORARILY; EASIFY PARSING LATER ON)
+   # ----------------------------------------------------------------------- #
+     sed ":a;N;\$!ba;s/\n/$BFOO/g" $SVGLAYER | # REMOVE ALL LINEBREAKS (BUT SAVE)
+     sed "s/ /$SFOO/g"                       | # REMOVE ALL SPACE (BUT SAVE)
+     sed 's/<g/4Fgt7RfjIoPg7/g'              | # PLACEHOLDER FOR GROUP OPEN
+     sed ':a;N;$!ba;s/\n/ /g'                | # REMOVE ALL NEW LINES
+     sed 's/4Fgt7RfjIoPg7/\n<g/g'            | # RESTORE GROUP OPEN + NEWLINE
+     sed '/groupmode="layer"/s/<g/4Fgt7R/g'  | # PLACEHOLDER FOR LAYERGROUP OPEN
+     sed ':a;N;$!ba;s/\n/ /g'                | # REMOVE ALL LINEBREAKS
+     sed 's/4Fgt7R/\n<g/g'                   | # RESTORE LAYERGROUP OPEN + NEWLINE
+     sed 's/<\/svg>//g'                      | # REMOVE SVG CLOSE
+     sed 's/display:none/display:inline/g'   | # MAKE VISIBLE EVEN WHEN HIDDEN
+     tee > ${SUPERTMP}                         # WRITE TO TEMPORARY FILE
+   # ----------------------------------------------------------------------- #
+   # WRITE LAYERS TO SEPARATE FILES AND TRANSFORM TO PDF 
+   # ----------------------------------------------------------------------- #
+     COUNT=1 
+     for LAYERNAME in $LAYERNAMES
+      do
+         for PAGE in 1 2
+         do
+             if [ $PAGE -eq 1 ]; then
+                  XSHIFT=-$CROP
+             else
+                  XSHIFT=-`python -c "print $CANVASWIDTH - $CROP"`
+             fi
+             TRANSFORM="transform=\"translate($XSHIFT,0)\""
+             NUM=`echo 0000$COUNT | rev | cut -c 1-4 | rev`
+             LNAME=`echo $LAYERNAME | md5sum | cut -c 1-6`
+             head -n 1 ${SUPERTMP}  | # THE HEADER
+             sed "s/$BFOO/\n/g"     | # RESTORE ORIGINAL LINEBREAKS
+             sed "s/$SFOO/ /g"      | # RESTORE ORIGINAL SPACES
+             tee                    >   ${TMPID}_${NUM}_${LNAME}.svg
+             echo "<g $TRANSFORM>"  >>  ${TMPID}_${NUM}_${LNAME}.svg
+             grep "inkscape:label=\"$LAYERNAME\"" ${SUPERTMP} | #
+             sed "s/$BFOO/\n/g"     | # RESTORE ORIGINAL LINEBREAKS
+             sed "s/$SFOO/ /g"      | # RESTORE ORIGINAL SPACES
+             tee                    >>  ${TMPID}_${NUM}_${LNAME}.svg
+             echo "</g>"            >>  ${TMPID}_${NUM}_${LNAME}.svg
+             echo "</svg>"          >>  ${TMPID}_${NUM}_${LNAME}.svg 
+ 
+             inkscape --export-pdf=${TMPID}_${NUM}_${LNAME}.pdf \
+                      --export-text-to-path \
+                      ${TMPID}_${NUM}_${LNAME}.svg
+
+           # http://www.imagemagick.org/Usage/compare/#type_greyscale
+             #convert ${TMPID}_${NUM}_${LNAME}.pdf \
+             #        -colorspace HSL \
+             #        -format '%M  avg=%[fx:mean.g] peak=%[fx:maxima.g]\n' \
+             #        info:
+
+             HASCOLOR=`convert ${TMPID}_${NUM}_${LNAME}.pdf \
+                      -colorspace HSL -format '%[fx:maxima.g]' info: |#
+                      sed 's/[^0-9]//g'`
+             if [ $HASCOLOR -eq 0 ]; then
+                   pdfxgs ${TMPID}_${NUM}_${LNAME}.pdf
+                  #cp ${TMPID}_${NUM}_${LNAME}.pdf ${COUNT}.pdf
+                  #echo "has no color"
+             else
+                   pdfxcmyk ${TMPID}_${NUM}_${LNAME}.pdf
+                  #cp ${TMPID}_${NUM}_${LNAME}.pdf ${COUNT}.pdf
+                  #echo "has color"
+             fi
+  
+             rm ${TMPID}_${NUM}_${LNAME}.svg
+             COUNT=`expr $COUNT + 1`
+         done
+     done
+   # ----------------------------------------------------------------------- #
+   # MAKE MULTIPAGE PDF
+   # ----------------------------------------------------------------------- #
+     pdftk ${TMPID}_*.pdf cat output $PDFPAGES
+   # ----------------------------------------------------------------------- #
+   # CLEAN UP(OBSOLETE?)
+   # ----------------------------------------------------------------------- #
+   # rm ${SUPERTMP} ${TMPID}_*.pdf $SVGLAYER
+ 
+  }
+
+# --------------------------------------------------------------------------- #
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+# --------------------------------------------------------------------------- #
+# INCLUDE ANOTHER SOURCE FILE
+# --------------------------------------------------------------------------- #
+
+function INCLUDE() {
+
+# TODOTODO: check, check, debug
+# mdsh2src $PARAMETERSWITHOUTFUNCTIONS # TODOTODO
+
+  echo "INCLUDE STARTS ====================================================="
+
+# EXTRACT OPTIONAL PARAMETERS
+# ---------------------------------------------------------
+  FUNCTIONSHERE=`echo $* | sed 's/ /\n/g' | #
+                 grep "\.functions$" | tail -n 1`
+
+  if [ `echo $FUNCTIONSHERE | wc -c` -gt 1 ];then
+  PARAMETERSWITHOUTFUNCTIONS=`echo $*        | #
+                              sed 's/ /\n/g' | #
+                              grep -v "\.functions$"`                                    # TODO: BETTER
+
+# ATTACH FUNCTIONS TO MAIN FUNCTIONS
+# ---------------------------------------------------------
+  if [ `ls $FUNCTIONSHERE 2>/dev/null | wc -l` -gt 0 ];then
+
+   FID=`date +%s%N`
+ # ATTACH AND MARK FUNCTIONS
+   echo "#  -- ${FID} -- START" >> $FUNCTIONS
+   cat  $FUNCTIONSHERE          >> $FUNCTIONS
+   echo "#  -- ${FID} -- END"   >> $FUNCTIONS
+   FUNCTIONSADDED="YES"
+ # SAVE FUNCTION ID (AS VARIABLE MAY BE OVERWRITTEN)
+   echo $FID >> ${TMPID}.fid
+   fi
+   else
+   FUNCTIONSADDED="NO"
+  fi
+
+# PROCESS INPUT !!!!!
+# --------------------------------------------------------
+  mdsh2src $*
+
+# REMOVE ADDED FUNCTIONS
+# --------------------------------------------------------
+  if [ -f ${TMPID}.fid ]; then
+
+# LOAD LATEST FUNCTION ID
+  FID=`tail -n 1 ${TMPID}.fid`
+# REMOVE FROM FUNCTIONS
+  sed -i "/${FID} -- START$/,/${FID} -- END$/d" ${FUNCTIONS}
+# REMOVE FROM SAVED FUNCTIONS
+  sed -i "/$FID/d" ${TMPID}.fid
+# RELOAD FUNCTIONS
+  source $FUNCTIONS
+  
+  fi
+  
+  echo "INCLUDE ENDS  ======================================================"
+}
+
+# --------------------------------------------------------------------------- #
+# CREATE AND INSERT PAGE SPREAD (SPECIFIC SRC)
+# --------------------------------------------------------------------------- #
+
+function SPREAD() {
+
+  SVGSRC=`echo $* | sed 's/ /\n/g'         | # SPACES TO NEWLINES
+          egrep "\.svg$|\.pdf$" | head -n 1` # SELECT FIRST ENDING WITH .svg/.pdf
+   PAGES=`echo $* | sed "s/#/\n#/g"   | # HASH TO NEWLINES
+          grep -v "^#"                | # 
+          sed 's/ /\n/g'              | #
+          sed "/[^0-9\\-]/d"          | # NO LINES WITH MORE THAN NUMS AND -
+          grep -v "^[ ]*$" | tail -n 1` # 
+
+  if [ `echo $PAGES | wc -c` -le 1 ]; then
+        PAGES=-
+  elif [ `echo $PAGES | grep "^[0-9]" | wc -l` -ge 1 ]; then
+        P1=`echo $PAGES | cut -d "-" -f 1`
+        if [ `python -c "print $P1 / 2.0" | #
+              cut -d "." -f 2` -lt 5 ]; then
+             #echo "page is even"
+              PAGECOMMAND="\cleartoright"
+        else
+             #echo "page is odd"
+              PAGECOMMAND="\cleartoleft"
+        fi
+  else
+        PAGES=- ; PAGECOMMAND=""
+  fi
+
+     EXT=`echo $SVGSRC | rev | cut -d "." -f 1 | rev`
+     PDF=${TMPID}`echo $SVGSRC | md5sum | cut -c 1-4`.pdf
+  SVGTMP=${TMPID}`echo $SVGSRC | md5sum | cut -c 5-9`.$EXT
+   MACRO="% something went wrong with $SVGSRC"
+
+  if [ -f $PDF ]; then
+       echo "$PDF exists"
+       MACRO="\spread{$PDF}{$PAGES}{$PAGECOMMAND}"
+  else
+
+    getFile $SVGSRC $SVGTMP
+    echo $PDF
+
+    if [ "X$SUCCESS" == "XYES" ]; then
+    if [ "X$EXT" == "Xsvg" ]; then
+
+    SVGTMP=`realpath $SVGTMP`
+
+   # ----------------------------------------------------------------------- #
+   # MAKE IMAGE HREFS ABSOLUTE
+   # ----------------------------------------------------------------------- #
+
+     IFHTTP=`echo $SVGSRC | grep "http.\?://" | wc -l`
+     if [ $IFHTTP -lt 1 ]; then
+     SVGPATH=`realpath $SVGSRC | rev | cut -d "/" -f 2- | rev`
+     SVG=`basename $SVGSRC`
+     cd $SVGPATH
+       for XLINK in `cat $SVG               | #
+                     sed "s/$XLINKID/\n&/g" | #
+                     grep "$XLINKID"`         #
+        do
+          IMGSRC=`echo $XLINK         | #
+                  cut -d "\"" -f 2    | #
+                  cut -d "\"" -f 2    | #
+                  sed "s/$XLINKID//g" | #
+                  sed 's,file://,,g'`   #
+          IMG=`basename $IMGSRC`
+          IMGPATH=`realpath $IMGSRC | rev | # 
+                   cut -d "/" -f 2- | rev`  #
+          ABSPATH=`realpath $IMGPATH`
+          NEWXLINK="$XLINKID=\"$ABSPATH/$IMG\""
+          sed -i "s,$XLINK,$NEWXLINK,g" $SVGTMP
+       done
+     cd - > /dev/null
+    fi
+
+    svglayers2pdfpages $SVGTMP $PDF
+
+   elif [ "X$EXT" == "Xpdf" ]; then
+
+    cp $SVGTMP $PDF
+    HASCOLOR=`convert $PDF[0] -colorspace HSL \
+              -format '%[fx:maxima.g]' info: | #
+              sed 's/[^0-9]//g'`
+    if [ $HASCOLOR -eq 0 ]; then
+          pdfxgs $PDF
+    else
+          pdfxcmyk $PDF
+    fi
+  fi
+  # ----------------------------------------------------------------------- #
+  # MACRO INCLUDE IN DOCUMENT
+  # ----------------------------------------------------------------------- #
+    MACRO="\spread{$PDF}{$PAGES}{$PAGECOMMAND}"
+  # ----------------------------------------------------------------------- #
+  # CLEAN UP 
+  # ----------------------------------------------------------------------- #
+    rm ${SPRTMP} ${TMPID}_*.pdf $SVGTMP
+   fi
+  fi
+
+ write2src "$MACRO"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function THISIS() {
+
+  echo $*
+
+  if [ `echo $* | grep intro | wc -l` -gt 0 ]; then
+
+     echo "this is a intro"
+     write2src "\intro"
+  else
+
+     echo " this is standard"
+     write2src "\resetall"
+
+  fi
+
+}
+
+# =========================================================================== #
+
+
+function TABLEOFCONTENTS(){
+
+ #write2src "\cleardoublepage"
+  write2src "\newpage"
+  write2src "\setcounter{tocdepth}{0}"
+  write2src "\tableofcontents"
+  write2src "\newpage"
+
+#  write2src "\newpage"
+#  write2src "\setcounter{tocdepth}{0}"
+#  write2src "\begingroup"
+#  write2src "  \flushbottom"
+#  write2src "  \setlength{\parskip}{0pt plus 1fil}%"
+#  write2src "  \tableofcontents"
+#  write2src "  \newpage"
+#  write2src "\endgroup"
+
+#  write2src "\newpage"
+#  write2src "\setcounter{tocdepth}{0}"
+#  write2src "{\setlength\parskip{\fill}"
+#  write2src "  \flushbottom"
+#  write2src "\tableofcontents"
+#  write2src "}"
+#  write2src "  \newpage"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function TOCITEM(){
+
+  TOCTITLE=`echo $* | pandoc -r markdown -w latex`
+
+ #if [ `echo $TOCTITLE | grep ":" | wc -l` -gt 0 ]; then
+ #F1=`echo $TOCTITLE | cut -d ":" -f 1`
+ #F2=`echo $TOCTITLE | cut -d ":" -f 2-`
+ #TOCTITLE="\MakeUppercase{$F1}: $F2"
+ #fi
+
+  if [ `echo $TOCTITLE | grep ":" | wc -l` -gt 0 ]; then
+  F1=`echo $TOCTITLE | cut -d ":" -f 1`
+  F2=`echo $TOCTITLE | cut -d ":" -f 2-`
+  TOCTITLE="${F1}: \MakeUppercase{$F2}"
+  fi
+
+  write2src "\addcontentsline{toc}{chapter}{$TOCTITLE}"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function BIOGRAPHY() {
+
+  write2src "\vfill"
+  write2src "\scalefont{.8}"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function RESETFONT() {
+
+  write2src ""
+  write2src "\resetfont"
+  write2src ""
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function HYPHENATE(){ 
+ 
+  FROM=`echo $* | cut -d " " -f 1   | # 
+        sed 's/ //g' | sed 's/"//g' | sed 's/\\\/\\\\\\\/g'` 
+    TO=`echo $* | cut -d " " -f 2   | # 
+        sed 's/ //g' | sed 's/"//g' | sed 's/\\\/\\\\\\\/g'` 
+   LINE=`grep -n $FROM $SRCDUMP | tail -n 1 | cut -d ":" -f 1`
+   sed -i "${LINE}s/\b$FROM\b/$TO/g" ${SRCDUMP}
+}
+
+# --------------------------------------------------------------------------- #
+
+function RAGGEDBOTTOM(){ 
+ 
+  write2src ""
+  write2src "\addtolength{\skip\footins}{\fill}"
+  write2src "\raggedbottom"
+  write2src ""
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function SCALEFONT() {
+
+  (
+  FSCALE=`echo $1 | sed 's/^[ \t]*//g'`
+  write2src "\relscale{$FSCALE}"
+  )
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function NEXT(){ 
+ 
+
+  write2src ""
+  write2src "\newpage"
+  write2src "\resetfont"
+  write2src "\setcounter{footnote}{0}"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function TEXINJECT() {
+
+   write2src "$*"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function SUPERIMPOSE() {
+
+  SVGSRC=`echo $* | sed 's/ /\n/g'    | # SPACES TO NEWLINES
+          grep "\.svg$" | head -n 1`    # SELECT FIRST ENDING WITH .pdf 
+   PAGES=`echo $* | sed "s/#/\n#/g"   | # HASH TO NEWLINES
+          grep -v "^#"                | # IGNORE LINES STARTING WITH HASH
+          sed 's/ /\n/g'              | # SPACES TO NEWLINES
+          sed "/[^0-9\\-]/d"          | # NO LINES WITH MORE THAN NUMS AND -
+          grep -v "^[ ]*$" | tail -n 1` # IGNORE EMPTY LINES, TAKE LAST MATCH
+  if [ `echo $PAGES | wc -c` -le 1 ]; then
+        PAGES=1
+  fi
+
+  P1=`echo $PAGES | cut -d "-" -f 1`
+  P2=`echo $PAGES | cut -d "-" -f 2`
+
+     PDF=${TMPID}`echo $SVGSRC | md5sum | cut -c 1-4`.pdf
+  SVGTMP=${TMPID}`echo $SVGSRC | md5sum | cut -c 1-4`.svg
+   MACRO="% something went wrong with $SVGSRC"
+
+    if [ -f $PDF ]; then
+      #echo "$PDF exists"
+       MACRO="\superimpose{$PDF}{$P1}{$P2}"
+  else
+
+  ISSVG=`echo $SVGSRC | grep "\.svg$" | wc -l`
+  if [ $ISSVG -gt 0 ]; then
+
+    getFile $SVGSRC $SVGTMP
+    echo $PDF
+
+    if [ "X$SUCCESS" == "XYES" ]; then
+
+    svglayers2pdfpages $SVGTMP $PDF
+
+  # ----------------------------------------------------------------------- #
+  # INCLUDE IN DOCUMENT
+  # ----------------------------------------------------------------------- #
+    MACRO="\superimpose{$PDF}{$P1}{$P2}"
+
+   fi
+  fi
+ fi
+
+ write2src "$MACRO"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function BY(){
+
+  write2src "{\by{$*}}"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function NEWPAGE(){
+
+  write2src "\newpage"
+}
+
+# --------------------------------------------------------------------------- #
+
+function VFILL(){
+
+  write2src "\vfill"
+}
+
+# --------------------------------------------------------------------------- #
+
+function EMPTYPAGE(){
+
+  write2src "\emptypage"
+}
+
+# --------------------------------------------------------------------------- #
+
+function CLEARTORIGHT(){
+
+  write2src "\cleartoright"
+}
+
+# --------------------------------------------------------------------------- #
+
+function CLEARTOLEFT(){
+
+  write2src "\cleartoleft"
+}
+
+# --------------------------------------------------------------------------- #
+
+  KEYWORDURL="http://freeze.sh/etherpad/export/_/btsw.keywords"
+
+  # TODO: optional +s (=> belong + belongs . owner + owners)
+
+function KEYWORDIZE() {
+
+  getFile $KEYWORDURL ${TMPID}.keywords
+
+  ( # A SUBSHELL => PROTECT VARIABLES
+ 
+   UN=U`echo $RANDOM | cut -c 1-2`N
+   S=S`echo $RANDOM | cut -c 1-2`P
+ 
+   IFS=$'\n'
+   for INDEXTHIS in `cat ${TMPID}.keywords         | # TAKE LIST
+                     grep -v "^#"                  | # IGNORE SOMETHING
+                     awk 'BEGIN { FS = "|" } ; \
+                     { print length($1) ":" $0; }' | # ADD LENGTH OF FIELD 1
+                     sort -n                       | # NUMERIC SORT (=LENGTH)
+                     cut -d ":" -f 2-              | # REMOVE LENGTH AGAIN
+                     tac`                            # REVERT (LONGEST FIRST)
+    do
+       MAINKEYWORD=`echo $INDEXTHIS         | # START
+                    cut -d "|" -f 1`          # SELECT FIRST FIELD 
+       MAINFOO=`echo $MAINKEYWORD  | # PIPE STARTS
+                sed  "s/./&M$UN/g" | # ADD UNID TO EACH LETTER
+                sed  "s/ /M$S/g"`    # PROTECT/RM SPACE
+         for KEYWORD in `echo $INDEXTHIS                   | # START
+                         sed 's/|/\n/g'                    | # PIPE TO NEWLINE
+                         awk '{ print length($1) ":" $0; }'| # PRINT LENGTH
+                         sort -n | cut -d ":" -f 2- | tac`   # SORT, CLEAN, REVERT
+         do
+                   K=`echo $KEYWORD       | # START
+                      sed 's/\//\\\\\//g' | # ESCAPE \ FOR sed
+                      sed 's/\./\\\./g'`    # ESCAPE \ FOR sed
+             #sed -i "s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP
+              set +H;
+              sed -i "/^\\\/!s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP 
+         done
+        sed -i "s/K$UN//g" $SRCDUMP    # NORMALIZE PROTECTED KEYWORD
+   done
+ 
+   sed -i "s/M$UN//g" $SRCDUMP  # NORMALIZE PROTECTED KEYWORD ANCHOR
+   sed -i "s/M$S/ /g" $SRCDUMP  # NORMALIZE PROTECTED KEYWORD ANCHOR
+ 
+   ) # END SUBSHELL
+
+ # PAGESTYLE FOR INDEX
+ # ------------------------------------------------------------------------ #
+   echo 'preamble
+        "\\begin{theindex}\n\\thispagestyle{empty}\n"
+          postamble "\n\n\\end{theindex}\n"' > ${TMPID}.ist
+ # ------------------------------------------------------------------------ #
+
+  write2src "\cleartoleft"
+  write2src "\renewcommand\chapter[1]{}" # NOT SAFE!
+  write2src "\renewcommand{\indexname}{}"
+  write2src "\printindex"
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function INSERTKEYWORDS(){
+
+   SISEP="% --------------"
+   SISEPNUM=`grep -n "$SISEP" $SRCDUMP | #
+             tail -n 1                 | #
+             cut -d ":" -f 1`
+   sed "1,${SISEPNUM}d" $SRCDUMP | # PRINT FROM LINENUM TO END
+   grep -v "^% INSERTKEYWORDS:"  | # IGNORE YOURSELF
+   sed "s/^%//"                  | # REMOVE LEADING % 
+   tee                           > super.tmp
+   ( IFS=$'\n'
+   for I in `cat super.tmp  | #
+             sed 's/|/\n/g' | #
+             sed "s/^[ ]*//"` # REMOVE ALL LEADING BLANKS
+    do
+       write2src "\index{$I}"
+   done )
+
+   rm super.tmp
+
+}
+
+# --------------------------------------------------------------------------- #
+
+function CONFORMPAGENUMBER() {
+
+  write2src "\cleartofour"
+}
+
+# --------------------------------------------------------------------------- #
+

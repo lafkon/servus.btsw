@@ -1,0 +1,64 @@
+  write2src "\newcommand{\LK}{}"
+  write2src "\newcommand{\AS}{}"
+
+  write2src "\newif\iflindafirst%
+             \lindafirsttrue%
+             \renewcommand\LK{%
+             \iflindafirst%
+             {\textbf{%
+               Linda Kronman~(LK)~:~}}\lindafirstfalse
+              \else\textbf{%
+               LK~:~
+              }\fi
+             }"
+  write2src "\newif\ifaudreyfirst%
+             \audreyfirsttrue%
+             \renewcommand\AS{%
+             \ifaudreyfirst%
+             {\textbf{%
+               Audrey Samson~(AS)~:~}}\audreyfirstfalse
+              \else\textbf{%
+               AS~:~
+              }\fi
+             }"
+  write2src "\newif\ifandreasfirst%
+             \andreasfirsttrue%
+             \renewcommand\AZ{%
+             \ifandreasfirst%
+             {\textbf{%
+               Andreas Zingerle~(AZ)~:~}}\andreasfirstfalse
+              \else\textbf{%
+               AZ~:~
+              }\fi
+             }"
+  write2src "\newif\ifmichaelafirst%
+             \michaelafirsttrue%
+             \renewcommand\ML{%
+             \ifmichaelafirst%
+             {\textbf{%
+               Michaela Lakova~(ML)~:~}}\michaelafirstfalse
+              \else\textbf{%
+               ML~:~
+              }\fi
+             }"
+
+
+function LK(){
+  write2src "\LK"
+}
+
+function AS(){
+  write2src "\AS"
+}
+
+function AZ(){
+  write2src "\AZ"
+}
+
+function ML(){
+  write2src "\ML"
+}
+
+
+function BY() { echo ""; }
+

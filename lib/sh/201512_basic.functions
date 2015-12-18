@@ -1,0 +1,492 @@
+
+# =========================================================================== #
+# SHARED
+# =========================================================================== #
+# GLOBAL REUSE
+# --------------------------------------------------------------------------- #
+# ONLY SET ONCE (FOR NOW. TO BE CLEANED)
+  if [ `echo $EMPTYLINE | wc -c` -lt 10 ]; then
+  MKLONG=`printf "X%.0s" {1..100}`
+  EMPTYLINE=EMPTY${RANDOM}LINE$MKLONG
+  APND=A${RANDOM}ND
+  ESC=ES${RANDOM}C
+  fi
+
+# --------------------------------------------------------------------------- #
+  function write2src() { echo "$*" >> $SRCDUMP ; }
+# --------------------------------------------------------------------------- #
+
+# --------------------------------------------------------------------------- #
+# MAKE LOCAL IF NECESSARY
+# --------------------------------------------------------------------------- #
+  WGETLOG=${TMPID}.wget
+
+  function getFile() {
+
+  SOURCE=$1
+  TARGET=$2
+  echo "$SOURCE -> $TARGET"
+
+  IFHTTP=`echo $SOURCE | grep "http.\?://" | wc -l`
+  if [ $IFHTTP -ge 1 ]; then
+       URL=$SOURCE;
+       RESPONSE=`curl -s -o /dev/null -IL -w "%{http_code}" $URL`
+       if [ $RESPONSE == '200' ]; then
+            wget --no-check-certificate -d \
+                 -O $TARGET $URL >> $WGETLOG 2>&1 # > /dev/null 2>&1
+            SUCCESS="YES"
+       else
+            echo "$URL does not exist! Skipping."
+            SUCCESS="NO"
+       fi
+  else
+       if [ `ls $SOURCE 2>/dev/null | wc -l` -le 0 ];then
+       echo "no valid input provided"
+       SUCCESS="NO"
+       else
+       SUCCESS="YES"
+       cp $SOURCE $TARGET
+       fi
+  fi
+
+  }
+
+# --------------------------------------------------------------------------- #
+# --------------------------------------------------------------------------- #
+# GENERATE QR CODE FOR INCLUSION
+# --------------------------------------------------------------------------- #
+  QRDEKOSRC=EDIT/assets/151007_qrdeko-simple.svg
+   QRURLLOG=${TMPID}.qrurls
+
+  function mkqr() {
+
+  QRID=`echo $* | md5sum | base64 | cut -c 1-5`
+  QURL="http://lfkn.de/$QRID"
+  QRTXT=`echo $QRID | tr [:lower:] [:upper:]`
+
+  QRPDF=$TMPID${QRID}.pdf
+  QRDEKO=${TMPID}DEKO
+
+
+  if [ ! -f $QRPDF ]; then
+
+  SCALE="scale(0.1,-0.1)"
+  MOVE="translate(55,145)"
+  TRANSFORMQR="transform=\"$MOVE$SCALE\""
+
+  echo $QURL >> $QRURLLOG
+
+# SELECT LAYERS: ONE FOR EACH UNIQUE NAME
+# ---------------------------------------------------------------------------- #
+  sed ":a;N;\$!ba;s/\n/ /g" $QRDEKOSRC  | # REMOVE ALL LINEBREAKS
+  sed 's/<g/\n<g/g'                     | # RESTORE GROUP OPEN + NEWLINE
+  sed '/groupmode="layer"/s/<g/4Fgt7R/g'| # PLACEHOLDER FOR LAYERGROUP OPEN
+  sed ':a;N;$!ba;s/\n/ /g'              | # REMOVE ALL LINEBREAKS
+  sed 's/4Fgt7R/\n<g/g'                 | # RESTORE LAYERGROUP OPEN + NEWLINE
+  sed 's/display:none/display:inline/g' | # MAKE VISIBLE EVEN WHEN HIDDEN
+  tee head.tmp                          | # DUMP NOW TO EXTRACT HEAD LATER
+  tail -n +2                            | # REMOVE HEAD (=FIRST LINE)
+  sed 's/<\/svg>//g'                    | # REMOVE CLOSING TAG
+  grep -n ""                            | # NUMBER LINES
+  sed "s/^.*$/&|&/g"                    | # DOUBLE CONTENT FOR ANALYSIS
+  sed "s/:label/\nX1X/"                 | # MARK LABEL (=NAME)
+  grep -v ":label=\"XX_"                | # IGNORE XX LAYERS
+  grep  "^X1X"                          | # SELECT MARKED
+  shuf                                  | # SHUFFLE
+  sort -u -t\" -k1,2                    | # SELECT ONE FOR EACH LABEL
+  cut -d "|" -f 2-                      | # SELECT SECOND/UNTOUCHED CONTEN
+  sort -n -u -t: -k1,1                  | # SORT ACCORDING TO LINE NUMBER
+  cut -d ":" -f 2-                      | # REMOVE LINENUMBER
+  tee  > layers.tmp                       # WRITE TO FILE
+# ---------------------------------------------------------------------------- #
+
+  head -n 1 head.tmp                      >  ${QRDEKO}.svg
+  cat layers.tmp | sed "s/VWXYZ/$QRTXT/g" >> ${QRDEKO}.svg
+
+  echo "$QURL" | qrencode -iv 1 -t EPS -o $TMPID${QRID}.eps
+
+  inkscape --export-plain-svg=$TMPID${QRID}.svg \
+           $TMPID${QRID}.eps
+
+  echo "<g $TRANSFORMQR>"  >> ${QRDEKO}.svg
+  sed ':a;N;$!ba;s/\n/ /g' $TMPID${QRID}.svg | \
+  tr -s ' ' | sed 's/</\n&/g' | #
+  grep "^<path"            >> ${QRDEKO}.svg
+  echo "</g>"              >> ${QRDEKO}.svg
+  echo "</svg>"            >> ${QRDEKO}.svg
+
+  inkscape --export-pdf=$QRPDF  \
+           --export-text-to-path \
+           ${QRDEKO}.svg
+
+# CLEAN UP
+  rm *.tmp $TMPID${QRID}.eps $TMPID${QRID}.svg ${QRDEKO}.svg
+
+  else
+       echo "qr graphic for $QURL already generated!"
+  fi
+  }
+# --------------------------------------------------------------------------- #
+
+function QR() {
+
+  QRKEY=`echo "$*" | tr -s ' ' | sed 's/^[ \t]*//'`
+      O=`echo $QRKEY | cut -d " " -f 1`
+
+  if [ X"$O" == XON   ] ||
+     [ X"$O" == XOFF  ]
+   then
+        QRMODE=$O
+        echo "QRMODE: $QRMODE"
+   else
+    if [ X"$QRMODE" != XOFF  ]; then
+        QRSEED=`echo "$QRKEY" | md5sum | base64 | cut -c 1-5`
+        echo "insert QR (QRSEED: $QRSEED)"
+        mkqr $QRSEED
+        write2src "\qrmargin{$QRPDF}{$QRTXT}"
+     else
+        echo "QRSEED: $QRSEED (but QRMODE: $QRMODE)"
+    fi
+  fi
+
+  # sleep 4 # TIME TO DEBUG
+
+  }
+
+# =========================================================================== #
+# =========================================================================== #
+# MAIN MDSH CONVERT FUNCTION
+# =========================================================================== #
+
+  function mdsh2src() {
+
+# --------------------------------------------------------------------------- #
+# DEFINE FUNCTION SPECIFIC PLACEHOLDERS
+# --------------------------------------------------------------------------- #
+  TMPBREAK=NX${RANDOM}XL ; TMPID2=`echo $RANDOM$RANDOM | cut -c 1-4`
+# --------------------------------------------------------------------------- #
+# INCLUDE FUNCTIONS
+# --------------------------------------------------------------------------- #
+  source $FUNCTIONS
+
+
+# --------------------------------------------------------------------------- #
+# AND ACTION PLEASE! 
+# --------------------------------------------------------------------------- #
+  #echo "--------------------------------------------------------------------"
+
+# --------------------------------------------------------------------------- #
+# PREPARE INPUT PARAMETERS 
+# --------------------------------------------------------------------------- #
+# TODO: NOT X AS IDENTIFIER
+
+  INPUT=`echo $* | cut -d " " -f 1`; echo "input is: "$INPUT
+  LINES=`echo $* | sed "s/ /\n/g"             | # SPACES TO NEWLINES
+        #sed "s/[^0-9\\-]//g"                 | # REMOVE ALL EXCEPT NUMS AND -      UNNECCESSARY?!
+        #grep -v "^[ ]*$"                     | # REMOVE EMPTY                      UNNECCESSARY?!
+         sed -e '/^[0-9]\+-*[0-9]*$/s/^/X/g'  | # MARK LINE OPTION 
+         grep "^X" | sed 's/^X//' | tail -n 1`  # SELECT LINE OPTION
+  if [ `echo $LINES | wc -c` -gt 1 ]; then      # IF LINE OPTION IS SET
+        echo "lines: $LINES"
+        LINES=`echo $LINES | sed 's/-/,/'`
+        SELECTLINES="sed -n \"${LINES}p\" "
+  else
+        SELECTLINES="tee" 
+  fi
+
+# --------------------------------------------------------------------------- #
+# MAKE LOCAL IF NECESSARY
+# --------------------------------------------------------------------------- #
+  MDSH=${TMPID}.${TMPID2}.mdsh
+  getFile $INPUT $MDSH
+  if [ X$SUCCESS == XYES ];then
+       RUN="YES"
+  else
+       RUN="NO"    
+  fi
+
+# =========================================================================== #
+# --------------------------------------------------------------------------- #
+# TRANSFORM (IF POSSIBLE/NECESSARY)
+# --------------------------------------------------------------------------- #
+  if [ "Y$RUN" == "YYES" ] && 
+     [ -f $MDSH ] &&
+     [ `wc -l $MDSH | cut -d " " -f 1` -gt 0 ]; then
+ 
+# --------------------------------------------------------------------------- #
+# PRE-PROCESSING
+# --------------------------------------------------------------------------- #
+
+# CORRECT MARKUP (CONFORM WITH PANDOC MARKDOWN (ETHERPAD PROBLEMS))
+# TODO EXTENSIVE TESTING !!!!!
+# sed -i '/^\*-/s/\*//'                 $MDSH # CORRECT LISTS
+# sed -i '/^\*[ \t]*-/s/\*[ \t]*/    /' $MDSH # CORRECT LISTS
+# sed -i 's/^[ \t]*\*[ \t]*$//g'        $MDSH # CORRECT LISTS
+# sed -i '/^[ \t]*\*/s/\*/- /g'         $MDSH # CORRECT LISTS
+
+# MOVE (% TO NEW LINE = ALLOW INLINE COMMANDS
+  sed -i '/^%/!s/(% /\n!!!% /g' $MDSH
+  sed -i "/^!!!%/s/)/\n$APND/"  $MDSH
+  sed -i 's/^!!!%/%/'           $MDSH
+
+# --------------------------------------------------------------------------- #
+# SAVE MDSH LINES TO PROTECT FROM PANDOC
+# --------------------------------------------------------------------------- #
+  BCKUPCOMM=${TMPID}.${TMPID2}.commented 
+  if [ -f $BCKUPCOMM ]; then rm $BCKUPCOMM ; fi
+  PROTECTED=${TMPID}.${TMPID2}.mdshprotected
+  cp $MDSH $PROTECTED
+  
+  if [ `grep "^%" $PROTECTED | wc -l` -gt 0 ]; then
+  for COMMENTNUM in `grep -n "^%" $PROTECTED | #
+                     cut -d ":" -f 1`
+   do
+        LINENUM=$COMMENTNUM
+        COMMENT=`sed "${LINENUM}q;d" $MDSH`
+      COMMENTID=`echo $COMMENT | md5sum | cut -d " " -f 1`$MKLONG
+       sed -i "${LINENUM}s/^.*$/$COMMENTID/g" $PROTECTED
+       echo "${COMMENTID}:${COMMENT}" >> $BCKUPCOMM
+  done
+  fi
+
+
+# --------------------------------------------------------------------------- #
+# CONVERT MARKDOWN WITH PANDOC (CUSTOM FOOTNOTES/BIBREFS)
+# --------------------------------------------------------------------------- #
+  MDSHMOD=${TMPID}.${TMPID2}.mdshmod
+  if [ -f $MDSHMOD ]; then rm $MDSHMOD ; fi
+
+  # TEMPORARY PROTECTORS (FOO)
+  # ---------------------------------
+    BREAKFOO=BR${RANDOM}EAK
+      FN1FOO=FN${RANDOM}1 ; FN2FOO=FN${RANDOM}2
+    CICOMMON=CM$RANDOM
+      CI1FOO=${CICOMMON}CI${RANDOM}1 ; CI2FOO=CI${RANDOM}2
+      CP1FOO=${CICOMMON}CP${RANDOM}1 ; CP2FOO=CP${RANDOM}2
+     CODEFOO=CO${RANDOM}DE
+
+  # THE GREAT ESCAPE
+  # ---------------------------------
+    FNOESC=$ESC`echo $FOOTNOTEOPEN     | #
+                sed 's/\\\/\\\\\\\/g'  | #
+                sed 's/\//\\\\\//g'`
+    CTOESC=$ESC`echo $CITEOPEN         | #
+                sed 's/\\\/\\\\\\\/g'  | #
+                sed 's/\//\\\\\//g'`
+    CPOESC=$ESC`echo $CITEPOPEN        | #
+                sed 's/\\\/\\\\\\\/g'  | #
+                sed 's/\//\\\\\//g'`
+
+  cat $PROTECTED                         | # USELESS USE OF CAT
+  eval "$SELECTLINES"                    | # CUSTOM COMMAND TO SELEC TLINES
+  sed "s/^ *$/$EMPTYLINE$BREAKFOO/g"     | # PROTECT EMPTY LINES
+  sed "s/^[ ]\{4\}/$CODEFOO/"            | # PROTECT CODEBLOCKS
+  sed ":a;N;\$!ba;s/\n/$BREAKFOO/g"      | # REMOVE LINEBREAKS (TEMPORARY)
+  sed "s/\[\^\]{/\n$FN1FOO/g"            | # PROTECT (FOONOTE OPEN)
+  sed "/^$FN1FOO/s/}/\n$FN2FOO/"         | # PROTECT (FOOTNOTE CLOSE)
+  sed "s/\[@\[/\n$CP1FOO/g"              | # PROTECT (CITEP OPEN)
+  sed "s/\[@/\n$CI1FOO/g"                | # PROTECT (CITE OPEN)
+  sed "/^$CP1FOO/s/\]/$CP2FOO/"          | # PROTECT (CITEP OPTION OPEN)
+  sed "/^$CICOMMON/s/\]/$CI2FOO/"        | # PROTECT (CITE CLOSE)
+  sed "s/$BREAKFOO/\n/g"                 | # RESTORE LINEBREAKS
+ #sed -r ":a;\$!{N;ba};s/([ \t]*[>*\\-][^\n]*)\n/\1$BREAKFOO/g" | #
+ #sed "s/[ \t]*[>*\\-]/\n&/"             | #
+  sed "s/$BREAKFOO/\n/g"                 | # RESTORE LINE BREAKS
+  sed "s/$CODEFOO/    /"                 | # RESTORE CODEFOO
+  $PANDOCACTION                          | # MD TO TARGET MARKUP
+  sed "s/[ \t]*$FN1FOO/$APND$FNOESC/g"   | # SUBSTITUTE WITH TARGET MARKUP 
+  sed "s/[ \t]*$FN2FOO/$FOOTNOTECLOSE/g" | # SUBSTITUTE WITH TARGET MARKUP 
+  sed "s/[ \t]*$CI1FOO/$APND$CTOESC/g"   | # SUBSTITUTE WITH TARGET MARKUP 
+  sed "s/[ \t]*$CI2FOO/$CITECLOSE/g"     | # SUBSTITUTE WITH TARGET MARKUP 
+  sed "s/[ \t]*$CP1FOO/$APND$CPOESC/g"   | # SUBSTITUTE WITH TARGET MARKUP 
+  sed "s/[ \t]*$CP2FOO/$CITEPCLOSE/g"    | # SUBSTITUTE WITH TARGET MARKUP 
+  tee > $MDSHMOD                           # WRITE TO FILE
+
+# --------------------------------------------------------------------------- #
+# MAKE MD5 HASH TO PREVENT (REPETITION)/RECURSION -> SKIP IF NECESSARY
+# --------------------------------------------------------------------------- #
+  MD5THIS=`md5sum $MDSHMOD | cut -d " " -f 1`
+  touch ${TMPID}.included
+  TIMESINCLUDED=`grep $MD5THIS ${TMPID}.included | wc -l`
+  echo $MD5THIS >> ${TMPID}.included
+ #echo $TIMESINCLUDED ; echo $MD5THIS
+
+  if [ $TIMESINCLUDED -ge 5 ]; then
+       echo "Skipping! (caught in a loop)"
+       SKIP="YES"
+  else
+       SKIP="NO"
+  fi
+
+  if [ X"$SKIP" != XYES ]; then
+# --------------------------------------------------------------------------- #
+# RESTORE MDSH LINES 
+# --------------------------------------------------------------------------- #
+  if [ -f $BCKUPCOMM ]; then
+  sed -i 's/\\/\\\\/g' $BCKUPCOMM # PROTECT ESCAPES (aka. \v PROBLEM)
+
+  for COMMENTID in `cat $BCKUPCOMM | cut -d ":" -f 1 | sort -u`
+   do
+      COMMENT=`grep $COMMENTID $BCKUPCOMM   | #
+               head -n 1 | cut -d ":" -f 2- | #
+               sed 's/\//\\\\\//g'          | # ESCAPE CONTROL CHARACTER
+               sed 's/&/\\\\\&/g'`            # ESCAPE CONTROL CHARACTER
+      sed -i "s/$COMMENTID/\n$COMMENT\n/g" $MDSHMOD
+   done
+  fi
+
+
+## --------------------------------------------------------------------------- #
+## COLLECT BEFORE PROCESSING NOT WORKING LIKE THAT
+## --------------------------------------------------------------------------- #
+#  cat $MDSHMOD              | # START WITH UNPROCESSED MDSH
+#  sed "s/$EMPTYLINE/\n\n/g" | # RESTORE EMPTY LINES
+#  sed '/./,/^$/!d'          | # REMOVE CONSECUTIVE BLANK LINES
+#  tee >> $DUMPUNPROCESSED
+
+# --------------------------------------------------------------------------- #
+# ADD INFORMATION (TO BE PROCESSED) 
+# --------------------------------------------------------------------------- #
+  SRCNFO="% SRC: $*"
+  sed -i "1i$SRCNFO"   $MDSHMOD
+  echo   "$SRCNFO"  >> $MDSHMOD
+
+# --------------------------------------------------------------------------- #
+# PARSE COMMANDS 
+# --------------------------------------------------------------------------- #
+
+  for LINE in `cat "$MDSHMOD" | sed 's, ,DieW73NaS03J,g'`
+   do 
+      # --------------------------------------------------- # 
+      # RESTORE SPACES
+        LINE=`echo "$LINE" | sed 's,DieW73NaS03J, ,g'`
+      # --------------------------------------------------- #  
+
+      # CHECK IF LINE STARTS WITH A %
+        ISCMD=`echo $LINE | grep "^%[ \t]*[A-Z]*:" | wc -l` 
+      # --------------------------------------------------- # 
+      # IF LINE STARTS WITH A %
+        if [ $ISCMD -ge 1 ]; then
+
+           CMD=`echo "$LINE" | \
+                cut -d "%" -f 2 | \
+                cut -d ":" -f 1 | \
+                sed 's/\[/ /g' | sed 's/\]/ /g' |\
+                sed 's, ,,g'`
+           ARG=`echo "$LINE" | cut -d ":" -f 2-`
+      # --------------------------------------------------- # 
+      # CHECK IF COMMAND EXISTS
+
+           CMDEXISTS=`grep "^function ${CMD}()" $FUNCTIONS |\
+                      wc -l`
+      # --------------------------------------------------- # 
+      # IF COMMAND EXISTS 
+        if [ $CMDEXISTS -ge 1 ]; then
+           # EXECUTE COMMAND
+             $CMD "$ARG"
+        fi
+      # --------------------------------------------------- # 
+      # IF LINE DOES NOT START WITH % (= SIMPLE MARKDOWN)
+        else
+      # --------------------------------------------------- # 
+      # APPEND LINE TO TEX FILE
+        echo "$LINE" >> $SRCDUMP
+        fi
+      # --------------------------------------------------- # 
+  done
+
+ #echo "DONE"
+ #echo "$INPUT converted"
+ #echo "--------------------------------------------------------------------"
+
+# POST-PROCESSING
+# --------------------------------------------------------------------------- #
+  sed -i "s/$EMPTYLINE/ /g"    $SRCDUMP  # RESTORE EMPTY LINES
+  sed -i '/./,/^$/!d'          $SRCDUMP  # REMOVE CONSECUTIVE BLANK LINES
+  sed -i -e :a  \
+      -i -e "\$!N;s/\n*[ \t]*$APND//;ta" \
+      -i -e 'P;D'                    $SRCDUMP  # APPEND & RM APPEND IDS
+  sed -i "s/[ \t]*$APND//g"          $SRCDUMP  # RM REMAINING APPEND IDS +SPACE
+  sed -i "s/[ \t]*$ESC//g"           $SRCDUMP  # RM ESC IDS +SPACE 
+
+# CLEANUP
+# --------------------------------------------------------------------------- #
+  if [ -f $BCKUPCOMM ]; then rm $BCKUPCOMM ;fi
+  if [ -f $PROTECTED ]; then rm $PROTECTED ;fi
+
+
+  # REMOVE ID TO PREVENT RECURSION (NOT REPETITION) 
+    sed -i "/$MD5THIS/d" ${TMPID}.included
+
+
+  fi
+  fi
+
+  }
+
+
+
+
+
+# --------------------------------------------------------------------------- #
+# TODO: adjust ad-hoc function set
+
+function INCLUDE() {
+
+# TODOTODO: check, check, debug
+# mdsh2src $PARAMETERSWITHOUTFUNCTIONS # TODOTODO
+
+  echo "INCLUDE STARTS ====================================================="
+
+# EXTRACT OPTIONAL PARAMETERS
+# ---------------------------------------------------------
+  FUNCTIONSHERE=`echo $* | sed 's/ /\n/g' | #
+                 grep "\.functions$" | tail -n 1`
+
+  if [ `echo $FUNCTIONSHERE | wc -c` -gt 1 ];then
+  PARAMETERSWITHOUTFUNCTIONS=`echo $* | #
+                              sed 's/ /\n/g' | #
+                              grep -v "\.functions$"`                                    # TODO: BETTER
+
+# ATTACH FUNCTIONS TO MAIN FUNCTIONS
+# ---------------------------------------------------------
+  if [ `ls $FUNCTIONSHERE 2>/dev/null | wc -l` -gt 0 ];then
+
+   FID=`date +%s%N`
+ # ATTACH AND MARK FUNCTIONS
+   echo "#  -- ${FID} -- START" >> $FUNCTIONS
+   cat  $FUNCTIONSHERE          >> $FUNCTIONS
+   echo "#  -- ${FID} -- END"   >> $FUNCTIONS
+   FUNCTIONSADDED="YES"
+ # SAVE FUNCTION ID (AS VARIABLE MAY BE OVERWRITTEN)
+   echo $FID >> ${TMPID}.fid
+   fi
+   else
+   FUNCTIONSADDED="NO"
+  fi
+
+# PROCESS INPUT !!!!!
+# --------------------------------------------------------
+  mdsh2src $*
+
+# REMOVE ADDED FUNCTIONS
+# --------------------------------------------------------
+  if [ -f ${TMPID}.fid ]; then
+
+# LOAD LATEST FUNCTION ID
+  FID=`tail -n 1 ${TMPID}.fid`
+# REMOVE FROM FUNCTIONS
+  sed -i "/${FID} -- START$/,/${FID} -- END$/d" ${FUNCTIONS}
+# REMOVE FROM SAVED FUNCTIONS
+  sed -i "/$FID/d" ${TMPID}.fid
+# RELOAD FUNCTIONS
+  source $FUNCTIONS
+
+  fi
+
+  echo "INCLUDE ENDS  ======================================================"
+}
+
+# --------------------------------------------------------------------------- #
+
+
