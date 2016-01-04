@@ -11,12 +11,12 @@ Behind the Smart World ArtLab -- artistic strategies for dealing with resurfacin
 
 Since 2010 we as KairUs artist duo have focused on researching topics such
 as spam, scam and Internet fraud. In August 2014 our research had evolved
-to the stage that we needed to take a field trip to West Africa, where
-a considerable number of so called advance fee fraud originates. Rather
-than hunting down scammers in Internet cafés, we were interested to see
-which technological affordances or limitations the scammers were faced
-with in this part of the world . In our initial research we came across
-reports about an electronic waste dump called Agbogbloshie. In the middle of
+to the stage that we needed to take a field trip to West Africa, where a
+considerable number of so called advance fee fraud originates. Rather than
+hunting down scammers in Internet cafés, we were interested to see which
+technological affordances or limitations the scammers were faced with in
+this part of the world. In our initial research we came across reports
+about an electronic waste dump called Agbogbloshie. In the middle of
 Ghana’s capital Accra, in this toxic wasteland by a lagoon, is where our
 electronics from developed countries are illegally dumped. Jennifer Garbys
 examines in her book *Digital Rubbish*[@garbys:2011:digitalrubbish] in
@@ -37,21 +37,21 @@ the computers into mother boards, processors and hard drives and further
 for extraction of valuable metals and raw earth minerals. Components
 and materials salvaged at Agbogbloshie enter new cycles of production,
 reentering the consumption cycle, whereas the residues remain. Moore’s
-Law, a near golden law within the world of computing, predicted the computer
-revolution in which the rate of innovation within electronics has decreased
-to as little as 18 months [@[p.30]garbys:2011:digitalrubbish]. Creating
-something new will thus be followed by an another gadget turning
+Law, a near golden law within the world of computing, predicted the
+computer revolution in which the rate of innovation within electronics has
+decreased to as little as 18 months. [@[p.30]garbys:2011:digitalrubbish]
+Creating something new will thus be followed by an another gadget turning
 old. These old electronics, dead media, or zombie media, as Jussi
 Parikka, names them leave fossilized traces of designed obsolescence
-and gadget-culture[@[p.60]parikka:2015:mediageology]. At Agbogbloshie
+and gadget-culture.[@[p.60]parikka:2015:mediageology] At Agbogbloshie
 these materials are difficult to recycle; the toxic, unstable materials
 mix with the black ashes of burned cables and pieces of electronic
 fossils. They pile in indefinitely growing layers of obsolete technologies,
 if not directly washed through the lagoon into the sea, as we witnessed
 during a day of heavy rain. This is how: *“dead media creeps back as
-dangerous toxins into the soil or then as zombie media recycled into**new
-assemblies”*[@[p.60]parikka:2015:mediageology]. Agbogbloshie, our
-electronic dystopia earned its nickname - Sodom and Gomorrah.
+dangerous toxins into the soil or then as zombie media recycled into
+new assemblies”*[@[p.60]parikka:2015:mediageology]. Agbogbloshie,
+our electronic dystopia earned its nickname - Sodom and Gomorrah.
 
 % TEXINJECT: \scalefont{.99}
 
@@ -63,12 +63,12 @@ in the bin on our computer desktop with an expectation of permanent
 deletion. What took us to Agbogbloshie in the first place were reports we
 read on how journalism students had discovered data breaches of companies
 and governments when recovering data from hard drives bought at the
-e-waste dump[^]{Emily Chung, B.C. students buy sensitive U.S. defence
+e-waste dump.[^]{Emily Chung, B.C. students buy sensitive U.S. defence
 data for $40 in Africa, CBC News Posted: Jun 23, 2009, available at:
-http://www.cbc.ca/news/technology/b-c-students-buy-sensitive-u-s-defence-data-for-40-in-africa-1.803353}.
+http://www.cbc.ca/news/technology/b-c-students-buy-sensitive-u-s-defence-data-for-40-in-africa-1.803353}
 Additionally we found articles describing how scammers abused data
 originating from hard drives collected at e-waste dumps in West
-Africa[@warner:2011:cybercrime]. Therefore, when visiting Agbogbloshie we
+Africa.[@warner:2011:cybercrime] Therefore, when visiting Agbogbloshie we
 decided to buy twenty-two hard drives, curious to see whether dumped data
 would persist, and could it easily be recovered and would it be of potential
 value? Could the data be artistically reused and/or rather easily abused?
@@ -99,10 +99,10 @@ and the only hundred percent secure way to delete data is to
 physically destroy the plate where the data is stored. This was
 demonstrated in one of the “stranger episodes in the history of
 digital-age journalism”, when the Guardian had to destroy all their
-hard drive copies of NSA files leaked by Edward Snowden[^]{Julian
+hard drive copies of NSA files leaked by Edward Snowden.[^]{Julian
 Borger, NSA files: why the Guardian in London destroyed hard
 drives of leaked files, the guardian.com Aug 20, 2013, available at:
-http://www.theguardian.com/world/2013/aug/20/nsa-snowden-files-drives-destroyed-london}.
+http://www.theguardian.com/world/2013/aug/20/nsa-snowden-files-drives-destroyed-london}
 What made the episode strange was that British authorities supervising the
 erasure of the data as well as the journalist were all aware of existing
 copies in America and Brazil, proving that the strength of digital data
@@ -172,9 +172,9 @@ the artist explains in an e-mail:
 
 > Before even starting to look at any of the files, I followed the 
 > standard procedure of running a virus scan. Which was interesting 
-> because at the end of the day, on the hard drives that have 
-> been recovered so far, there were 881 viruses
-> [^]{Emöke Bada, personal e-mail communication Jun 4, 2015} 
+> because at the end of the day, on the harddrives that have been 
+> recovered so far, there were 881 viruses all in 
+> all.**[^]{Emöke Bada, personal e-mail communication Jun 4, 2015} 
 
 Earlier viruses and malware were often destructive, even causing physical
 damage to the host, while today’s digital parasites hoard data and are
@@ -184,27 +184,28 @@ charts as a metaphor to describe their maleficent content. Could it also
 be that the “poor health” of the hard drives was the reason why they
 ended up at Agbogbloshie in the first place?
 
-In a trilogy of installations, the artist duo KairUs returns to their
-initial research questions of what is the value of the data on a hard
-drive and how could it potentially be (ab)used? We know that dealing with
-data is a rather lucrative business today, yet as we learned from our
-data policies expert Fieke Jansen, the data of one person is worth only
-0.7-0.01USD (a speculative estimate made by dividing Google’s value by
-its users). In these terms data points are only valuable when connected to
-others, revealing patterns and desires. Selling the content of a hard drive
-to data brokers is worth less than selling its spare parts to a company
-in the data recovery business. What can make a hard drive valuable, on
-the other hand, is sensitive personal data that can be abused, including
-access to banking or shopping accounts, private images for blackmailing
-and harassment, or identity theft. This was the case with U.S. Congressman
-Robert Wexler. He was contacted and blackmailed with information from one of
-his discarded hard drives that was found in a second-hand computer market
-in Ghana[@warner:2011:cybercrime]. By using DIY-data forensic methods combined
-with open source intelligent strategies and tools, it was also possible to
-confirm one of the owners of a hard drive with sensitive images. And another
-hard drive shows evidence of being used for romance scams. The potential
-abusing of data is therefore the focal point of these works, illustrating a
-number of “worst case scenarios” based on the recovered data. Even if there
+In a trilogy of installations, we as the artist duo KairUs returned to
+our initial research questions of what is the value of the data on a hard
+drive and how could it potentially be (ab)used? We know that dealing
+with data is a rather lucrative business today, yet as we learned from
+our data policies expert Fieke Jansen, the data of one person is worth
+only 0.7-0.01USD (a speculative estimate made by dividing Google’s
+value by its users). In these terms data points are only valuable when
+connected to others, revealing patterns and desires. Selling the content
+of a hard drive to data brokers is worth less than selling its spare
+parts to a company in the data recovery business. What can make a hard
+drive valuable, on the other hand, is sensitive personal data that can be
+abused, including access to banking or shopping accounts, private images
+for blackmailing and harassment, or identity theft. This was the case
+with U.S. Congressman Robert Wexler. He was contacted and blackmailed
+with information from one of his discarded hard drives that was found
+in a second-hand computer market in Ghana.[@warner:2011:cybercrime] By
+using DIY-data forensic methods combined with open source intelligent
+strategies and tools, it was also possible for us to confirm one of the
+owners of a hard drive with sensitive images. And another hard drive
+shows evidence of being used for romance scams. The potential abusing of
+data is therefore the focal point of these works, illustrating a number
+of “worst case scenarios” based on the recovered data. Even if there
 is nothing to hide, your deleted data might still return to haunt you.
 
 Shifting to the works that deal with the material aspects of the hard
