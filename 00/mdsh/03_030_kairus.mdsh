@@ -1,17 +1,18 @@
 Strategies of Net-activists Against Phishing and Fake Business Websites 
-=======================================================================
+======================================================================= 
+
 % BY: KairUs - Linda Kronman and Andreas Zingerle
 
 This essay is part of our artistic research into vigilante online
 communities and Internet fraud. Online communities of so called scambaiters
-try to identify, block and report Internet crime activities. For
-this they have developed various strategies, ranging from creating
-warning platforms to collecting fake checks or blocking bank accounts,
-and they organize themselves in different forums[^]{Zingerle, Andreas
+try to identify, block and report Internet crime activities. For this
+they have developed various strategies, ranging from creating warning
+platforms to collecting fake checks or blocking bank accounts, and
+they organize themselves in different forums.[^]{Zingerle, Andreas
 and Linda Kronman. “Humiliating Entertainment or Social Activism:
 Analyzing Scambaiting Strategies Against Online Advance Fee Fraud.”
 in *Cyberworlds* (CW), 2013 International Conference on. IEEE, 2013,
-pp. 352-355.}. One of these subgroups call themselves “Artists against
+pp. 352-355.} One of these subgroups call themselves “Artists against
 419” and host the biggest open-access database of fake websites. As
 of November 2015, there are over 4800 registered users and on average
 about 35 websites are added to the database each day. They use “passive
@@ -42,9 +43,9 @@ support their political causes or other such ethical motivations. Law
 enforcement officials may also use passive reconnaissance as part of a
 criminal investigation. Ethical or not, passive reconnaissance is always
 done without the authorization of the person or organization that is being
-targeted[^]{Bansal, Akanksha, and Monika Arora. “Ethical Hacking and
+targeted.[^]{Bansal, Akanksha, and Monika Arora. “Ethical Hacking and
 Social Security.” *Radix International Journal of Research in Social
-Science* 1, no. 11 (2012).}.
+Science* 1, no. 11 (2012).}
 
 This leads to an effective combination of classical social
 engineering attacks on the target, which in turn can be
@@ -215,7 +216,6 @@ sunexsolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 11 Oct
 is a clone from “sunexsolutions.com”. The sunexsolutions was amongst
 the *Megacorp*. business websites that were scraped and analyzed.
 
-
 The Megacorp. Business Conglomerate 
 ----------------------------------- 
 
@@ -253,9 +253,8 @@ were analyzed and categorized according to business segment, street address,
 most prominently used color on the webpage, registered city and country.
 
 The findings are best described in the report, yet following some
-key figures and reflections extracted from the CEO’s Letter:
-[^]{*Megacorp*. Interim report: First 1000 companies}
-
+key figures and reflections extracted from the CEO’s Letter    
+(*Megacorp*. Interim report: First 1000 companies):
 
 % TEXINJECT: \scalefont{.97}
 
@@ -279,6 +278,7 @@ website www.megacorp.kairus.org
 % NEWPAGE:
 
 % RESETFONT:
+
 % BIOGRAPHY: -------------------------------------
 
 **KairUs** is a collective of two artists, Linda Kronman (FI) and
