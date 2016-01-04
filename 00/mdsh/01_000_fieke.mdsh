@@ -9,9 +9,9 @@ companies that comply with European data protection law to transfer
 and store data of European citizens. Under the American Patriot Act
 this allowed US authorities to gain routine access to the online data
 of Europeans stored with American companies, which according to the
-European Court infringed on the privacy of EU citizens[^]{Powles,
+European Court infringed on the privacy of EU citizens.[^]{Powles,
 J. Tech companies like Facebook not above the law, says Max Schrems
-http://www.theguardian.com/technology/2015/oct/09/facebook-data-privacy-max-schrems-european-court-of-justice}.
+http://www.theguardian.com/technology/2015/oct/09/facebook-data-privacy-max-schrems-european-court-of-justice}
 These jurisdictional issues around data stem from the fact that individuals
 no longer own or store their data, that third parties have become the
 data holders. The question we try to answer in this article is how do we
@@ -24,22 +24,22 @@ How do we loose control over our data?
 
 Our devices – computers, mobile phones, and tablets – are constantly
 telling others where we are and what we are doing. Mobile phones in
-particular are very effective tracking devices: Where we go, it goes,
-and it records our location all the time – even even when we're not
-connected to the Internet. It also collects information about our contacts,
-which websites we visit, and the apps we use.
+particular are very effective tracking devices: Where we go, it goes, and
+it records our location all the time – even when we're not connected
+to the Internet. It also collects information about our contacts, which
+websites we visit, and the apps we use.
 
 This might sound abstract, so lets take a closer look at location
-data. Location collected over time can tell a surprisingly full story
-about who we are and what our life looks like. Location data can
-predict where we live and work by analyzing where our phone sleeps at
-night and rests during the day[^]{Location tracking, Me and My Shadow
-https://myshadow.org/location-tracking}. Subsequently, if location
-data is layered with other data like Google maps, a company that has
-access to location data can tell where we have been: whether we visited
-the doctor, which restaurants we have visited frequently, and even
-whether we are part of a political organization. When location data
-is layered with time and data, the location can be linked to public
+data. Location collected over time can tell a surprisingly full
+story about who we are and what our life looks like. Location data
+can predict where we live and work by analyzing where our phone
+sleeps at night and rests during the day.[^]{Location tracking, Me
+and My Shadow https://myshadow.org/location-tracking} Subsequently,
+if location data is layered with other data like Google maps, a company
+that has access to location data can tell where we have been: whether
+we visited the doctor, which restaurants we have visited frequently,
+and even whether we are part of a political organization. When location
+data is layered with time and data, the location can be linked to public
 events, which can tell something about participation in protests, the
 attendance of a concert or festival or even a visit to specific support
 group. Now imagine a company has access not only to our own location
@@ -199,7 +199,7 @@ sharing with others. Try the following steps:
     email, chat apps, maps and file sharing, we share a lot of data with 
     these companies. Using an alternative to these commercial services, 
     will give us more control over who has access to this data. Find out 
-    which 'alternative' email services exist[^]{https://myshadow.org/increase-your-privacy#alternatives}. 
+    which 'alternative' email services exist.[^]{https://myshadow.org/increase-your-privacy#alternatives} 
 
 6. Don't forget the privacy and digital security basics. There's no 
     such thing as 'perfect privacy' or 'perfect security', but there 
