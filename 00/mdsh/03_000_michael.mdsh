@@ -25,7 +25,7 @@ that they know, but this is difficult to avoid and data protection laws
 provide not only theoretical but at least partly also effective limits
 and remedies against data misuse.
 
-Much more difficult to “take care” of are third persons knowing about
+Much more difficult to “take care” of are third persons processing
 our data: not only would you have to know about their existence and what
 they actually collect and store, but they can also be located anywhere
 and you do not have any contract with them – or they would not be third
@@ -65,7 +65,7 @@ persons. Examples of such third persons and third person data are:
     else: they look like an integral part of the platform. Often they 
     can access data other than that which directly collected in their 
     “parts” through the platform, e.g. the user profile or parts 
-    thereof. Typically the default configuration allows extensive 
+    thereof. Typically default privacy configurations allows extensive 
     access. 
 
 - **Identity providers:** Logging in through a single central account 
@@ -136,7 +136,6 @@ is stored, collected, or used by someone the person does not know is
 doing this (a third person), and where therefore no direct control or
 verification/supervision is possible.
 
-
 Implications for Computer Forensics 
 ----------------------------------- 
 
@@ -151,14 +150,12 @@ investigator does not know who might have such data in her possession, and
 if they do, how to obtain access to it. Additionally there is no guarantee
 that data exists, that it is complete, of good quality, reliable etc.
 
-
 % VFILL:
 % NEWPAGE:
 
 
-
-How to know that data exists at all – and where 
------------------------------------------------ 
+How to know data exists at all – and where 
+------------------------------------------ 
 
 The first and most simple option is just to know who collects which
 data. While this is a good approach for experts and in narrow areas, this
@@ -200,9 +197,8 @@ not part of the data disclosed, some conclusions can still be drawn. The
 Snowden disclosure can serve as an example here. The capabilities of
 one specific secret service have been published, but it must be assumed
 that similar services in other countries are mostly capable of the same
-actions. Additionally, it is possible to identify what someone else
-with the same access might be able to do – and therefore is doing with
-some probability.
+actions. Additionally, it is possible to identify what someone else with
+comparable access might be able to do – and therefore probably is doing.
 
 This leads to the next, and rather pessimistic, category: when someone
 possesses the technical capabilities to monitor and collect data, he
@@ -227,7 +223,7 @@ selling to someone else; similar to utilizing domain names in bankruptcy).
 The last useful option is inserting incorrect data and waiting for it
 to come up somewhere again. For instance an arbitrary e-mail address
 might be created and disclosed to a single provider (creating a new
-one for each target is no difficulty). Whenever someone contacts you on
+one for each target is not difficult). Whenever someone contacts you on
 this address, you know one person to whom your data (or at least parts
 of it) was disclosed too – and from which source. This is obviously
 time-consuming and works only if data usage is observable (e.g. difficult
@@ -272,11 +268,11 @@ forensic view, at least in “official” cases, e.g. court proceedings,
 several additional options do exist. Moreover, cooperation of the data
 holder might then be enforceable (at least within a country).
 
-First, the person can request access to her/his own data. This only
-works for personal data according to privacy laws, explicitly granting
-this right. Outside the EU, someone possessing data because of a contract
-is not necessarily required to provide such data. This situation is very
-problematic with third parties, as they are usually unwilling to provide it
+First, the person can request access to her/his own data. This only works
+for personal data according to privacy laws, explicitly granting this
+right. Outside the EU, someone possessing data because of a contract is not
+necessarily required to provide it. This situation is very problematic
+with third parties, as they are usually unwilling to disclose it
 voluntarily. Also, while the person might have a contract with company A,
 and this company a contract with company B, this does not automatically
 mean that data at B must be disclosed to the person. Any court case is
@@ -328,7 +324,7 @@ not be allowed to use it or pass it on further), this is not necessarily
 the case. Sometimes the owner would be interested in publishing the data,
 e.g. to be able to provide an alibi. This may contradict interests of
 the third party: data is only valuable if it is not generally available,
-and moreover its legality might be questionable. But even if the person
+and more so when its legality is questionable. But even if the person
 obtains the data, owners might retain some rights to it, especially if
 the original data (collected or received) has been enhanced or combined
 with data collected by them. This is comparable to the problem of
@@ -353,8 +349,8 @@ or general availability of data categories stored by someone are unlikely
 to significantly improve the situation. And individual rights to retrieve
 such information would be enough for e.g. investigative journalists.
 
-Legally, third person data is difficult to regulate: by definition
-there is no direct contact or contract between data subject and data
+Legally, third person data is difficult to regulate: by definition there
+exists no direct contact or contract between data subject and data
 owner. Therefore all rights of both parties depend either on the law
 or a chain of contracts, which might be enforceable by third parties
 – or not (legally possible, but restricted in scope and difficult in
@@ -420,8 +416,6 @@ masses” who do not. The latter will then have no control over their own
 data and not be able to find it, while the “privileged” can access all
 data (their own and others), therefore creating an artificial distinction
 and partial immunity, as they can hide their misdeeds, while others cannot.
-
-
 
 Outlook 
 ------- 
