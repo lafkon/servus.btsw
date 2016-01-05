@@ -60,7 +60,7 @@
   \let\oldhref=\href 
   \renewcommand{\href}[2]{#2\footnote{#1}}
 
-  \newcommand\urlsplit[1]{{ \scalefont{.9}\seqsplit{\tt #1}}}
+  \newcommand\urlsplit[1]{{\scalefont{.9}\seqsplit{\tt #1}}}
 
 % http://tex.stackexchange.com/questions/167823/multiply-define-a-label-on-purpose
   \makeatletter

@@ -101,7 +101,8 @@
  #sed -i '/\\urlsplit/s/\\index{[a-zA-Z. ]*}//g'                   $SRCDUMP
   sed -i '/http.\?:\/\//s/\\index{[a-zA-Z. ]*}//g' $SRCDUMP
  #sed -i 's/\bhttp.\?:.*\b/\\urlsplit{&}/g'               $SRCDUMP
-  sed -i 's/\(\bhttp.\?:[^ ]*\) /\\urlsplit{\1} /g' $SRCDUMP
+ #sed -i 's/\(\bhttp.\?:[^ ]*\) /\\urlsplit{\1} /g' $SRCDUMP
+  sed -i 's/\(\bhttp.\?:[^ ]*\)[ $]*/\\urlsplit{\1}/g' $SRCDUMP
 
   cat   $SRCDUMP                                        >> $TMPTEX
   echo "\end{document}"                                 >> $TMPTEX
