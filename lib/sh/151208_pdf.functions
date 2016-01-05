@@ -554,11 +554,11 @@ function KEYWORDIZE() {
                    K=`echo $KEYWORD       | # START
                       sed 's/\//\\\\\//g' | # ESCAPE \ FOR sed
                       sed 's/\./\\\./g'`    # ESCAPE \ FOR sed
-               sed -i "s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP
+             # sed -i "s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP
 
-             # solved via LaTeX
-             # set +H;
-             # sed -i "/^\\\/!s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP 
+             # solved via LaTeX (for section so far ...)
+               set +H;
+               sed -i "/^\\\/!s/\b$K\b/K${UN}&K${UN}\\\index{$MAINFOO}/I" $SRCDUMP 
 
          done
         sed -i "s/K$UN//g" $SRCDUMP    # NORMALIZE PROTECTED KEYWORD
