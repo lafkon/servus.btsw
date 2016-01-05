@@ -469,7 +469,6 @@ function SUPERIMPOSE() {
   fi
  fi
 
- cp $PDF superimposedebug.pdf
  write2src "$MACRO"
 
 }
