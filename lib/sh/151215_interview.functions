@@ -1,6 +1,6 @@
-  write2src "\newcommand{\LK}{}"
-  write2src "\newcommand{\AS}{}"
 
+  if [ `grep "\LK" $SRCDUMP | wc -l` -lt 1 ]; then
+  write2src "\newcommand{\LK}{}"
   write2src "\newif\iflindafirst%
              \lindafirsttrue%
              \renewcommand\LK{%
@@ -11,6 +11,7 @@
                LK: 
               }\fi
              }"
+  write2src "\newcommand{\AS}{}"
   write2src "\newif\ifaudreyfirst%
              \audreyfirsttrue%
              \renewcommand\AS{%
@@ -21,6 +22,7 @@
                AS: 
               }\fi
              }"
+  write2src "\newcommand{\AZ}{}"
   write2src "\newif\ifandreasfirst%
              \andreasfirsttrue%
              \renewcommand\AZ{%
@@ -31,6 +33,7 @@
                AZ: 
               }\fi
              }"
+  write2src "\newcommand{\ML}{}"
   write2src "\newif\ifmichaelafirst%
              \michaelafirsttrue%
              \renewcommand\ML{%
@@ -41,6 +44,7 @@
                ML: 
               }\fi
              }"
+  fi
 
 
 function LK(){
