@@ -94,14 +94,14 @@
   sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+\b/\1\\ts{\3}/g' $SRCDUMP
   sed -i "s/--\\\textgreater{}/\\\ding{222}/g"                     $SRCDUMP
 
+ # STILL DEBUGGING <- CLEAN THIS UP
  #sed -i 's/\bhttp.\?:[^ ]* /\\urlsplit{&}/g'                      $SRCDUMP
  #sed -i 's/\bhttp.\?:[^ ]* [,.)}]*/\\urlsplit{&}/g'               $SRCDUMP
  #sed -i '/\\urlsplit/s/\\index{[^}]*}//g'                         $SRCDUMP
  #sed -i '/\\urlsplit/s/\\index{[a-zA-Z. ]*}//g'                   $SRCDUMP
-
   sed -i '/http.\?:\/\//s/\\index{[a-zA-Z. ]*}//g' $SRCDUMP
-  sed -i 's/\bhttp.\?:.*\b/\\urlsplit{&}/g'               $SRCDUMP
-
+ #sed -i 's/\bhttp.\?:.*\b/\\urlsplit{&}/g'               $SRCDUMP
+  sed -i 's/\(\bhttp.\?:[^ ]*\) /\\urlsplit{\1} /g' $SRCDUMP
 
   cat   $SRCDUMP                                        >> $TMPTEX
   echo "\end{document}"                                 >> $TMPTEX
