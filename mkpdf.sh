@@ -4,6 +4,7 @@
 # --------------------------------------------------------------------------- #
 
   MAIN=Behind_The_Smart_World_PDF.mdsh
+ #MAIN=DEBUG.mdsh
 
   TMPDIR=. ;  TMPID=$TMPDIR/TMP`date +%Y%m%H``echo $RANDOM | cut -c 1-4`
   SRCDUMP=${TMPID}.maindump
@@ -35,7 +36,8 @@
 # --------------------------------------------------------------------------- #
 # DEFINITIONS SPECIFIC TO OUTPUT
 # --------------------------------------------------------------------------- #
-  PANDOCACTION="pandoc --ascii -V links-as-notes -r markdown -w latex"
+ #PANDOCACTION="pandoc --ascii -V links-as-notes -r markdown -w latex"
+  PANDOCACTION="pandoc --ascii -r markdown -w latex"
 # --------------------------------------------------------------------------- #
 # FOOTNOTES
 # \footnote{the end is near, the text is here}
@@ -86,22 +88,24 @@
    >> ]
        }'                                               >> $TMPTEX
   echo "\begin{document}"                               >> $TMPTEX
+# --------------------------------------------------------------------------- #
+# LAST MINUTE CORRECTIONS (NOT SO NICE)
+# --------------------------------------------------------------------------- #
+  sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+\b/\1\\ts{\3}/g' $SRCDUMP
+  sed -i "s/--\\\textgreater{}/\\\ding{222}/g"                     $SRCDUMP
+
+ #sed -i 's/\bhttp.\?:[^ ]* /\\urlsplit{&}/g'                      $SRCDUMP
+ #sed -i 's/\bhttp.\?:[^ ]* [,.)}]*/\\urlsplit{&}/g'               $SRCDUMP
+ #sed -i '/\\urlsplit/s/\\index{[^}]*}//g'                         $SRCDUMP
+ #sed -i '/\\urlsplit/s/\\index{[a-zA-Z. ]*}//g'                   $SRCDUMP
+
+  sed -i '/http.\?:\/\//s/\\index{[a-zA-Z. ]*}//g' $SRCDUMP
+  sed -i 's/\bhttp.\?:.*\b/\\urlsplit{&}/g'               $SRCDUMP
+
+
   cat   $SRCDUMP                                        >> $TMPTEX
   echo "\end{document}"                                 >> $TMPTEX
  
-# --------------------------------------------------------------------------- #
-# MODIFY SRC BEFORE COMPILING
-# --------------------------------------------------------------------------- #
- # ORDINALS:\newcommand{\ts}{\textsuperscript}
- # echo "14th 345chd 3rd rd 1st 2nd ddnd" | #
- # sed -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+/\1\\ts{\3}/g'
- # SuiteTM <- convert trademark sign <- TODO!
- 
-  # BUG: 20150402theworstplaceonearth
-  #sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+/\1\\ts{\3}/g' $TMPTEX
-  sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+\b/\1\\ts{\3}/g' $TMPTEX
-  sed -i "s/--\\\textgreater{}/\\\ding{222}/g" $TMPTEX
-
 # --------------------------------------------------------------------------- #
 # MAKE PDF
 # --------------------------------------------------------------------------- #
