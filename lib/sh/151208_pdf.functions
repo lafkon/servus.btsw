@@ -477,7 +477,7 @@ function SUPERIMPOSE() {
 
 function BY(){
 
-  write2src "{by \by{$*}}"
+  write2src "{\by{by $*}}"
 
 }
 
