@@ -159,7 +159,6 @@ has access to it (other people, companies or governments), make choices
 about what data we want to keep private and which data we are comfortable
 sharing with others. Try the following steps:
 
-% TEXINJECT: \scalefont{.9}
 
 1. Give as little data as possible. When we open a new email, social 
     media or online shopping account or register for an event or a 
@@ -211,8 +210,7 @@ sharing with others. Try the following steps:
     install HTTPS everywhere, anonymize our Internet connection using 
     the Tor Browser. 
 
-% RESETFONT:
-% THISIS: intro
+
 
 For more practical tips on managing your data, please visit us at
 myshadow.org and securityinabox.org
