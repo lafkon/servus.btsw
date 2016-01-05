@@ -27,7 +27,12 @@ understanding of ourselves, become better people, as suggested by the
 Quantified Self movement?
 
 Our hunger for information started with the shift in meaning of the word
-information itself [@[pp.3-20]roszak:1986:informationcult]. Information
+% information itself [@[pp.3-20]roszak:1986:informationcult]. Information
+%
+information itself [^]{Theodore Roszak, “Information, please”, in The Cult
+of Information: The Folklore of Computers and the True Art of Thinking,
+(New York: Pantheon Books, 1986), pp. 3-20.}. Information
+%
 used to mean nothing more than a short statement of fact, such as a
 number, date or place. Nothing so special you would name an age or
 type of economy after. In the 1950s this changed with the advent of
@@ -101,7 +106,12 @@ Data streams, compare data to naturally occurring physical resources,
 seemingly inexhaustible and ready for exploitation in the name of economic
 growth and private gain. They mask the human aspect of it, the fact that
 most of it is personal, something we would be more hesitant to have
-exploited.[@hwanglevy:2015:metaphors] Other metaphors, such as open
+% exploited.[@hwanglevy:2015:metaphors] Other metaphors, such as open
+%
+exploited.[^]{Tim Hwang and Karen Levy, “'The Cloud' and Other Dangerous Metaphors,
+Contemporary ideas about data and privacy are tied up inextricably with language choices”,
+The Atlantic, January 20, 2015, http://www.theatlantic.com/technology/archive/2015/01/thecloudandotherdangerousmetaphors/384518/.} Other metaphors, such as open
+%
 data and software transparency have strong connotations of trust. If
 everything is open and transparent, everyone will behave honestly. But
 the sheer amount of online scams show transparency is no guarantee,
@@ -118,7 +128,8 @@ labor is cheap and there is limited regulatory oversight into health,
 safety and environmental impact. Near Baotou in China, for instance,
 the effects are clearly visible and took the shape of an artificial
 toxic lake of black sludge, the result of mining to create our tech
-gadgets.[@maughan:2015:dystopianlake] China is also home to one of
+% gadgets.[@maughan:2015:dystopianlake] China is also home to one of
+gadgets.[^]{Tim Maughan, “The dystopian lake filled by the world’s tech lust”, BBC Future, April 2, 2015, http://www.bbc.com/future/story/20150402theworstplaceonearth.} China is also home to one of
 the largest dumps of e-waste in the world, which not coincidentally is
 also one of the most polluted places on earth: Guiyu. Despite strict
 regulations, loopholes have been found and illegal dumping of e-waste
