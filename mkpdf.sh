@@ -96,8 +96,10 @@
  # echo "14th 345chd 3rd rd 1st 2nd ddnd" | #
  # sed -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+/\1\\ts{\3}/g'
  # SuiteTM <- convert trademark sign <- TODO!
-
-  sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+/\1\\ts{\3}/g' $TMPTEX
+ 
+  # BUG: 20150402theworstplaceonearth
+  #sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+/\1\\ts{\3}/g' $TMPTEX
+  sed -i -e 's/\(\([0-9]\)\+\)\(st\|nd\|rd\|th\)\+\b/\1\\ts{\3}/g' $TMPTEX
   sed -i "s/--\\\textgreater{}/\\\ding{222}/g" $TMPTEX
 
 # --------------------------------------------------------------------------- #
