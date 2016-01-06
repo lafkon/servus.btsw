@@ -73,13 +73,14 @@
                       --export-text-to-path \
                       ${TMPID}_${NUM}_${LNAME}.svg
 
-           # http://www.imagemagick.org/Usage/compare/#type_greyscale
-             #convert ${TMPID}_${NUM}_${LNAME}.pdf \
-             #        -colorspace HSL \
-             #        -format '%M  avg=%[fx:mean.g] peak=%[fx:maxima.g]\n' \
-             #        info:
+             gs -dNumRenderingThreads=4 \
+                -dNOPAUSE -sDEVICE=jpeg \
+                -dFirstPage=1 -dLastPage=1 \
+                -sOutputFile=./checkcolor.jpg \
+                -dJPEGQ=100 -r300 \
+                -q ${TMPID}_${NUM}_${LNAME}.pdf -c quit
 
-             HASCOLOR=`convert ${TMPID}_${NUM}_${LNAME}.pdf \
+             HASCOLOR=`convert checkcolor.jpg \
                       -colorspace HSL -format '%[fx:maxima.g]' info: |#
                       sed 's/[^0-9]//g'`
              if [ $HASCOLOR -eq 0 ]; then
@@ -255,7 +256,13 @@ function SPREAD() {
    elif [ "X$EXT" == "Xpdf" ]; then
 
     cp $SVGTMP $PDF
-    HASCOLOR=`convert $PDF[0] -colorspace HSL \
+    gs -dNumRenderingThreads=4 \
+       -dNOPAUSE -sDEVICE=jpeg \
+       -dFirstPage=1 -dLastPage=1 \
+       -sOutputFile=./checkcolor.jpg \
+       -dJPEGQ=100 -r300 \
+       -q ${PDF} -c quit
+    HASCOLOR=`convert checkcolor.jpg -colorspace HSL \
               -format '%[fx:maxima.g]' info: | #
               sed 's/[^0-9]//g'`
     if [ $HASCOLOR -eq 0 ]; then
@@ -263,6 +270,8 @@ function SPREAD() {
     else
           pdfxcmyk $PDF
     fi
+
+    rm checkcolor.jpg
   fi
   # ----------------------------------------------------------------------- #
   # MACRO INCLUDE IN DOCUMENT
