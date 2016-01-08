@@ -1,3 +1,7 @@
+% TEXINJECT: \setnowidow[2] \setnoclub[2]
+% RAGGEDBOTTOM:
+
+
 Strategies of Net-activists Against Phishing and Fake Business Websites 
 ======================================================================= 
 
@@ -97,6 +101,8 @@ the company’s name was not changed. The “career” page offers an
 application form to apply for the “local agent” position. The salary
 is stated in USD and is paid on a weekly basis, which is also a very
 uncommon practice in Austria.
+
+% NEWPAGE:
 
 Crosslinks 
 ---------- 
@@ -211,15 +217,15 @@ which the content for the other websites was copied.
 
 In addition to analyzing the text on the website, when we look into
 the HMTL code we find a reference that the website was “mirrored from
-sunexsolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 11 Oct
-2014 06:46:46 GMT”. This reveals that the website “start-office.biz”
+sunexsolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat,
+11 Oct 2014 06:46:46 GMT”. This reveals that the website “start-office.biz”
 is a clone from “sunexsolutions.com”. The sunexsolutions was amongst
 the *Megacorp*. business websites that were scraped and analyzed.
 
+
+
 The Megacorp. Business Conglomerate 
 ----------------------------------- 
-
-% SCALEFONT: .99
 
 The research of the scambaiting community “Artists against 419” led
 to a deeper investigation into how this community tracks fake business
@@ -242,10 +248,6 @@ fake websites. Additionally a corporate presentation video and a location
 reconnaissance video reflect both the imaginary and the real world outreach
 of the *Megacorp*.
 
-
-% NEWPAGE:
-% TEXINJECT: \scalefont{.965}
-
 The data gathering process took several months. From September 2014 to April
 2015. The aa419-database was visited on a daily basis and websites were
 automatically downloaded using a site scraper tool. The scraped websites
@@ -256,7 +258,7 @@ The findings are best described in the report, yet following some
 key figures and reflections extracted from the CEO’s Letter    
 (*Megacorp*. Interim report: First 1000 companies):
 
-% TEXINJECT: \scalefont{.97}
+% TEXINJECT: \scalefont{.96}
 
 > ... We have divided our enterprise into 10 business segments, of which
 > the biggest are ‘Transport and Logistics’ (32.6%), ‘Banking and
@@ -269,16 +271,12 @@ key figures and reflections extracted from the CEO’s Letter
 > phishers are responsible for 85% of the domain names that were registered
 > for phishing.
 
-% TEXINJECT: \scalefont{1.03}
-
+% TEXINJECT: \scalefont{1.04}
 
 The full report and screenshots from the websites can be found on the
 website www.megacorp.kairus.org
 
 % NEWPAGE:
-
-% RESETFONT:
-
 % BIOGRAPHY: -------------------------------------
 
 **KairUs** is a collective of two artists, Linda Kronman (FI) and
@@ -290,3 +288,5 @@ therefore approaching the theme from a number of perspectives, such as
 data security, data privacy, ethics of vigilante communities, narratives
 of scam e-mails, and technologies in relation to fraud.
 
+% SWAPTHISHERE: \subsection \fakesubsection
+% SWAPTHISHERE: CO'2013 CO\blank'2013
