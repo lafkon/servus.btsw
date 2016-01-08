@@ -32,10 +32,10 @@
      inkscape:window-height="480"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.32712306"
-     inkscape:cx="583.55697"
-     inkscape:cy="320.29101"
-     inkscape:current-layer="layer1"
+     inkscape:zoom="2.5222311"
+     inkscape:cx="697.23606"
+     inkscape:cy="191.31965"
+     inkscape:current-layer="layer9"
      units="mm"
      guidecolor="#ff0000"
      guideopacity="0.47058824"
@@ -57,10 +57,7 @@
        id="guide4275" /><sodipodi:guide
        position="21.259843,10.62992"
        orientation="-744.09449,-4.6185278e-14"
-       id="guide4277" /><sodipodi:guide
-       position="545.669,10.63"
-       orientation="-761.31029,0"
-       id="guide4301" /><inkscape:grid
+       id="guide4277" /><inkscape:grid
        type="xygrid"
        id="grid4326"
        empspacing="5"
@@ -70,7 +67,10 @@
        units="mm"
        spacingx="8mm"
        spacingy="8mm"
-       originx="10mm" /></sodipodi:namedview><g
+       originx="10mm" /><sodipodi:guide
+       position="545.669,-6.5867502"
+       orientation="-778.52704,0"
+       id="guide3887" /></sodipodi:namedview><g
      style="display:inline"
      id="refbuild"
      inkscape:groupmode="layer"
@@ -147,7 +147,7 @@
      inkscape:label="XX_REF151208"
      inkscape:groupmode="layer"
      id="content"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true"><path
        id="path14-5"
        style="fill:none;stroke:#ff0000;stroke-width:0.24875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
@@ -214,19 +214,6 @@
        d="m 78.8025,705.05377 371.05125,0"
        inkscape:connector-curvature="0" /></g><g
      inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="XX_010_REF"
-     style="display:none"
-     sodipodi:insensitive="true"><path
-       style="fill:none;stroke:#0000ff;stroke-width:0.24875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 1012.5945,801.78001 0,-861.665005"
-       id="path3285"
-       inkscape:connector-curvature="0" /><path
-       style="fill:none;stroke:#0000ff;stroke-width:0.24875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 641.29451,801.78001 0,-861.665005"
-       id="path30-6-0"
-       inkscape:connector-curvature="0" /></g><g
-     inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="XX_010"
      style="display:none"><text
@@ -240,6 +227,16 @@
      id="tspan3096"
      x="1224.229"
      y="-414.43964">Behind the Smart World</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -269,6 +266,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:140.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk Bold"
@@ -280,6 +287,16 @@
      id="tspan3108"
      x="1224.229"
      y="-324.43964">BEHIND THE SMART WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -321,6 +338,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    sodipodi:linespacing="150%"
    id="text3182"
@@ -344,6 +371,16 @@
      y="205.56036"
      x="1224.229"
      sodipodi:role="line">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -915,6 +952,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -942,6 +989,16 @@
      sodipodi:role="line"
      x="1320.8192"
      y="336.37012">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1144,6 +1201,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:150%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -1159,6 +1226,16 @@
      sodipodi:role="line"
      x="826.43982"
      y="698.02515">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1281,6 +1358,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    sodipodi:linespacing="150%"
    id="text6236"
@@ -1312,6 +1399,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -1335,6 +1432,16 @@
      x="-465.771"
      y="205.56036"
      id="tspan6254">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1380,6 +1487,16 @@
      y="555.56036"
      x="639.229"
      sodipodi:role="line">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1433,6 +1550,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -1457,6 +1584,16 @@
      x="-452.10953"
      y="555.56036"
      id="tspan4241">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1511,6 +1648,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 </g><g
      inkscape:groupmode="layer"
      id="layer6"
@@ -1519,25 +1666,35 @@
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    x="639.229"
-   y="1374.5604"
+   y="1385.5604"
    id="text6454"
    sodipodi:linespacing="150%"><tspan
      sodipodi:role="line"
      id="tspan6456"
      x="639.229"
-     y="1374.5604">BEHIND</tspan><tspan
+     y="1385.5604">BEHIND</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1401.5604"
+     y="1412.5604"
      id="tspan6458">THE</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1428.5604"
+     y="1439.5604"
      id="tspan6460">SMART</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1455.5604"
+     y="1466.5604"
      id="tspan6462">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1549,43 +1706,43 @@
 <text
    sodipodi:linespacing="150%"
    id="text6464"
-   y="1335.0251"
+   y="1346.0251"
    x="639.86078"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:150%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    xml:space="preserve"><tspan
-     y="1335.0251"
+     y="1346.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6466">AMRO Research Lab 2015 - servus.at</tspan><tspan
      id="tspan6468"
-     y="1362.0251"
+     y="1373.0251"
      x="639.86078"
      sodipodi:role="line"> </tspan><tspan
-     y="1389.0251"
+     y="1400.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6470" /><tspan
      id="tspan6472"
-     y="1416.0251"
+     y="1427.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6474"
-     y="1443.0251"
+     y="1454.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6476"
-     y="1470.0251"
+     y="1481.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6478"
-     y="1497.0251"
+     y="1508.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
-     y="1524.0251"
+     y="1535.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6480">– saving, deleting and resurfacing data</tspan><tspan
-     y="1551.0251"
+     y="1562.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6482">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
@@ -1597,29 +1754,49 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    x="639.229"
-   y="1684.5604"
+   y="1695.5604"
    id="text6484"
    sodipodi:linespacing="150%"><tspan
      sodipodi:role="line"
      id="tspan6486"
      x="639.229"
-     y="1684.5604">BEHIND</tspan><tspan
+     y="1695.5604">BEHIND</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1711.5604"
+     y="1722.5604"
      id="tspan6488">THE</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1738.5604"
+     y="1749.5604"
      id="tspan6490">SMART</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="1765.5604"
+     y="1776.5604"
      id="tspan6492">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1631,45 +1808,45 @@
 <text
    sodipodi:linespacing="150%"
    id="text6494"
-   y="1645.0251"
+   y="1656.0251"
    x="639.86078"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:150%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    xml:space="preserve"><tspan
      style="letter-spacing:2.28999877px;word-spacing:1px"
-     y="1645.0251"
+     y="1656.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6496">AMRO Research Lab 2015 - servus.at</tspan><tspan
      id="tspan6498"
-     y="1672.0251"
+     y="1683.0251"
      x="639.86078"
      sodipodi:role="line"> </tspan><tspan
-     y="1699.0251"
+     y="1710.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6500" /><tspan
      id="tspan6502"
-     y="1726.0251"
+     y="1737.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6504"
-     y="1753.0251"
+     y="1764.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6506"
-     y="1780.0251"
+     y="1791.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      id="tspan6508"
-     y="1807.0251"
+     y="1818.0251"
      x="639.86078"
      sodipodi:role="line" /><tspan
      style="letter-spacing:1.61999941px;word-spacing:1px"
-     y="1834.0251"
+     y="1845.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6510">– saving, deleting and resurfacing data</tspan><tspan
-     y="1861.0251"
+     y="1872.0251"
      x="639.86078"
      sodipodi:role="line"
      id="tspan6512">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
@@ -1681,29 +1858,19 @@
 
 
 
-<text
-   sodipodi:linespacing="150%"
-   id="text6514"
-   y="419.56036"
-   x="639.229"
-   style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
-   xml:space="preserve"><tspan
-     y="419.56036"
-     x="639.229"
-     id="tspan6516"
-     sodipodi:role="line">BEHIND</tspan><tspan
-     id="tspan6518"
-     y="446.56036"
-     x="639.229"
-     sodipodi:role="line">THE</tspan><tspan
-     id="tspan6520"
-     y="473.56036"
-     x="639.229"
-     sodipodi:role="line">SMART</tspan><tspan
-     id="tspan6522"
-     y="500.56036"
-     x="639.229"
-     sodipodi:role="line">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1720,24 +1887,24 @@
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    x="639.229"
-   y="-145.43964"
+   y="-134.43964"
    id="text6544"
    sodipodi:linespacing="150%"><tspan
      sodipodi:role="line"
      id="tspan6546"
      x="639.229"
-     y="-145.43964">BEHIND</tspan><tspan
+     y="-134.43964">BEHIND</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="-118.43964"
+     y="-107.43964"
      id="tspan6548">THE</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="-91.439636"
+     y="-80.439636"
      id="tspan6550">SMART</tspan><tspan
      sodipodi:role="line"
      x="639.229"
-     y="-64.439636"
+     y="-53.439636"
      id="tspan6552">WORLD</tspan></text>
 
 
@@ -1747,581 +1914,98 @@
 
 
 
-</g><g
-     inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="XX_TEXREF-004"
-     style="display:none"
-     sodipodi:insensitive="true"><path
-   style="opacity:0.2;color:#000000;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-   d="m 1080.7188,-5.4023437e-4 -545.66929,0 0,765.35430023437 545.66929,0 z"
-   id="rect3095"
-   inkscape:connector-curvature="0" /><text
-   style="font-size:15px"
-   y="85.251244"
-   x="-1012.5413"
-   id="text12-4"
-   transform="scale(-1,1)"><tspan
-     style="font-size:21.51925087px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1012.5413 -999.99561 -988.78406 -976.30286 -970.60028 -959.79761 -948.58612 -936.66443 -920.61108 -908.30206 -897.11206 -884.97522 -872.83832 -861.64832 -852.26593 -836.96576 -824.42004 -813.22998 -803.8476 -792.65759 -781.44611 -773.48395 -762.68127 -744.45447 -733.50116 -722.28967 -703.84766 -691.8399 -679.22961 -671.00928"
-     y="85.251244"
-     sodipodi:role="line"
-     id="tspan14-2">RadicalOpennessResearchLab2015</tspan></text>
+
+
+
+
+
+
 
 
 
 
 <text
-   style="font-size:15px"
-   y="123.865"
-   x="-1012.925"
-   id="text16"
-   transform="scale(-1,1)"><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.925 -1006.0757 -999.22632 -992.37695 -978.67816 -971.8288 -964.97943 -958.13007 -951.2807 -944.43134 -937.58191 -930.73254 -923.88318 -917.03381 -910.18445 -896.48566 -889.63629 -882.78693 -875.93756 -869.0882 -862.23877 -855.3894 -848.54004 -841.69067 -827.99194 -821.14258 -814.29315 -800.59442 -793.74506 -786.89569 -780.04633 -773.1969 -759.49817 -752.6488 -745.79944 -738.95007 -732.10065 -725.25128 -718.40192 -711.55255 -697.85376 -691.00439 -684.15503"
-     y="123.865"
-     sodipodi:role="line"
-     id="tspan18-5">Thispublicationdocumentsthefirstresearchlab</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1013.295 -1006.4457 -999.59631 -992.74695 -985.89752 -979.04816 -972.19879 -965.34943 -958.50006 -944.80133 -937.9519 -931.10254 -924.25317 -917.40381 -910.55444 -903.70508 -896.85565 -883.15692 -876.30756 -869.45819 -862.60883 -855.75946 -848.91003 -842.06067 -835.2113 -821.51251 -814.66315 -807.81378 -800.96442"
-     y="141.94751"
-     sodipodi:role="line"
-     id="tspan20-1">(“RadicalOpennessResearchLab”</tspan></text>
+   sodipodi:linespacing="150%"
+   id="text6514-2-2"
+   y="487.56036"
+   x="639.229"
+   style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="487.56036"
+     x="639.229"
+     id="tspan6516-1-9"
+     sodipodi:role="line">BEHIND</tspan><tspan
+     id="tspan6518-3-3"
+     y="514.56036"
+     x="639.229"
+     sodipodi:role="line">THE</tspan><tspan
+     id="tspan6520-2-9"
+     y="541.56036"
+     x="639.229"
+     sodipodi:role="line">SMART</tspan><tspan
+     id="tspan6522-3-6"
+     y="568.56036"
+     x="639.229"
+     sodipodi:role="line">WORLD</tspan></text>
 
 
 
-
-<text
-   style="font-size:15px"
-   y="136.99875"
-   x="-791.83252"
-   id="text22"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.58899975px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-791.83252"
-     y="136.99875"
-     id="tspan24-6">1</tspan></text>
 
 
 
 
 <text
-   style="font-size:15px"
-   y="141.94751"
-   x="-779.56628"
-   id="text26"
-   transform="scale(-1,1)"><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-779.56628 -765.86755 -759.01819 -745.3194 -738.47003 -731.62067 -724.7713 -717.92194 -711.07257 -704.22314 -697.37378 -690.52441 -683.67505 -676.82568"
-     y="141.94751"
+   xml:space="preserve"
+   style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:154.99999523%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="639.86078"
+   y="446.02515"
+   id="text6524-6-7-2"
+   sodipodi:linespacing="155%"><tspan
+     id="tspan6526-8-4-1"
      sodipodi:role="line"
-     id="tspan28-4">)inconjunction</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.925 -1006.0757 -999.22632 -992.37695 -978.67816 -971.8288 -964.97943 -951.2807 -944.43127 -937.58191 -930.73254 -923.88318 -917.03381 -910.18445 -903.33508 -889.63629 -882.78693 -875.93756 -862.23883 -855.3894 -848.54004 -841.69067 -834.84131 -827.99194 -821.14258 -807.44379 -800.59442 -793.74506 -786.89569 -780.04633 -773.1969 -766.34753 -759.49817 -752.6488 -745.79944 -732.10065 -725.25128 -718.40192 -711.55255 -704.70319 -697.85382 -691.00439 -684.15503 -677.30566"
-     y="160.03"
+     x="639.86078"
+     y="446.02515"
+     style="font-size:16px;letter-spacing:-0.05px;word-spacing:0px">AMRO Research Lab 2015 – servus.at</tspan><tspan
      sodipodi:role="line"
-     id="tspan30-9">withtheAustriannetcultureinitiativeservus.at</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -971.44507 -964.5957 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -909.80066 -902.95129 -896.10193 -882.4032 -875.55383 -868.70441 -861.85504 -848.15631 -841.30695 -834.45758 -820.75879 -813.90942 -807.06006 -800.21069 -786.5119 -779.66254 -772.81317 -765.96381 -752.26508 -745.41565 -731.71692 -724.86755 -718.01819 -711.16882 -697.47003 -690.62067 -683.7713 -676.92194 -670.07257 -656.37378 -649.52441"
-     y="178.11125"
+     x="639.86078"
+     y="470.82513"
+     id="tspan6528-2-6-8"> </tspan><tspan
+     id="tspan6530-5-6-0"
      sodipodi:role="line"
-     id="tspan32-0">basedinLinz.Theideaforthiskindoflab,whichis</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -978.29443 -971.44507 -957.74634 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -916.65002 -902.95129 -889.25256 -882.4032 -875.55383 -868.70441 -861.85504 -855.00568 -848.15631 -841.30695 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -786.5119 -779.66254 -772.81317 -759.11444 -752.26508 -745.41565 -731.71692 -724.86755 -718.01819 -711.16882 -704.3194 -697.47003 -690.62067 -683.7713 -676.92194 -670.07257"
-     y="196.19376"
+     x="639.86078"
+     y="495.62515" /><tspan
      sodipodi:role="line"
-     id="tspan34-3">abletoexploreaspecifictopicandtheassociated</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.5957 -957.74634 -950.89691 -937.19818 -930.34882 -923.49945 -909.80066 -902.95129 -896.10193 -882.4032 -875.55383 -868.70441 -861.85504 -855.00568 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -800.21069 -793.36127 -786.5119 -772.81317 -765.96381 -752.26508 -745.41565 -738.56628 -731.71692 -724.86755 -711.16882 -704.3194 -697.47003 -690.62067 -676.92194 -670.07257 -663.22314"
-     y="214.27625"
+     x="639.86078"
+     y="520.42517"
+     id="tspan6532-2-5-9" /><tspan
      sodipodi:role="line"
-     id="tspan36-7">challengesfortheinformationageindepthoverthe</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -964.5957 -957.74634 -944.04755 -937.19818 -930.34882 -916.65002 -909.80066 -902.95129 -896.10193 -889.25256 -875.55383 -868.70441 -855.00568 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -807.06006 -800.21069 -786.5119 -779.66254 -772.81317 -759.11444 -752.26508 -745.41565 -738.56628 -731.71692 -724.86755 -718.01819 -711.16882 -697.47003 -690.62067 -683.7713 -676.92194"
-     y="232.35875"
+     x="639.86078"
+     y="545.22516"
+     id="tspan6534-9-9-6" /><tspan
      sodipodi:role="line"
-     id="tspan38-8">courseofoneyear,isrootedinthefestival“Art</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -971.44507 -964.5957 -957.74634 -950.89691 -944.04755 -937.19818 -930.34882 -916.65002 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55383 -868.70441 -861.85504"
-     y="250.44125"
+     x="639.86078"
+     y="570.02515"
+     id="tspan6536-8-1-5" /><tspan
      sodipodi:role="line"
-     id="tspan40-5">MeetsRadicalOpenness”</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="245.49251"
-   x="-852.72382"
-   id="text42"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.58899975px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-852.72382"
-     y="245.49251"
-     id="tspan44-9">2</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="250.44125"
-   x="-847.30627"
-   id="text46"
-   transform="scale(-1,1)"><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-847.30627 -833.60754 -826.75818 -819.90881 -813.05945 -806.21002 -792.51129 -785.66193 -778.81256 -771.9632 -765.11377 -751.41504 -744.56567 -737.71631 -730.86694 -724.01758 -710.31879 -703.46942 -696.62006 -689.77069 -682.92133 -676.0719 -669.22253 -662.37317 -655.5238 -648.67444"
-     y="250.44125"
+     x="639.86078"
+     y="594.82513"
+     id="tspan6538-2-0-0"
+     dy="3.2134049"
+     style="line-height:154.99999523%"> </tspan><tspan
      sodipodi:role="line"
-     id="tspan48-3">,whichtakesplacebiennially</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.692 -998.84253 -991.99316 -985.1438 -971.49982 -964.65045 -957.80109 -950.95172 -937.29407 -930.4447 -916.80072 -909.95135 -903.10199 -896.25262 -889.40326 -882.55389 -875.70447 -868.8551 -862.00574 -855.15637 -848.30701 -834.64935 -827.79999 -820.95056 -814.1012 -800.45728 -793.60785 -786.75848 -773.10083 -766.25146 -759.4021 -745.75812 -738.90875 -732.05939 -725.21002 -718.36066 -711.51129 -704.66193 -697.8125 -690.96313 -684.11377 -670.46979 -663.62042 -656.77106 -649.92169 -643.07233"
-     y="268.52374"
+     x="639.86078"
+     y="619.62512"
+     style="font-size:16px;letter-spacing:-0.05px;word-spacing:0px"
+     id="tspan3525">Saving, deleting and resurfacing data</tspan><tspan
+     id="tspan6542-6-9-4"
      sodipodi:role="line"
-     id="tspan50-9">since2008incooperationwiththeArtUniversityLinz.</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.925 -1006.0757 -999.22632 -992.37695 -978.67816 -971.8288 -958.13007 -944.43127 -937.58191 -930.73254 -923.88318 -917.03381 -910.18445 -903.33508 -896.48566 -889.63629 -875.93756 -869.0882 -862.23883 -855.3894 -848.54004 -841.69067 -834.84131 -827.99194 -814.29315 -807.44379 -800.59442 -793.74506 -786.89569 -780.04633 -773.1969 -766.34753 -759.49817 -752.6488 -745.79944 -732.10065 -725.25128 -711.55255 -704.70319 -697.85382 -684.15503 -677.30566 -670.4563 -663.60693"
-     y="286.60623"
-     sodipodi:role="line"
-     id="tspan52-2">ThisisacommunityfestivaloriginatingintheFree</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.692 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -889.25256 -882.4032 -875.55383 -861.85504 -855.00568 -848.15631 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -793.36133 -786.5119 -779.66254 -772.81317 -765.96381 -759.11444 -752.26508 -745.41565 -731.71692 -724.86755 -718.01819 -711.16876 -704.3194 -697.47003 -690.62067 -683.7713 -676.92194 -670.07257"
-     y="304.6875"
-     sodipodi:role="line"
-     id="tspan54-1">SoftwaremovementandtheearlyAustrianinitiative</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.692 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -957.74628 -950.89691 -944.04755 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -896.10193 -882.4032 -875.55383 -868.70441 -861.85504 -855.00568 -848.15631"
-     y="322.76999"
-     sodipodi:role="line"
-     id="tspan56-3">Linuxwochen(LinuxWeeks)</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="317.82123"
-   x="-839.02502"
-   id="text58"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.58899975px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-839.02502"
-     y="317.82123"
-     id="tspan60-0">3</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="322.76999"
-   x="-833.60754"
-   id="text62"
-   transform="scale(-1,1)"><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-833.60754 -819.90881 -813.05945 -806.21002 -792.51129 -785.66193 -778.81256 -771.9632 -758.2644 -751.41504 -744.56567 -737.71631 -730.86694 -717.16815 -710.31879 -703.46942 -689.77069 -682.92126 -676.0719 -669.22253"
-     y="322.76999"
-     sodipodi:role="line"
-     id="tspan64">,butthiseventhasbeen</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -950.89691 -944.04755 -937.19818 -930.34882 -916.65002 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -868.70441 -861.85504 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -793.36127 -779.66254 -772.81317 -765.96381 -752.26508 -745.41565 -738.56628 -731.71692 -724.86755 -718.01819 -711.16882 -704.3194 -697.47003 -690.62067 -683.7713 -676.92194 -670.07257 -663.22321 -656.37378"
-     y="340.85248"
-     sodipodi:role="line"
-     id="tspan66-9">expandedwithcultural,artistic,andsocial-critical</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -957.74628 -950.89691 -937.19818 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -861.85504 -855.00568 -848.15631 -841.30695 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -793.36127 -786.5119 -779.66254 -772.81317 -765.96381 -759.11444 -745.41565 -738.56628 -731.71692 -724.86755 -711.16882 -704.3194 -697.47003 -683.7713 -676.92194 -670.07257 -663.22321 -656.37378"
-     y="358.935"
-     sodipodi:role="line"
-     id="tspan68">aspectsinconnectionwithtechnology.Whenartmeets</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -957.74628 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -889.25256 -882.4032 -875.55377 -868.70441 -855.00568 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -793.36127 -779.66254 -772.81317 -765.96381 -759.11444 -752.26508 -745.41565 -738.56628 -731.71692"
-     y="377.01749"
-     sodipodi:role="line"
-     id="tspan70">radicalopenness,thissuggestsaparadox.</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -985.1438 -978.29443 -971.44507 -964.59564 -950.89691 -944.04755 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -861.85504 -855.00568 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -786.5119 -779.66254 -772.81317 -765.96381 -759.11444 -752.26508 -745.41565 -738.56628 -731.71692 -724.86755 -718.01819 -711.16882 -697.47003 -690.62067 -683.7713 -670.07257 -663.22321"
-     y="413.13998"
-     sodipodi:role="line"
-     id="tspan72">Forwhatisgenerallyconsideredcontemporaryartis</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -964.59564 -957.74628 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -889.25256 -882.4032 -875.55377 -868.70441 -861.85504 -848.15631 -841.30695 -827.60815 -820.75879 -813.90942 -800.21069 -793.36127 -786.5119 -779.66254 -772.81317 -759.11444 -752.26508 -745.41565 -738.56628 -724.86755 -718.01819 -711.16882 -697.47003 -690.62067 -683.7713 -676.92194 -670.07257 -663.22321 -656.37378"
-     y="431.2225"
-     sodipodi:role="line"
-     id="tspan74">rarely“radicallyopen”inthesensethatitsauthors</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -957.74628 -944.04755 -937.19818 -930.34882 -923.49945 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -868.70441 -861.85504 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -793.36127 -779.66254 -772.81317 -765.96381 -752.26508 -745.41565 -738.56628 -731.71692 -724.86755 -718.01819 -711.16882 -704.3194"
-     y="449.30374"
-     sodipodi:role="line"
-     id="tspan76">purposelymakesources,processesandcontents</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -957.74628 -950.89691 -937.19818 -930.34882 -923.49945 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -868.70441 -855.00568 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -807.06006 -800.21069 -793.36127 -786.5119 -772.81317 -765.96381 -752.26508 -745.41565 -731.71692 -724.86755 -718.01819 -704.3194 -697.47003 -690.62067 -683.7713 -670.07257 -663.22321 -656.37378 -649.52441"
-     y="467.38623"
-     sodipodi:role="line"
-     id="tspan78">accessibleforfurtherprocessing,asistherulewith</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -964.59564 -957.74628 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -916.65002 -909.80066 -902.95129 -896.10193 -882.4032 -875.55377 -868.70441 -861.85504 -848.15631 -841.30695 -834.45758 -827.60815 -820.75879 -813.90942 -800.21069 -793.36127 -786.5119 -779.66254 -772.81317 -765.96381 -759.11444 -752.26508 -745.41565 -731.71692 -724.86755 -718.01819 -711.16882 -704.3194 -697.47003 -690.62067 -683.7713 -676.92194"
-     y="485.46872"
-     sodipodi:role="line"
-     id="tspan80">F/LOSS(free/libreOpenSourceSoftware)projects.</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.925 -1006.0757 -999.22632 -992.37695 -978.67816 -971.8288 -964.97943 -951.2807 -944.43127 -937.58191 -930.73254 -923.88318 -917.03381 -910.18445 -896.48566 -889.63629 -875.93756 -869.0882 -862.23883 -848.54004 -841.69067 -834.84131 -827.99194 -821.14252 -814.29315 -807.44379 -800.59442 -793.74506 -786.89569 -780.04633 -766.34753 -759.49817 -745.79944 -738.95007 -732.10065 -725.25128 -711.55255 -704.70319 -697.85382 -691.00439 -684.15503 -677.30566 -670.4563 -663.60693 -656.75757"
-     y="503.55124"
-     sodipodi:role="line"
-     id="tspan82">Whatmaysucceedinthedevelopmentoffreesoftware,</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -971.44507 -964.59564 -950.89691 -944.04755 -937.19818 -930.34882 -923.49945 -909.80066 -896.10193 -889.25256 -882.4032 -875.55377 -868.70441 -861.85504 -855.00568 -848.15631 -841.30695 -827.60815 -820.75879 -807.06006 -800.21069 -786.5119 -779.66254 -765.96381 -759.11444 -752.26508 -738.56628 -731.71692 -724.86755 -711.16882 -704.3194 -690.62067 -683.7713 -676.92194 -670.07257"
-     y="521.63373"
-     sodipodi:role="line"
-     id="tspan84">however,posesachallengetousinthewaywedeal</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.925 -1006.0757 -999.22632 -992.37695 -978.67816 -971.8288 -964.97943 -958.13007 -951.2807 -944.43127 -937.58191 -930.73254 -923.88318 -917.03381 -910.18445 -903.33508 -889.63629 -882.78693 -875.93756 -869.0882 -862.23883 -848.54004 -841.69067 -834.84131 -827.99194 -821.14252 -814.29315 -807.44379 -800.59442 -793.74506 -786.89569 -780.04633 -766.34753 -759.49817 -745.79944 -738.95007 -732.10065 -725.25128 -718.40192 -711.55255 -704.70319 -697.85382 -691.00439 -684.15503 -670.4563 -663.60693 -656.75757"
-     y="539.71625"
-     sodipodi:role="line"
-     id="tspan86">withinformation.Whichinformationismeaningfuland</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="-1012.5413 -1005.6919 -998.84253 -991.99316 -985.1438 -978.29443 -964.59564 -957.74628 -944.04755 -937.19818 -930.34882 -923.49945 -909.80066 -902.95129 -896.10193 -889.25256 -882.4032 -875.55377 -868.70441 -861.85504 -855.00568 -848.15631 -834.45758 -827.60815 -813.90942 -807.06006 -800.21069 -793.36127 -779.66254 -772.81317 -759.11444 -752.26508 -745.41565 -738.56628 -731.71692 -718.01819 -711.16882 -704.3194 -697.47003 -690.62067"
-     y="557.79871"
-     sodipodi:role="line"
-     id="tspan88">shouldbemadeaccessibletowhominwhichform?</tspan></text>
-
-
-
-
-<g
-   id="g90"
-   transform="matrix(-1.25,0,0,-1.25,1012.5413,603.87125)"><path
-     inkscape:connector-curvature="0"
-     d="M 0,0 296.841,0"
-     style="fill:none;stroke:#000000;stroke-width:0.498;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
-     id="path92" /></g><text
-   style="font-size:15px"
-   y="623.64746"
-   x="-1012.5413"
-   id="text94"
-   transform="scale(-1,1)"><tspan
-     style="font-size:7.47200012px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1012.5413"
-     y="623.64746"
-     id="tspan96">1</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="627.16376"
-   x="-1000.0888"
-   id="text98"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1000.0888 -994.3902 -991.04272 -987.69531 -981.9967 -980.00415 -975.42133 -970.83856 -967.15234 -961.9718 -957.62811 -952.44751 -947.25702 -943.5708 -938.56958 -932.87097 -930.85852 -927.17236 -921.98181 -916.20349 -913.56342 -908.56219 -903.37164 -900.59204 -896.2583 -890.57965 -884.88098 -879.70044 -874.08154 -868.46259 -863.28204 -858.93835 -854.5946 -852.58215 -846.9035 -843.21729 -838.0567 -833.47388 -827.91473 -822.0766 -818.27087"
-     y="627.16376"
-     sodipodi:role="line"
-     id="tspan100">http://research.radical-openness.org/2015</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="635.83124"
-   x="-1012.5413"
-   id="text102"
-   transform="scale(-1,1)"><tspan
-     style="font-size:7.47200012px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1012.5413"
-     y="635.83124"
-     id="tspan104">2</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="639.34747"
-   x="-1000.0888"
-   id="text106"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1000.0888 -994.3902 -991.04272 -987.69531 -981.9967 -980.00415 -975.42133 -970.83856 -963.86469 -956.89087 -949.91705 -947.9046 -944.21838 -939.02789 -933.24957 -930.60944 -925.60822 -920.41766 -917.63812 -913.30438 -907.62567 -901.92706 -896.74646 -891.12756 -885.50867 -880.32806 -875.98438 -871.64069 -869.62823 -863.94952 -860.26337"
-     y="639.34747"
-     sodipodi:role="line"
-     id="tspan108">http://www.radical-openness.org</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="648.01501"
-   x="-1012.5413"
-   id="text110"
-   transform="scale(-1,1)"><tspan
-     style="font-size:7.47200012px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1012.5413"
-     y="648.01501"
-     id="tspan112">3</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="651.53125"
-   x="-1000.0888"
-   id="text114"
-   transform="scale(-1,1)"><tspan
-     style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-1000.0888 -994.3902 -991.04272 -987.69531 -981.9967 -980.00415 -975.42133 -970.83856 -968.05896 -965.41888 -958.44501 -952.76636 -949.98676 -947.34668 -945.33423 -940.14368 -934.05652 -931.04779 -925.97681 -923.33673 -917.71783 -912.00922 -907.42645 -898.45013 -892.77142 -887.7702 -882.07153 -876.89099 -871.27209 -866.20105 -863.56097 -857.94208 -853.39911"
-     y="651.53125"
-     sodipodi:role="line"
-     id="tspan116">http://liwoli.at(LinuxWochenLinz)</tspan><tspan
-     style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="-835.44757"
-     y="704.67999"
-     id="tspan118">4</tspan></text>
+     x="639.86078"
+     y="644.42517">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
 
 
 
 
 </g><g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="XX_TEXREF-005"
-     style="display:none"
-     sodipodi:insensitive="true"><path
-   style="opacity:0.2;color:#000000;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-   d="m 535.0495,-5.5023438e-4 545.6693,0 0,765.35431023438 -545.6693,0 z"
-   id="rect3043"
-   inkscape:connector-curvature="0" /><text
-   style="font-size:15px"
-   y="82.318748"
-   x="641.03577"
-   id="text12"><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.03577 647.88513 654.7345 668.43323 675.28265 682.13202 688.98138 695.83075 702.68011 709.52948 716.37891 730.07764 736.927 743.77637 750.62573 757.47516 764.32452 778.02325 784.87262 791.72205 798.57141 805.42078 812.27014 819.11951 825.96887 839.66766 853.36639 860.21576 867.06512 873.91449 880.76392 887.61328 894.46265 908.16138 915.01074 921.86017 928.70953 935.5589 949.25763 956.10699 969.80573 976.65515 983.50452 990.35388 997.20325 1004.0527"
-     y="82.318748"
-     sodipodi:role="line"
-     id="tspan14">Thefestivalbringstogetheradiversegroupofactors</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="640.66577 647.51514 654.3645 661.21387 668.06323 674.91266 681.76202 688.61139 695.46075 709.15948 716.00891 722.85828 729.70764 736.55701 743.40637 750.25574 757.1051 770.80389 777.65326 784.50262 791.35199 798.20142 805.05078 811.90015 818.74951 832.44824 839.29761 846.14703 852.9964 859.84576 866.69513 873.54449 880.39386 887.24329 894.09265 900.94202 907.79138 914.64075 928.33954 935.1889 942.03827 948.88763 955.737 962.58643 969.43579 976.28516"
-     y="100.40125"
-     sodipodi:role="line"
-     id="tspan16">(artists,culturalworkers,philosophers,software</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 709.91327 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 778.40698 785.25641 792.10577 798.95514 812.65387 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 887.99701 894.84637 901.69574 915.39453 922.2439 929.09326 935.94263 942.79199 949.64142 956.49078 963.34015 970.18951 977.03888 983.88831 990.73767 997.58704"
-     y="118.48375"
-     sodipodi:role="line"
-     id="tspan18">developers,hacktivists,activists,andjournalists),</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.03577 647.88513 654.7345 668.43323 675.28265 682.13202 688.98138 695.83075 709.52948 716.37891 723.22827 730.07764 736.927 743.77637 750.62573 764.32452 771.17389 784.87262 791.72205 798.57141 805.42078 812.27014 819.11951 825.96887 832.81824 839.66766 853.36639 860.21576 867.06512 873.91449 880.76392 887.61328 901.31201 908.16138 921.86017 928.70953 935.5589 949.25763 956.10699 962.95636 969.80573 983.50452 990.35388 997.20325 1004.0527"
-     y="136.56625"
-     sodipodi:role="line"
-     id="tspan20">whooftenoperateindifferentfieldsatthesametime</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="640.66577 647.51514 654.3645 661.21387 668.06323 681.76202 688.61139 695.46075 702.31012 709.15948 716.00891 722.85828 729.70764 736.55701 743.40637 757.1051 763.95453 770.80389 777.65326 784.50262 791.35199 798.20142 805.05078 811.90015 818.74951 825.59888 839.29761 846.14703 852.9964 859.84576 866.69513 873.54449 880.39386 887.24329 894.09265 907.79138 914.64075 921.49011 928.33954 935.1889 942.03827 948.88763 955.737"
-     y="154.64874"
-     sodipodi:role="line"
-     id="tspan22">(art,education,journalism,activism,software</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 709.91327 723.612 730.46136 737.31073 751.00952 757.85889 764.70825 771.55762 778.40698 792.10577 798.95514 805.8045 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 881.14764 887.99701 901.69574 908.54517 915.39453 922.2439 929.09326 942.79199 949.64142 963.34015 970.18951 977.03888"
-     y="172.73001"
-     sodipodi:role="line"
-     id="tspan24">developmentandmore)andprincipallyagreeonthe</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.03577 647.88513 654.7345 661.58386 668.43323 682.13202 688.98138 702.68011 709.52948 716.37891 723.22827 730.07764 743.77637 750.62573 757.47516 764.32452 771.17389 778.02325 784.87262 791.72205 798.57141 805.42078 812.27014 825.96887 832.81824 839.66766 846.51703 853.36639 860.21576 873.91449 880.76392 887.61328 894.46265 901.31201 915.01074 921.86017 935.5589"
-     y="190.8125"
-     sodipodi:role="line"
-     id="tspan26">valueofusingalternativetools,basedona</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 709.91327 716.76263 723.612 730.46136 737.31073 751.00952 757.85889 764.70825 771.55762 778.40698 785.25641 792.10577 805.8045 812.65387 819.5033 826.35266 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 881.14764 887.99701 894.84637 901.69574 908.54517 922.2439 929.09326 935.94263 942.79199 949.64142 956.49078"
-     y="208.895"
-     sodipodi:role="line"
-     id="tspan28">social-criticalstance.Thisfundamentalstance</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 716.55713 723.40656 730.25592 743.73547 750.58484 757.4342 764.28363 777.77686 784.62622 791.47565 804.9552 811.80457 825.29785 832.14722 838.99658 845.84595 859.33923 866.1886 873.03796 879.88733 893.36694 900.21631 907.06567 913.91504 920.7644 927.61377 934.4632 941.31256 948.16193 955.01129 968.50458 975.35394 982.20331 995.68292 1002.5323 1009.3817"
-     y="226.97749"
-     sodipodi:role="line"
-     id="tspan30">influencesnotonlyhowwedealwithtechnologyperse,</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 668.81702 675.66638 682.51575 689.36511 703.0639 709.91327 716.76263 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 778.40698 792.10577 798.95514 812.65387 819.5033 826.35266 833.20203 840.05139 846.90076 860.59949 867.44885 874.29828 881.14764 887.99701 894.84637 901.69574 908.54517 915.39453 922.2439 935.94263 942.79199 949.64142 963.34015 970.18951 977.03888 983.88831 990.73767 997.58704 1004.4364"
-     y="245.06"
-     sodipodi:role="line"
-     id="tspan32">butalsotheapproachtoissuesconcerningthecomplex</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 716.76263 723.612 737.31073 744.16016 751.00952 764.70825 771.55762 778.40698 785.25641 792.10577 798.95514 805.8045 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 881.14764 887.99701 901.69574 908.54517 915.39453 922.2439 929.09326 942.79199 949.64142 956.49078 963.34015 970.18951 977.03888 990.73767 997.58704"
-     y="263.14249"
-     sodipodi:role="line"
-     id="tspan34">conditionsofourdigitalinfosphere,whichimpelsan</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 709.91327 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 785.25641 792.10577 798.95514 805.8045 812.65387 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 887.99701 894.84637 901.69574 908.54517 922.2439 929.09326 935.94263 949.64142 963.34015 970.18951 977.03888 983.88831"
-     y="281.22501"
-     sodipodi:role="line"
-     id="tspan36">unremittingculturaltransformationthathasareal</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 689.36511 696.21454 709.91327 716.76263 723.612 737.31073 744.16016 751.00952 757.85889 771.55762 778.40698 785.25641 798.95514 805.8045 812.65387 826.35266 833.20203 840.05139 853.75012 860.59949 874.29828 881.14764 887.99701 894.84637 908.54517 915.39453 922.2439 929.09326 942.79199 949.64142 956.49078 970.18951 977.03888 983.88831 990.73767 997.58704"
-     y="299.30624"
-     sodipodi:role="line"
-     id="tspan38">impactonourlifeandthewaywedealwithourworld</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638"
-     y="317.38876"
-     sodipodi:role="line"
-     id="tspan40">today.</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 668.81702 675.66638 682.51575 696.21454 703.0639 709.91327 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 778.40698 785.25641 792.10577 798.95514 805.8045 819.5033 826.35266 833.20203 840.05139 853.75012 860.59949 867.44885 881.14764 887.99701 894.84637 901.69574 908.54517 915.39453 929.09326 935.94263 942.79199 949.64142 956.49078 963.34015 970.18951 977.03888 983.88831 990.73767"
-     y="360.3775"
-     sodipodi:role="line"
-     id="tspan42">Forus,thecollaborationwiththeartistcollective</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 689.36511 703.0639 709.91327 716.76263 723.612 730.46136 744.16016 751.00952 757.85889 764.70825 771.55762 778.40698 785.25641 798.95514 812.65387 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 867.44885 874.29828 881.14764 887.99701 894.84637 901.69574 908.54517 915.39453 929.09326 935.94263 942.79199 956.49078 963.34015 970.18951 977.03888 983.88831 990.73767"
-     y="378.45999"
-     sodipodi:role="line"
-     id="tspan44">KairUs-LindaKronman&amp;AndreasZingerlehasproved</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 661.96765 668.81702 682.51575 689.36511 696.21454 703.0639 716.76263 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 785.25641 792.10577 798.95514 805.8045 812.65387 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 887.99701 894.84637 901.69574 908.54517 915.39453 929.09326 935.94263 942.79199 949.64142 956.49078 963.34015 970.18951 983.88831 990.73767 997.58704"
-     y="396.54251"
-     sodipodi:role="line"
-     id="tspan46">tobeveryvaluable.Theirresearchtopic“Behindthe</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 682.51575 689.36511 696.21454 703.0639 709.91327 716.76263 730.46136 737.31073 744.16016 751.00952 764.70825 771.55762 778.40698 792.10577 798.95514 805.8045 812.65387 819.5033 826.35266 833.20203 840.05139 853.75012 860.59949 867.44885 874.29828 881.14764 887.99701 894.84637 901.69574 915.39453 922.2439 929.09326 935.94263 942.79199 956.49078 963.34015"
-     y="414.625"
-     sodipodi:role="line"
-     id="tspan48">SmartWorld”withitsoriginalstartingpointof</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 716.76263 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 764.70825 771.55762 785.25641 792.10577 798.95514 805.8045 819.5033 826.35266 833.20203 846.90076 853.75012 860.59949 867.44885 874.29828 881.14764 887.99701 901.69574 908.54517 915.39453 922.2439 929.09326 935.94263 942.79199 949.64142 956.49078 970.18951 977.03888 983.88831 990.73767 997.58704 1004.4364"
-     y="432.70752"
-     sodipodi:role="line"
-     id="tspan50">twenty-twoharddisksfromthelargestrecyclingcenter</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 661.96765 668.81702 675.66638 682.51575 689.36511 703.0639 709.91327 716.76263 730.46136 737.31073 744.16016 757.85889 764.70825 778.40698 785.25641 798.95514 812.65387 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 874.29828 887.99701 894.84637 908.54517 915.39453 922.2439 929.09326 935.94263 942.79199 949.64142 956.49078 963.34015 970.18951 977.03888 990.73767 997.58704 1004.4364"
-     y="450.79001"
-     sodipodi:role="line"
-     id="tspan52">inGhanahasledustoacollectionoftheoreticaland</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 703.0639 709.91327 716.76263 723.612 730.46136 737.31073 744.16016 751.00952 757.85889 771.55762 778.40698 785.25641 792.10577 798.95514 805.8045 812.65387 819.5033 833.20203 840.05139 853.75012 867.44885 874.29828 881.14764 887.99701 894.84637 901.69574 908.54517 915.39453 922.2439 929.09326 935.94263 949.64142 956.49078 963.34015 970.18951 977.03888 983.88831 990.73767"
-     y="468.87125"
-     sodipodi:role="line"
-     id="tspan54">artisticpositionsfocusingonafundamentalproblem</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 661.96765 668.81702 675.66638 689.36511 696.21454 703.0639 709.91327 716.76263 723.612 737.31073 744.16016 751.00952 764.70825 771.55762 778.40698 785.25641 792.10577 798.95514 805.8045 819.5033 826.35266 833.20203 840.05139 846.90076 853.75012 860.59949 867.44885 881.14764 887.99701 894.84637 908.54517 915.39453 922.2439 929.09326 935.94263 942.79199 949.64142 956.49078 963.34015 970.18951 977.03888 990.73767 997.58704"
-     y="486.95377"
-     sodipodi:role="line"
-     id="tspan56">ofourtimes,thesaving,deletingandresurfacingof</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 689.36511 696.21454 703.0639 709.91327 716.76263"
-     y="505.03625"
-     sodipodi:role="line"
-     id="tspan58">information.</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 675.66638 682.51575 696.21454 703.0639 709.91327 716.76263 723.612 730.46136"
-     y="548.02502"
-     sodipodi:role="line"
-     id="tspan60">Us(c)hiReiter</tspan><tspan
-     style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-     x="641.41949 648.26886 655.11823 661.96765 668.81702 682.51575 689.36511 696.21454 703.0639 709.91327 716.76263 723.612 730.46136 744.16016 751.00952 757.85889 764.70825"
-     y="591.01373"
-     sodipodi:role="line"
-     id="tspan62">Linz,November2015</tspan></text>
-
-
-
-
-<text
-   style="font-size:15px"
-   y="704.67999"
-   x="829.60828"
-   id="text64"><tspan
-     style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular"
-     x="829.60828"
-     y="704.67999"
-     id="tspan66">5</tspan></text>
-
-
-
-
-</g><g
-     style="display:none"
-     inkscape:label="XX_020_test"
-     id="g4723"
-     inkscape:groupmode="layer"><path
-       inkscape:connector-curvature="0"
-       id="path4806"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 730.88586,73.20908 0,9.109668 0.64384,0 0.34247,-0.821924 c 0.41096,0.616443 1.0959,0.986309 1.84933,0.986309 1.28769,0 2.61647,-1.095902 2.61647,-3.369892 0,-2.178099 -1.28769,-3.191809 -2.52057,-3.191809 -0.79453,0 -1.53427,0.424662 -1.93153,1.109599 l 0,-3.50688 c 0,-0.08219 0.0137,-0.10959 0.0822,-0.164385 0.0274,-0.0137 0.0959,-0.06849 0.0822,-0.150686 l -1.1644,0 m 2.58907,3.561675 c 0.58904,0 1.83563,0.342471 1.83563,2.561666 0,1.904124 -1.23289,2.260294 -1.84933,2.260294 -0.42466,0 -1.36988,-0.164386 -1.53426,-1.369875 -0.0411,-0.315071 -0.0411,-0.684938 -0.0411,-1.232888 0,-0.561648 0.0274,-0.972611 0.16439,-1.31508 0.23288,-0.561648 0.80822,-0.904117 1.42467,-0.904117" /><path
-       inkscape:connector-curvature="0"
-       id="path4842"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 877.44877,75.921432 c -1.49317,0 -2.87674,1.068505 -2.87674,3.342495 0,2.095907 1.30138,3.205508 3.00003,3.205508 0.90411,0 1.71234,-0.328771 2.24659,-0.972611 l -0.54795,-0.534252 c -0.39726,0.465757 -1.00001,0.712335 -1.61645,0.712335 -0.83562,0 -2.05481,-0.465759 -2.12331,-2.342486 l 4.4384,0 c 0.0411,-0.424661 0.0274,-0.835624 -0.0411,-1.191791 -0.28767,-1.684945 -1.45207,-2.219198 -2.47947,-2.219198 m -1.89043,2.657558 c 0.20548,-1.479464 1.1507,-1.904126 1.82193,-1.904126 1.01371,0 1.73974,0.890419 1.61646,1.904126 l -3.43839,0" /><path
-       inkscape:connector-curvature="0"
-       id="path4990"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 724.55721,118.48375 1.01371,0 0,-3.60277 c 0,-0.41096 0.0411,-0.72604 0.30137,-1.0685 0.24658,-0.31508 0.84933,-0.87672 1.50687,-0.87672 0.31507,0 0.63014,0.13698 0.84932,0.39726 0.34247,0.41096 0.34247,0.94521 0.34247,1.38357 l 0,3.76716 0.97261,0 0,-3.79455 0,0 c 0,-0.47946 -0.0137,-1.00001 -0.23288,-1.50687 -0.31507,-0.69863 -0.94522,-1.0959 -1.65755,-1.0959 -0.84932,0 -1.63015,0.54795 -2.08221,1.24659 l 0,-3.63017 c 0,-0.0411 0,-0.0822 0.0411,-0.12329 0.0411,-0.0411 0.0959,-0.0822 0.0959,-0.15068 0,-0.0137 0,-0.0274 -0.0137,-0.0411 l -1.137,0 0,9.09597" /><path
-       inkscape:connector-curvature="0"
-       id="path5024"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 848.35282,112.22342 0,0.80823 1.50687,0 0,4.67127 -1.58906,0 0,0.78083 4.05483,0 0,-0.78083 -1.46576,0 0,-5.4795 -2.50688,0 m 2.02742,-2.71235 c -0.39726,0 -0.71234,0.31507 -0.71234,0.69863 0,0.38357 0.31508,0.69864 0.71234,0.69864 0.39726,0 0.71233,-0.31507 0.71233,-0.69864 0,-0.38356 -0.31507,-0.69863 -0.71233,-0.69863" /><path
-       inkscape:connector-curvature="0"
-       id="path5182"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 737.48852,154.64874 1.00001,0 0,-3.60277 c 0,-0.41096 0.0548,-0.72603 0.31507,-1.0685 0.23288,-0.31507 0.83563,-0.87672 1.49317,-0.87672 0.31507,0 0.63014,0.13699 0.84932,0.39726 0.34247,0.41096 0.34247,0.94522 0.34247,1.38358 l 0,3.76715 0.97261,0 0,-3.79455 0,0 c 0,-0.47946 0,-1.00001 -0.21918,-1.50686 -0.31507,-0.69864 -0.95892,-1.0959 -1.67125,-1.0959 -0.84932,0 -1.61645,0.54795 -2.08221,1.24658 l 0,-1.0959 -1.00001,0 0,6.24663" /><path
-       inkscape:connector-curvature="0"
-       id="path5242"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 646.50173,167.3875 c -0.30137,-0.64384 -0.97261,-1.0685 -1.83563,-1.0685 -1.19179,0 -2.64386,0.84932 -2.64386,3.2329 0,2.31509 1.28768,3.3288 2.49317,3.3288 0.79453,0 1.53426,-0.45206 1.93153,-1.1507 l 0,0.54795 c 0,0.15069 0.0137,0.30137 0.0548,0.45206 l 0.98631,0 c -0.0548,-0.17808 -0.0548,-0.38356 -0.0548,-0.57535 l -0.0137,-8.13705 c 0,-0.0822 0,-0.10959 0.0548,-0.19179 0.0274,-0.0411 0.0822,-0.10959 0.0685,-0.20548 l -1.04111,0 0,3.76716 m -1.79454,-0.26028 c 0.54795,0 1.35618,0.28768 1.60276,1.21919 0.0822,0.28767 0.10959,0.63014 0.10959,1.32878 0,0.47946 -0.0274,0.82193 -0.13699,1.15069 -0.23288,0.73974 -0.89042,1.1781 -1.53426,1.1781 -0.71233,0 -1.76714,-0.54795 -1.76714,-2.60277 0,-1.79453 1.00001,-2.27399 1.72604,-2.27399" /><path
-       inkscape:connector-curvature="0"
-       id="path5374"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 828.54424,182.88092 -0.12329,1.68495 -1.49317,0 -0.0137,0.80823 1.46576,0 c -0.0822,1.0685 -0.12329,2.137 -0.12329,3.19181 0,0.56164 0,1.19179 0.36987,1.71234 0.30137,0.41096 0.78083,0.65754 1.42467,0.65754 0.73973,0 1.46577,-0.31507 2.00002,-0.69864 l -0.30138,-0.78083 c -0.53425,0.39727 -1.0274,0.57535 -1.41097,0.57535 -0.46575,0 -0.94521,-0.26028 -1.0548,-1.01371 0,-0.0548 -0.0411,-0.28767 -0.0411,-1.20549 0,-0.80822 0.0411,-1.63015 0.12329,-2.43837 l 2.05481,0 0,-0.82193 -2.04111,0 c 0,0 0.0959,-1.1233 0.16439,-1.47946 0.0137,-0.13699 0.12328,-0.21918 0.0685,-0.36987 l -1.0685,0.17808" /><path
-       inkscape:connector-curvature="0"
-       id="path5448"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 813.59908,208.895 1.01371,0 0,-3.60277 c 0,-0.41096 0.0411,-0.72603 0.30137,-1.0685 0.24658,-0.31507 0.84933,-0.87672 1.50687,-0.87672 0.31507,0 0.63014,0.13699 0.84932,0.39726 0.34247,0.41097 0.34247,0.94522 0.34247,1.38358 l 0,3.76715 0.97261,0 0,-3.79455 0,0 c 0,-0.47946 -0.0137,-1.00001 -0.23288,-1.50686 -0.31507,-0.69864 -0.94521,-1.0959 -1.65755,-1.0959 -0.84932,0 -1.63015,0.54795 -2.08221,1.24658 l 0,-3.63016 c 0,-0.0411 0,-0.0822 0.0411,-0.12329 0.0411,-0.0411 0.0959,-0.0822 0.0959,-0.15069 0,-0.0137 0,-0.0274 -0.0137,-0.0411 l -1.137,0 0,9.09597" /><path
-       inkscape:connector-curvature="0"
-       id="path5576"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 1006.0666,220.58018 c -1.4932,0 -2.8768,1.0685 -2.8768,3.34249 0,2.09591 1.3014,3.20551 3.0001,3.20551 0.9041,0 1.7123,-0.32877 2.2465,-0.97261 l -0.5479,-0.53425 c -0.3973,0.46575 -1,0.71233 -1.6165,0.71233 -0.8356,0 -2.0548,-0.46576 -2.1233,-2.34248 l 4.4384,0 c 0.041,-0.42466 0.027,-0.83563 -0.041,-1.1918 -0.2876,-1.68494 -1.452,-2.21919 -2.4794,-2.21919 m -1.8905,2.65755 c 0.2055,-1.47946 1.1507,-1.90412 1.822,-1.90412 1.0137,0 1.7397,0.89042 1.6164,1.90412 l -3.4384,0" /><path
-       inkscape:connector-curvature="0"
-       id="path5590"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 688.43361,239.63529 c -0.57535,-0.63014 -1.41098,-0.97261 -2.34249,-0.97261 -1.45207,0 -2.39728,0.80823 -2.39728,1.73974 0,1.0959 1.17809,1.49317 1.52056,1.61646 0.53425,0.19178 1.21919,0.35616 1.68495,0.57534 0.52055,0.24658 0.61644,0.57535 0.61644,0.79453 0,0.58905 -0.71234,0.98631 -1.60275,0.98631 -1.0685,0 -1.75344,-0.64384 -1.95892,-0.86302 -0.0411,-0.0548 -0.0411,-0.0959 -0.0411,-0.15069 0,-0.0137 0.0137,-0.0959 -0.0548,-0.12329 l -0.57534,0.97262 c 0.73973,0.68493 1.69864,1 2.64386,1 1.71234,0 2.60276,-1.0137 2.60276,-1.95892 0,-0.42466 -0.17809,-1.00001 -0.91782,-1.41097 -0.69863,-0.39726 -1.71234,-0.53425 -2.30139,-0.82192 -0.50685,-0.24658 -0.61644,-0.54795 -0.61644,-0.76713 0,-0.49316 0.61644,-0.84933 1.31508,-0.84933 0.90411,0 1.50686,0.54795 1.73974,0.86303 0.0411,0.0411 0.0274,0.0822 0.0274,0.12328 0,0.0822 0.0548,0.10959 0.0822,0.10959 l 0.57535,-0.86302" /><path
-       inkscape:connector-curvature="0"
-       id="path5662"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 977.54573,245.06 0.90412,0 0,-4.16442 c 0,-0.30137 0.0274,-0.57535 0.20548,-0.90412 0.21918,-0.41096 0.49316,-0.57535 0.75343,-0.57535 0.21918,0 0.46576,0.13699 0.57535,0.47946 0.0822,0.26027 0.0685,0.56165 0.0685,0.82192 l 0,4.34251 0.91782,0 0,-4.13702 c 0,-0.32877 0.0274,-0.58905 0.26028,-0.98631 0.10959,-0.16439 0.34247,-0.56165 0.72603,-0.56165 0.20548,0 0.39726,0.12329 0.49316,0.35616 0.12328,0.26028 0.0959,0.61645 0.0959,0.90412 l 0,4.4384 0.93151,0 0,-4.4521 c 0,-0.52055 0.0137,-1.0411 -0.26027,-1.46576 -0.23288,-0.35617 -0.63015,-0.49316 -0.97262,-0.49316 -0.60274,0 -1.16439,0.35617 -1.41097,0.90412 -0.0959,-0.52055 -0.53425,-0.90412 -1.0959,-0.90412 -0.52055,0 -1.00001,0.32877 -1.28768,0.76713 l 0.0137,-0.61644 -0.91782,0 0,6.24663" /><path
-       inkscape:connector-curvature="0"
-       id="path5712"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 800.18803,257.62189 0.47945,0.63014 c 0.52055,-0.53425 1.21919,-0.69863 1.80824,-0.69863 0.73973,0 1.1096,0.31507 1.28768,0.60274 0.20548,0.34247 0.19178,0.75343 0.19178,1.0822 l 0,0.21918 -0.19178,0 c -0.93151,0 -1.91783,0 -2.71235,0.28768 -0.98631,0.35616 -1.42467,1.0959 -1.42467,1.78083 0,0.91782 0.79453,1.78084 2.09591,1.78084 0.76713,0 1.56165,-0.28767 2.24659,-0.84932 l 0,0.68494 0.93152,0 0,-3.87675 c 0,-0.50685 -0.0137,-0.98631 -0.30138,-1.47946 -0.41096,-0.67124 -1.20549,-1.02741 -2.1781,-1.02741 -0.83562,0 -1.64385,0.26028 -2.23289,0.86302 m 3.80825,2.58906 0,0.42467 c 0,0.31507 0,0.72603 -0.42466,1.17809 -0.23288,0.23288 -0.82193,0.73973 -1.64385,0.73973 -0.83563,0 -1.31508,-0.53425 -1.31508,-1.0822 0,-0.46576 0.31507,-0.97261 1.0959,-1.16439 0.57534,-0.13699 1.41097,-0.0959 2.06851,-0.0959 l 0.21918,0" /><path
-       inkscape:connector-curvature="0"
-       id="path5732"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 875.65446,256.89586 0,6.26033 0.9863,0 0,-3.04113 c 0,-0.38356 0.0137,-0.79453 0.43836,-1.46576 0.57535,-0.90412 1.31509,-1.05481 1.76714,-1.05481 0.52056,0 0.84933,0.24658 1.02741,0.46576 0.0822,0.10959 0.12329,0.21918 0.23288,0.31507 l 0.46576,-0.94521 c -0.39727,-0.41096 -0.97262,-0.68494 -1.67125,-0.68494 -0.91782,0 -1.84933,0.46576 -2.2603,1.35618 l 0.0411,-1.20549 -1.0274,0" /><path
-       inkscape:connector-curvature="0"
-       id="path5776"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 685.09111,273.29343 -0.12329,1.68495 -1.49316,0 -0.0137,0.80822 1.46577,0 c -0.0822,1.0685 -0.12329,2.13701 -0.12329,3.19181 0,0.56165 0,1.19179 0.36986,1.71234 0.30138,0.41097 0.78083,0.65754 1.42467,0.65754 0.73974,0 1.46577,-0.31507 2.00002,-0.69863 l -0.30137,-0.78083 c -0.53425,0.39726 -1.02741,0.57535 -1.41097,0.57535 -0.46576,0 -0.94522,-0.26028 -1.05481,-1.01371 0,-0.0548 -0.0411,-0.28767 -0.0411,-1.20549 0,-0.80823 0.0411,-1.63015 0.12329,-2.43838 l 2.05481,0 0,-0.82192 -2.04111,0 c 0,0 0.0959,-1.1233 0.16438,-1.47947 0.0137,-0.13698 0.12329,-0.21918 0.0685,-0.36986 l -1.0685,0.17808" /><path
-       inkscape:connector-curvature="0"
-       id="path9038"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 819.7088,354.11717 1.2603,6.27403 0.8904,0 1.0959,-4.05483 1.1644,4.05483 0.9178,0 c 0.4247,-2.06851 0.7808,-4.16442 1.0411,-6.26033 l -0.9041,0 c 0.027,0.75343 -0.041,1.45207 -0.5891,5.01374 l -1.315,-4.43839 -0.6028,0 -1.0822,4.45209 -0.9041,-4.52058 c -0.027,-0.0959 -0.027,-0.13699 0.014,-0.24658 0.014,-0.0685 0.055,-0.16439 0.014,-0.27398 l -1,0" /><path
-       inkscape:connector-curvature="0"
-       id="path9164"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 976.4909,375.36407 c 0,-2.1644 -1.3698,-3.2877 -2.7945,-3.2877 -1.5891,0 -2.9589,1.36988 -2.9589,3.3151 0,1.90413 1.3561,3.24661 2.9315,3.24661 1.4795,0 2.8219,-1.1918 2.8219,-3.27401 m -2.863,-2.45207 c 0.9041,0 1.863,0.78083 1.863,2.49317 0,1.57535 -0.9041,2.36988 -1.8082,2.36988 -1,0 -1.9041,-0.93151 -1.9041,-2.47947 0,-1.53426 0.8904,-2.38358 1.8493,-2.38358" /><path
-       inkscape:connector-curvature="0"
-       id="path9276"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 697.5707,408.37837 0,6.26033 0.9863,0 0,-3.04112 c 0,-0.38357 0.014,-0.79453 0.4384,-1.46577 0.5753,-0.90412 1.3151,-1.0548 1.7671,-1.0548 0.5206,0 0.8494,0.24657 1.0274,0.46575 0.082,0.10959 0.1233,0.21918 0.2329,0.31508 l 0.4658,-0.94522 c -0.3973,-0.41096 -0.9726,-0.68494 -1.6713,-0.68494 -0.9178,0 -1.8493,0.46576 -2.2603,1.35618 l 0.041,-1.20549 -1.0274,0" /><path
-       inkscape:connector-curvature="0"
-       id="path9460"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 731.6121,441.69404 0,0.79453 1.7808,0 0,7.52061 -1.863,0 0,0.78083 4.6986,0 0,-0.78083 -1.8493,0 0,-8.31514 -2.7671,0" /><path
-       inkscape:connector-curvature="0"
-       id="path9662"
-       style="font-size:13.69874954px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata-Regular"
-       d="m 824.5855,481.61125 c -0.3013,-0.64384 -0.9726,-1.0685 -1.8356,-1.0685 -1.1918,0 -2.6439,0.84933 -2.6439,3.23291 0,2.31508 1.2877,3.32879 2.4932,3.32879 0.7945,0 1.5343,-0.45206 1.9315,-1.15069 l 0,0.54795 c 0,0.15068 0.014,0.30137 0.055,0.45206 l 0.9863,0 c -0.055,-0.17809 -0.055,-0.38357 -0.055,-0.57535 l -0.014,-8.13706 c 0,-0.0822 0,-0.10959 0.055,-0.19178 0.027,-0.0411 0.082,-0.10959 0.069,-0.20548 l -1.0411,0 0,3.76715 m -1.7945,-0.26027 c 0.548,0 1.3562,0.28767 1.6028,1.21919 0.082,0.28767 0.1096,0.63014 0.1096,1.32877 0,0.47946 -0.027,0.82193 -0.137,1.1507 -0.2329,0.73973 -0.8905,1.17809 -1.5343,1.17809 -0.7123,0 -1.7671,-0.54795 -1.7671,-2.60276 0,-1.79453 1,-2.27399 1.726,-2.27399" /></g><g
      style="display:none"
      inkscape:label="XX_020"
      id="g3849"
@@ -2402,6 +2086,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -2426,6 +2120,16 @@
      x="-452.10953"
      y="495.56036"
      id="tspan4241-1">WORLD</tspan></text>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2514,6 +2218,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <text
    transform="scale(-1,1)"
    sodipodi:linespacing="150%"
@@ -2542,9 +2256,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 </g><g
      style="display:none"
-     inkscape:label="020"
+     inkscape:label="XX_020"
      id="g3582"
      inkscape:groupmode="layer">
 
@@ -2577,110 +2301,945 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <text
    xml:space="preserve"
    style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    x="-452.10953"
-   y="419.56036"
-   id="text3606"
+   y="476.56036"
+   id="text4233-3"
    sodipodi:linespacing="150%"
    transform="scale(-1,1)"><tspan
      sodipodi:role="line"
-     id="tspan3608"
+     id="tspan4235-8"
      x="-452.10953"
-     y="419.56036">BEHIND</tspan><tspan
+     y="476.56036">BEHIND</tspan><tspan
      sodipodi:role="line"
      x="-452.10953"
-     y="446.56036"
-     id="tspan3610">THE</tspan><tspan
+     y="503.56036"
+     id="tspan4237-1">THE</tspan><tspan
      sodipodi:role="line"
      x="-452.10953"
-     y="473.56036"
-     id="tspan3612">SMART</tspan><tspan
+     y="530.56036"
+     id="tspan4239-2">SMART</tspan><tspan
      sodipodi:role="line"
      x="-452.10953"
-     y="500.56036"
-     id="tspan3614">WORLD</tspan></text>
+     y="557.56036"
+     id="tspan4241-5">WORLD</tspan></text>
+
+
+
 
 
 
 
 <text
-   transform="scale(-1,1)"
-   sodipodi:linespacing="159%"
-   id="text3616"
-   y="362.02515"
-   x="-451.47702"
-   style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:159.00000334%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
-   xml:space="preserve"><tspan
-     style="line-height:159.00000334%;letter-spacing:-0.05px;word-spacing:0px;fill:#000000"
-     y="362.02515"
-     x="-451.47702"
-     sodipodi:role="line"
-     id="tspan3618">AMRO Research Lab 2015 - servus.at</tspan><tspan
-     id="tspan3620"
-     y="390.06586"
-     x="-451.47702"
-     sodipodi:role="line"
-     style="font-size:17.5px;fill:#000000"> </tspan><tspan
-     y="417.89084"
-     x="-451.47702"
-     sodipodi:role="line"
-     id="tspan3622" /><tspan
-     id="tspan3624"
-     y="445.71585"
-     x="-451.47702"
-     sodipodi:role="line" /><tspan
-     id="tspan3626"
-     y="473.54083"
-     x="-451.47702"
-     sodipodi:role="line" /><tspan
-     id="tspan3628"
-     y="501.36584"
-     x="-451.47702"
-     sodipodi:role="line" /><tspan
-     id="tspan3630"
-     y="529.19086"
-     x="-451.47702"
-     sodipodi:role="line" /><tspan
-     style="line-height:159.00000334%;letter-spacing:-0.05px;word-spacing:0px;fill:#000000"
-     y="557.59515"
-     x="-451.47702"
-     sodipodi:role="line"
-     id="tspan3632"
-     dy="9.5554295">– saving, deleting and resurfacing data</tspan><tspan
-     y="586.21515"
-     x="-451.47702"
-     sodipodi:role="line"
-     id="tspan3634"
-     dy="5.0962281">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
-
-<text
+   sodipodi:linespacing="150%"
+   id="text4243-9"
+   y="435.02515"
+   x="-451.47775"
+   style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:150%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    xml:space="preserve"
-   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:140.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
-   x="831.63824"
-   y="653.14331"
-   id="text3637-2"
-   sodipodi:linespacing="141%"><tspan
+   transform="scale(-1,1)"><tspan
+     style="letter-spacing:-0.05px;word-spacing:0px;fill:#000000"
+     y="435.02515"
+     x="-451.47775"
      sodipodi:role="line"
-     id="tspan3639-3"
-     x="831.63824"
-     y="653.14331">CREDITS</tspan></text>
+     id="tspan4245-8">AMRO Research Lab 2015 - servus.at</tspan><tspan
+     id="tspan4247-7"
+     y="462.02515"
+     x="-451.47775"
+     sodipodi:role="line"> </tspan><tspan
+     y="489.02515"
+     x="-451.47775"
+     sodipodi:role="line"
+     id="tspan4249-2" /><tspan
+     id="tspan4251-7"
+     y="516.02515"
+     x="-451.47775"
+     sodipodi:role="line" /><tspan
+     id="tspan4253-5"
+     y="543.02515"
+     x="-451.47775"
+     sodipodi:role="line" /><tspan
+     id="tspan4255-1"
+     y="570.02515"
+     x="-451.47775"
+     sodipodi:role="line" /><tspan
+     id="tspan4257-9"
+     y="597.02515"
+     x="-451.47775"
+     sodipodi:role="line" /><tspan
+     style="letter-spacing:-0.05px;word-spacing:0px;fill:#000000"
+     y="624.02515"
+     x="-451.47775"
+     sodipodi:role="line"
+     id="tspan4259-0">– saving, deleting and resurfacing data</tspan><tspan
+     y="651.02515"
+     x="-451.47775"
+     sodipodi:role="line"
+     id="tspan4261-9">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
 
 </g><g
      inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="020"
+     style="display:inline"><flowRoot
+       xml:space="preserve"
+       id="flowRoot3672"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.30000001px;word-spacing:2.5px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+       transform="translate(-42.70921,174)"><flowRegion
+         id="flowRegion3674"><rect
+           id="rect3676"
+           width="378.58664"
+           height="224.64783"
+           x="684.19556"
+           y="284.2962"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.30000001px;word-spacing:2.5px;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk" /></flowRegion><flowPara
+         id="flowPara3680"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:2.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk">Except for that which originally appeared elsewhere and is</flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3923"><flowSpan
+           style="word-spacing:2.5px"
+           id="flowSpan3938">republished here or that which carries its own license, permission is</flowSpan><flowSpan
+           id="flowSpan3682"
+           style="word-spacing:1.39999998px;fill:#000000"> granted to copy, distribute and/or modify all content under the terms of</flowSpan><flowSpan
+           id="flowSpan3684"
+           style="word-spacing:0.1px;fill:#000000"> the </flowSpan><flowSpan
+           id="flowSpan3686"
+           style="letter-spacing:0.2px;word-spacing:0.5px;fill:#000000">CREATIVE COMMONS ATTRIBUTION-SHAREALIKE</flowSpan><flowSpan
+           id="flowSpan3688"
+           style="word-spacing:0.1px;fill:#000000"> 4.0 </flowSpan><flowSpan
+           id="flowSpan3690"
+           style="letter-spacing:0.1px;word-spacing:0.1px;fill:#000000">International License.</flowSpan></flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3692"> </flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.40000001px;word-spacing:1px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3694">To view a copy of this license, visit</flowPara><flowPara
+         id="flowPara3696"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.40000001px;word-spacing:1px;text-anchor:start;fill:#000000;font-family:Inconsolata;-inkscape-font-specification:Inconsolata">http://creativecommons.org/licenses/by-sa/4.0</flowPara><flowPara
+         id="flowPara3698"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:179.99999523%;letter-spacing:0.40000001px;word-spacing:1px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk">or flip to page 154</flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3700"> </flowPara><flowPara
+         id="flowPara3706"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"><flowSpan
+   style="word-spacing:2.5px"
+   id="flowSpan3934">These document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of</flowSpan> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. </flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3708"> </flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3710">Your fair use and other rights are not affected by the above. </flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:129.99999523%;letter-spacing:0.5px;word-spacing:1.5px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3712" /></flowRoot><flowRoot
+       transform="translate(-42.70921,-216)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+       id="flowRoot3714"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3716"><rect
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+           y="284.2962"
+           x="684.19556"
+           height="86.407372"
+           width="371.59973"
+           id="rect3718" /></flowRegion><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3720">Published 2015 by servus.at</flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3722">Kirchengasse 4,</flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3724">4040 Linz</flowPara><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+         id="flowPara3726">AUSTRIA</flowPara><flowPara
+         id="flowPara3728"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk" /><flowPara
+         id="flowPara3730"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:139.99999762%;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk">ISBN: 978-3-9504200-0-5</flowPara></flowRoot><flowRoot
+       xml:space="preserve"
+       id="flowRoot3732"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+       transform="translate(-42.70921,150)"><flowRegion
+         id="flowRegion3734"><rect
+           id="rect3736"
+           width="371.59973"
+           height="86.407372"
+           x="684.19556"
+           y="284.2962"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk" /></flowRegion><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:139.99999762%;letter-spacing:0.2px;text-anchor:start;fill:#000000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk Bold"
+         id="flowPara3738">COPYRIGHT (C) 2015 KairUs and Authors</flowPara></flowRoot></g><g
+     inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="030"
-     style="display:inline"><text
+     style="display:none"
+     sodipodi:insensitive="true">
+
+<path
+   sodipodi:nodetypes="ccccc"
+   inkscape:connector-curvature="0"
+   id="canvas-4-0"
+   d="m 9.259843,-1.3706502 537.818857,0 0,768.0944902 -537.818857,0 z"
+   style="color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline" />
+</g><g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="030"
+     style="display:none"><text
    xml:space="preserve"
-   style="font-size:51.87179565px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:140.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   style="font-size:51.87179565px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:140.99999666%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    x="268.32965"
-   y="388.68768"
+   y="-101.31232"
    id="text3637"
    sodipodi:linespacing="141%"><tspan
      sodipodi:role="line"
      id="tspan3639"
      x="268.32965"
-     y="388.68768">TOC</tspan></text>
+     y="-101.31232">TOC</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3636"
+   y="65.47776"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="65.47776"
+     x="77.300003"
+     id="tspan3638"
+     sodipodi:role="line"
+     style="font-style:italic;-inkscape-font-specification:HK Grotesk Italic">'Behind the Smart World' - Introduction</tspan><tspan
+     y="79.47776"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3640">by KairUs - Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="104.47775"
+   id="text3642"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3646"
+     sodipodi:role="line"
+     x="77.300003"
+     y="104.47775"
+     style="font-style:italic;-inkscape-font-specification:HK Grotesk Italic">If not us, who stores and owns our data?</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="118.47775"
+     id="tspan3650">by Fieke Jansen, Tactical Tech</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3652"
+   y="143.47775"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     id="tspan3656"
+     y="143.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     style="font-style:italic;-inkscape-font-specification:HK Grotesk Italic">Center of Doubt</tspan><tspan
+     y="157.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3660">by Ivar Veermäe</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="182.47775"
+   id="text3662"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3666"
+     sodipodi:role="line"
+     x="77.300003"
+     y="182.47775"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">THE GOOGLE TRILOGY.</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="196.47775"
+     id="tspan3704"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Or how to play with Google Street View in different ways</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="210.47775"
+     id="tspan3670">by Emilio Varvarella</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3672"
+   y="241.47775"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     id="tspan3676"
+     y="241.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Surveillance, McLuhan, and the Social Prosthesis: </tspan><tspan
+     y="255.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3706"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Examining the Construction and Presentation of Identity </tspan><tspan
+     y="269.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3680">by Leo Selvaggio</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="300.47775"
+   id="text3682"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3686"
+     sodipodi:role="line"
+     x="77.300003"
+     y="300.47775"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">What remains? The way we save ourselves</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="314.47775"
+     id="tspan3690">by Marloes de Valk</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3692"
+   y="339.47775"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     id="tspan3696"
+     y="339.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Times of Waste</tspan><tspan
+     y="353.47775"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3708">by Research Team &quot;Times of Waste&quot;</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="378.47775"
+   id="text3710"
+   sodipodi:linespacing="100%"><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="378.47775"
+     id="tspan3712"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Digital Data Funerals</tspan><tspan
+     id="tspan3714"
+     sodipodi:role="line"
+     x="77.300003"
+     y="392.47775">Interview with Audrey Samson by Linda Kronman</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3716"
+   y="417.47778"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="417.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3720"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Technology-based Art and Destruction -</tspan><tspan
+     y="431.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3726"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Exhibiting Malfunctions</tspan><tspan
+     y="445.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3724">by Stefan Tiefengraber</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="476.47778"
+   id="text3728"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3734"
+     sodipodi:role="line"
+     x="77.300003"
+     y="476.47778"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Third Person Data</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="490.47778"
+     id="tspan3741">by Dr. Michael Sonntag</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3743"
+   y="515.47778"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     id="tspan3747"
+     y="515.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Behind the Smart World ArtLab –</tspan><tspan
+     y="529.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3753"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">artistic strategies for dealing with resurfacing data </tspan><tspan
+     y="543.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3751">by KairUs - Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="574.47778"
+   id="text3755"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3761"
+     sodipodi:role="line"
+     x="77.300003"
+     y="574.47778"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Deleted file information is like a fossil...</tspan><tspan
+     sodipodi:role="line"
+     x="77.300003"
+     y="588.47778"
+     id="tspan3768">Interview with Michaela Lakova by Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3770"
+   y="613.47778"
+   x="77.300003"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     id="tspan3774"
+     y="613.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Strategies of Net-activists Against</tspan><tspan
+     y="627.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3780"
+     style="font-style:italic;fill:#ffffff;-inkscape-font-specification:HK Grotesk Italic">Phishing and Fake Business Websites </tspan><tspan
+     y="641.47778"
+     x="77.300003"
+     sodipodi:role="line"
+     id="tspan3778">by KairUs - Linda Kronman and Andreas Zingerle</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="77.300003"
+   y="685.47778"
+   id="text3782"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3788"
+     sodipodi:role="line"
+     x="77.300003"
+     y="685.47778">COLOPHON</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3795"
+   y="685.47778"
+   x="269.48676"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="685.47778"
+     x="269.48676"
+     sodipodi:role="line"
+     id="tspan3797">KEYWORD INDEX</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="65.43576"
+   id="text3799"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3803"
+     sodipodi:role="line"
+     x="451.47253"
+     y="65.43576">7</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3815"
+   y="104.49175"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="104.49175"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3817">16</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="143.47775"
+   id="text3819"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3821"
+     sodipodi:role="line"
+     x="451.47253"
+     y="143.47775">27</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3823"
+   y="182.47775"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="182.47775"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3825">41</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="241.49176"
+   id="text3827"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3829"
+     sodipodi:role="line"
+     x="451.47253"
+     y="241.49176">53</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3831"
+   y="300.49176"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="300.49176"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3833">62</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="339.49176"
+   id="text3835"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3837"
+     sodipodi:role="line"
+     x="451.47253"
+     y="339.49176">71</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3839"
+   y="378.58975"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="378.58975"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3841">83</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="417.58978"
+   id="text3843"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3845"
+     sodipodi:role="line"
+     x="451.47253"
+     y="417.58978">93</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3847"
+   y="476.58978"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="476.58978"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3849">102</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="515.49176"
+   id="text3851"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3853"
+     sodipodi:role="line"
+     x="451.47253"
+     y="515.49176">121</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3855"
+   y="574.49176"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="574.49176"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3857">133</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="451.47253"
+   y="613.49176"
+   id="text3859"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3861"
+     sodipodi:role="line"
+     x="451.47253"
+     y="613.49176">143</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3863"
+   y="685.49176"
+   x="451.47253"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   xml:space="preserve"><tspan
+     y="685.49176"
+     x="451.47253"
+     sodipodi:role="line"
+     id="tspan3865">156</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
+   x="221.71613"
+   y="685.49176"
+   id="text3867"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3869"
+     sodipodi:role="line"
+     x="221.71613"
+     y="685.49176">154</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3871"
+   y="-43.051395"
+   x="106.60698"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
+   xml:space="preserve"
+   transform="matrix(0,1,-1,0,0,0)"><tspan
+     y="-43.051395"
+     x="106.60698"
+     sodipodi:role="line"
+     id="tspan3873">save</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   transform="matrix(0,1,-1,0,0,0)"
+   xml:space="preserve"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
+   x="302.60699"
+   y="-43.051395"
+   id="text3875"
+   sodipodi:linespacing="100%"><tspan
+     id="tspan3877"
+     sodipodi:role="line"
+     x="302.60699"
+     y="-43.051395">delete</tspan></text>
+
+
+
+
+
+
+
+
+<text
+   sodipodi:linespacing="100%"
+   id="text3879"
+   y="-43.051395"
+   x="478.60699"
+   style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
+   xml:space="preserve"
+   transform="matrix(0,1,-1,0,0,0)"><tspan
+     y="-43.051395"
+     x="478.60699"
+     sodipodi:role="line"
+     id="tspan3881">resurface</tspan></text>
+
+
+
+
+
+
+
 
 </g></svg>
