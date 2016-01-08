@@ -33,9 +33,9 @@
      inkscape:window-height="480"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.45787855"
+     inkscape:zoom="0.82702095"
      inkscape:cx="669.92138"
-     inkscape:cy="370.58622"
+     inkscape:cy="180.77206"
      inkscape:current-layer="layer4"
      units="mm"
      guidecolor="#ff0000"
@@ -218,18 +218,17 @@
      inkscape:label="010"
      style="display:inline"
      sodipodi:insensitive="true"><image
-       
        xlink:href="../../src/02_010_yvonne/DSC04723.JPG"
-       width="1166.2389"
-       height="777.49249"
-       id="image3100"
+       y="-9.541543"
        x="-35.319992"
-       y="-9.541543" /></g><g
+       id="image3100"
+       height="777.49249"
+       width="1166.2389" /></g><g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="010"><path
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 435.59926,-138.75379 118.22461,0 0,464.81326 -118.22461,0 z"
+       d="m 435.59926,-138.75379 102.22461,0 0,464.81326 -102.22461,0 z"
        id="rect3062-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" /><flowRoot
@@ -253,14 +252,13 @@
      inkscape:label="020"
      style="display:none"
      sodipodi:insensitive="true"><image
-       
        xlink:href="../../src/02_010_yvonne/DSC06955.JPG"
-       transform="matrix(0,-1,1,0,0,0)"
-       width="837.46429"
-       height="558.30951"
-       id="image3163"
+       y="-4.2761765"
        x="-796.65582"
-       y="-4.2761765" /></g><g
+       id="image3163"
+       height="558.30951"
+       width="837.46429"
+       transform="matrix(0,-1,1,0,0,0)" /></g><g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="020"
