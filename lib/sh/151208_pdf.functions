@@ -585,7 +585,7 @@ function KEYWORDIZE() {
 #       "\\begin{theindex}\n\\thispagestyle{empty}\n"
 #         postamble "\n\n\\end{theindex}\n"' > ${TMPID}.ist
    echo 'preamble
-        "\\begin{theindex}\n"
+        "\\begin{theindex}\n\\pagestyle{fancy}\n"
           postamble "\n\n\\end{theindex}\n"' > ${TMPID}.ist
  # ------------------------------------------------------------------------ #
 
