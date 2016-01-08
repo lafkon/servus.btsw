@@ -1,0 +1,29 @@
+# --------------------------------------------------------------------------- #
+  INCLUDEID="% "`printf "_%.0s" {1..35}`" "`echo $RANDOM | #
+             cut -c 1-4`" "`printf "_%.0s" {1..34}`" %"
+  echo -e "\n\n\n\n" >> $SRCDUMP
+  echo "$INCLUDEID"  >> $SRCDUMP
+  echo -e "\n\n"     >> $SRCDUMP
+# --------------------------------------------------------------------------- #
+
+function SWAPTHISHERE(){
+
+  FROM=`echo $* | cut -d " " -f 1 | sed 's/ //g' | sed 's/"//g' | sed 's/\\\/\\\\\\\/g'`
+    TO=`echo $* | cut -d " " -f 2 | sed 's/ //g' | sed 's/"//g' | sed 's/\\\/\\\\\\\/g'`
+
+   echo "$FROM -> $TO"
+
+   tac $SRCDUMP              | #
+   sed -n "/$INCLUDEID/,\$p" | #
+   tac  > ${SRCDUMP}.tmp
+ 
+   cat $SRCDUMP | #
+   sed -n "/$INCLUDEID/,\$p" | #
+   sed '1d' | #
+   sed "s/$FROM/$TO/g" >> ${SRCDUMP}.tmp
+ 
+   mv ${SRCDUMP}.tmp $SRCDUMP
+
+}
+
+
