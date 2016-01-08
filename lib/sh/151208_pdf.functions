@@ -581,8 +581,11 @@ function KEYWORDIZE() {
 
  # PAGESTYLE FOR INDEX
  # ------------------------------------------------------------------------ #
+#  echo 'preamble
+#       "\\begin{theindex}\n\\thispagestyle{empty}\n"
+#         postamble "\n\n\\end{theindex}\n"' > ${TMPID}.ist
    echo 'preamble
-        "\\begin{theindex}\n\\thispagestyle{empty}\n"
+        "\\begin{theindex}\n"
           postamble "\n\n\\end{theindex}\n"' > ${TMPID}.ist
  # ------------------------------------------------------------------------ #
 
