@@ -215,6 +215,8 @@
 % RESETALL:
 % NEXT:
 
+
+
 %  A G A I N S T   P H I S I N G   A N D   F A K E
 % --------------------------------------------------------------------------- %
 % S!PREAD:  00/pages/03_030_kairus.svg 1-3
@@ -222,7 +224,9 @@
 % --------------------------------------------------------------------------- %
 % TOCITEM: KairUs: Strategies Against Phishing and Fake Business Websites
 % --------------------------------------------------------------------------- %
+% TEXINJECT: \setnowidow[2] \setnoclub[2]
 % INCLUDE: 00/mdsh/03_030_kairus.mdsh lib/sh/160108_alternativ.functions
+
 % RESETALL:
 
 
