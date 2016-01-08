@@ -77,7 +77,7 @@
                 -dNOPAUSE -sDEVICE=jpeg \
                 -dFirstPage=1 -dLastPage=1 \
                 -sOutputFile=./checkcolor.jpg \
-                -dJPEGQ=100 -r300 \
+                -dJPEGQ=20 -r10 \
                 -q ${TMPID}_${NUM}_${LNAME}.pdf -c quit
 
              HASCOLOR=`convert checkcolor.jpg \
@@ -260,7 +260,7 @@ function SPREAD() {
        -dNOPAUSE -sDEVICE=jpeg \
        -dFirstPage=1 -dLastPage=1 \
        -sOutputFile=./checkcolor.jpg \
-       -dJPEGQ=100 -r300 \
+       -dJPEGQ=20 -r10 \
        -q ${PDF} -c quit
     HASCOLOR=`convert checkcolor.jpg -colorspace HSL \
               -format '%[fx:maxima.g]' info: | #
