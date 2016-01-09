@@ -137,7 +137,6 @@
 % --------------------------------------------------------------------------- %
 % TEXINJECT: \scalefont{.93}
 % INCLUDE: 00/mdsh/02_010_yvonne.mdsh
-% R!ESETFONT:
 % NEXT:
 
 %  D I G I T A L   D A T A   F U N E R A L S
@@ -215,7 +214,6 @@
 % NEXT:
 
 
-
 %  A G A I N S T   P H I S I N G   A N D   F A K E
 % --------------------------------------------------------------------------- %
 % SPREAD:  00/pages/03_030_kairus.svg 1-3
@@ -234,12 +232,6 @@
 % SPREAD:  00/pages/00_000_utils.svg 3-4
 % SPREAD:  00/pages/00_000_utils.svg 7
 
-% ------------------------------------
-% Levien, Raph|Pradil, Alfredo Marco
-% HK Grotesk|Inconsolata
-% Free software
-% INSERTKEYWORDS:
-
 % SPREAD:  00/pages/00_000_utils.svg 8
 
 %  K E Y W O R D   I N D E X
@@ -252,5 +244,4 @@
 % SPREAD: https://github.com/christop/licenses/raw/5acdcf9/pdf/CC-BY-SA_4.0.pdf -
 
 % CONFORMPAGENUMBER:
-
 
