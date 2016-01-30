@@ -33,10 +33,10 @@
      inkscape:window-height="480"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.71751254"
-     inkscape:cx="284.00763"
-     inkscape:cy="632.07308"
-     inkscape:current-layer="layer6"
+     inkscape:zoom="0.70153861"
+     inkscape:cx="299.90689"
+     inkscape:cy="285.17277"
+     inkscape:current-layer="layer4"
      units="mm"
      guidecolor="#ff0000"
      guideopacity="0.47058824"
@@ -150,44 +150,44 @@
      style="display:none"><image
        
        xlink:href="../../src/01_010_ivar/03_ivar_veermae_crystal_computing_still_03.jpg"
-       y="-2.0490208"
-       x="-102.28217"
-       id="image3146"
+       width="1392.7748"
        height="781.06964"
-       width="1392.7748" /></g><g
+       id="image3146"
+       x="-102.28217"
+       y="-2.0490208" /></g><g
      style="display:none"
      id="g3087"
      inkscape:groupmode="layer"
      inkscape:label="001"><image
        
        xlink:href="../../src/01_010_ivar/03_ivar_veermae_crystal_computing_still_01.jpg"
-       width="1373.3939"
-       height="770.20087"
-       id="image3089"
+       y="-2.0806389"
        x="-284.86917"
-       y="-2.0806389" /></g><g
+       id="image3089"
+       height="770.20087"
+       width="1373.3939" /></g><g
      inkscape:label="XX_002"
      inkscape:groupmode="layer"
      id="content"
      style="display:none"><image
        
        xlink:href="../../src/01_010_ivar/03_ivar_veermae_crystal_computing_still_01.jpg"
-       y="-2.0806389"
-       x="-78.869171"
-       id="image3083"
+       width="1373.3939"
        height="770.20087"
-       width="1373.3939" /></g><g
+       id="image3083"
+       x="-78.869171"
+       y="-2.0806389" /></g><g
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="002"
      style="display:none"><image
        
        xlink:href="../../src/01_010_ivar/03_ivar_veermae_crystal_computing_still_05.jpg"
-       y="-6.5358124"
-       x="-446.6409"
-       id="image3179"
+       width="1384.9789"
        height="776.69769"
-       width="1384.9789" /><path
+       id="image3179"
+       x="-446.6409"
+       y="-6.5358124" /><path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="canvas-3"
@@ -212,12 +212,12 @@
      inkscape:label="004"
      style="display:inline"><path
    style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-   d="m 451.34375,449.5625 0,417.40625 -362.15625,0 0,6 368.15625,0 0,-423.40625 z"
+   d="m 454.34375,449.5625 0,417.40625 -365.15625,0 0,6 371.15625,0 0,-423.40625 z"
    id="path3058"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="ccccccc" /><path
    style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-   d="m 63.189522,443.54709 388.145748,0 0,423.43625 -388.145748,0 z"
+   d="m 68.189522,443.54709 386.145748,0 0,423.43625 -386.145748,0 z"
    id="rect3055"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="ccccc" /><flowRoot
@@ -270,6 +270,8 @@
 
 
 
+
+
 </g><g
      inkscape:groupmode="layer"
      id="layer6"
@@ -284,6 +286,8 @@
      y="251.87166"
      x="-418.90482 -416.05051"
      style="font-size:7.47200012px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular">14</tspan></text>
+
+
 
 
 
@@ -323,6 +327,8 @@
 
 
 
+
+
 <text
    id="text3105"
    transform="scale(0.9989995,1.0010015)"
@@ -334,6 +340,8 @@
      y="255.13237"
      x="-344.11658 -338.31421 -333.13879 -327.95349 -323.61414 -319.27472 -314.09937 -305.66949 -299.87701 -297.10022 -294.46277 -288.84949 -280.94708 -277.60297 -271.91003 -263.99768 -258.56354 -252.8905 -247.89429 -245.25684 -240.07147 -237.29474 -232.55725 -226.22736 -217.87708 -215.24957 -209.63629 -206.29218 -202.60968 -196.93671 -191.16412 -185.4613 -180.46503 -177.12097 -174.48346 -168.81049 -160.45026 -157.10614 -148.69617 -142.36627 -137.37006 -134.02594 -128.35291 -124.67041 -120.34106 -113.57324 -108.39783 -105.05377 -98.086914 -92.413879 -88.731384 -83.446533 -79.117126 -73.483948 -67.791016 -62.615601 -56.942627 -53.260132"
      style="font-size:9.9526577px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular-Slant_167">ReassemblingtheSocial:AnIntroductiontoActor-Network-Theory</tspan></text>
+
+
 
 
 
@@ -372,6 +380,8 @@
 
 
 
+
+
 <text
    id="text3113"
    x="-406.4523"
@@ -382,6 +392,8 @@
      y="267.21912"
      x="-406.4523 -399.02017 -394.43738 -390.98035 -385.30167 -381.61548 -375.83716 -370.70642 -363.93182 -358.75125 -349.03769 -343.63794 -337.95923 -334.27307 -328.98291 -324.25067 -316.81854 -312.23578 -308.77875 -303.10004 -299.41388 -290.89581 -284.44 -278.82111 -276.18103 -271.51849 -266.33795 -262.65179 -258.30804 -255.66795 -252.32048 -244.72899 -239.29936 -235.6132 -230.43266 -226.08891 -221.74522 -216.7639 -211.20476 -205.36668 -199.52855 -193.9395"
      style="font-size:9.96262455px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:HK Grotesk;-inkscape-font-specification:HKGrotesk-Regular">Oxford;NewYork:OxfordUniversityPress,2005.</tspan></text>
+
+
 
 
 
@@ -434,6 +446,8 @@
 
 
 
+
+
 <g
    id="g3251"
    transform="matrix(0,1,-1,0,793.22859,-140.48304)"><flowRoot
@@ -460,6 +474,8 @@
      y="299.87164"
      sodipodi:role="line"
      id="tspan3249">1</tspan></text>
+
+
 
 
 
@@ -526,6 +542,8 @@
 
 
 
+
+
 </g><g
      inkscape:label="006"
      id="g3028"
@@ -552,7 +570,7 @@
      id="layer5"
      inkscape:label="XX_REF151208"
      sodipodi:insensitive="true"
-     style="display:inline"><path
+     style="display:none"><path
        id="path14-5"
        style="fill:none;stroke:#ff0000;stroke-width:0.24875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
        d="m 641.41951,28.645005 371.05129,0"
