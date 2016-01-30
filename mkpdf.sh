@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# THIS IS A FRAGILE SYSTEM, HANDLE WITH CARE.                                #
+# THIS IS A FRAGILE SYSTEM, HANDLE WITH CARE.
 # --------------------------------------------------------------------------- #
 
   MAIN=Behind_The_Smart_World_PDF.mdsh
