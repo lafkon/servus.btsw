@@ -41,8 +41,9 @@
 %  S A V I N G   D A T A
 % =========================================================================== %
 % CLEARTOLEFT:
-% SUPERIMPOSE:  00/pages/00_000_separate.svg 1-2
-% SPREAD: 00/pages/00_000_cmyk.pdf 1-2
+% SPREAD: 00/pages/00_000_cmyk.pdf 1
+% SUPERIMPOSE:  00/pages/00_000_separate.svg 2
+% SPREAD: 00/pages/00_000_cmyk.pdf 2
 % =========================================================================== %
 
 
