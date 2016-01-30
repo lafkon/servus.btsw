@@ -32,10 +32,10 @@
      inkscape:window-height="480"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.52282182"
-     inkscape:cx="531.47678"
-     inkscape:cy="345.46103"
-     inkscape:current-layer="g8943"
+     inkscape:zoom="1.0587629"
+     inkscape:cx="343.1718"
+     inkscape:cy="649.81798"
+     inkscape:current-layer="layer12"
      showguides="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -85,8 +85,7 @@
      id="g3354"
      inkscape:groupmode="layer"
      style="display:inline"
-     transform="translate(0,5.5517578e-4)"
-     sodipodi:insensitive="true"><path
+     transform="translate(0,5.5517578e-4)"><path
    style="color:#000000;fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
    d="M 0,-5.7070866e-4 0,765.35376 l 535.03937,0 0,-10.62515 -524.414209,0 0,-744.104034 524.414209,0 0,-10.62514670866 -535.03937,0 z"
    id="path3356"
@@ -109,6 +108,7 @@
 
 
 
+
 <text
    sodipodi:linespacing="125%"
    id="text3370"
@@ -120,6 +120,7 @@
      x="272.62845"
      id="tspan3372"
      sodipodi:role="line">154mm</tspan></text>
+
 
 
 
@@ -162,6 +163,7 @@
 
 
 
+
 <text
    sodipodi:linespacing="125%"
    id="text3253"
@@ -174,6 +176,7 @@
      x="382.47095"
      id="tspan3255"
      sodipodi:role="line">216mm</tspan></text>
+
 
 
 
@@ -203,6 +206,7 @@
      x="539.34784"
      y="791.59125"
      id="tspan8291">= 160p</tspan></text>
+
 </g><g
      inkscape:groupmode="layer"
      id="layer2"
@@ -2371,6 +2375,7 @@
      sodipodi:role="line">WORLD</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:154.99999523%;letter-spacing:-0.1px;word-spacing:-0.5px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
@@ -2418,6 +2423,7 @@
      sodipodi:role="line"
      x="670.68756"
      y="644.42517">Edited by Linda Kronman and Andreas Zingerle</tspan></text>
+
 
 
 </g><g
@@ -2830,6 +2836,7 @@
      sodipodi:role="line">WORLD</tspan></text>
 
 
+
 </g><g
      inkscape:groupmode="layer"
      id="layer13"
@@ -2839,62 +2846,69 @@
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:10px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;display:inline;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
        id="text6514-2-2-7"><path
          d="m 674.9586,444.89091 c 1.296,0 2.412,0.756 2.412,2.106 0,1.332 -1.116,2.16 -2.412,2.16 l -2.736,0 0,-4.266 2.736,0 m -0.63,-5.382 c 1.296,0 2.412,0.774 2.412,2.106 0,1.35 -1.116,1.908 -2.412,1.908 l -2.106,0 0,-4.014 2.106,0 m 0.594,11.052 c 1.98,0 3.96,-1.278 3.96,-3.438 0,-1.386 -0.918,-2.61 -2.178,-3.114 0.918,-0.576 1.566,-1.458 1.566,-2.556 0,-2.15999 -2.016,-3.312 -3.978,-3.312 l -3.564,0 0,12.42 4.194,0"
-         style=""
-         id="path9186" /><path
+         id="path9186"
+         inkscape:connector-curvature="0" /><path
          d="m 699.49726,450.56091 0,-1.386 -6.57,0 0,-4.158 5.796,0 0,-1.332 -5.796,0 0,-4.212 6.57,0 0,-1.332 -8.082,0 0,12.42 8.082,0"
-         style=""
-         id="path9188" /><path
+         id="path9188"
+         inkscape:connector-curvature="0" /><path
          d="m 721.56401,450.56091 0,-12.42 -1.512,0 0,5.544 -6.156,0 0,-5.544 -1.512,0 0,12.42 1.512,0 0,-5.544 6.156,0 0,5.544 1.512,0"
-         style=""
-         id="path9190" /><path
+         id="path9190"
+         inkscape:connector-curvature="0" /><path
          d="m 736.39195,450.56091 0,-12.42 -1.512,0 0,12.42 1.512,0"
-         style=""
-         id="path9192" /><path
+         id="path9192"
+         inkscape:connector-curvature="0" /><path
          d="m 758.53604,450.56091 0,-12.42 -1.494,0 0,10.494 -5.346,-10.494 -1.998,0 0,12.42 1.512,0 0,-10.494 5.328,10.494 1.998,0"
-         style=""
-         id="path9194" /><path
+         id="path9194"
+         inkscape:connector-curvature="0" /><path
          d="m 773.37242,449.17491 0,-9.666 1.692,0 c 3.23999,0 4.788,1.67401 4.788,4.842 0,3.384 -2.12401,4.824 -4.986,4.824 l -1.494,0 m 8.01,-4.734 c 0,-4.08599 -2.23201,-6.3 -6.282,-6.3 l -3.24,0 0,12.42 3.222,0 c 4.01399,0 6.282,-2.196 6.3,-6.12"
-         style=""
-         id="path9196" /><path
+         id="path9196"
+         inkscape:connector-curvature="0" /><path
          d="m 678.9906,466.41891 0,-1.278 -9.828,0 0,1.278 4.158,0 0,11.142 1.512,0 0,-11.142 4.158,0"
-         style=""
-         id="path9198" /><path
+         id="path9198"
+         inkscape:connector-curvature="0" /><path
          d="m 700.06792,477.56091 0,-12.42 -1.512,0 0,5.544 -6.156,0 0,-5.544 -1.512,0 0,12.42 1.512,0 0,-5.544 6.156,0 0,5.544 1.512,0"
-         style=""
-         id="path9200" /><path
+         id="path9200"
+         inkscape:connector-curvature="0" /><path
          d="m 721.55585,477.56091 0,-1.386 -6.57,0 0,-4.158 5.796,0 0,-1.332 -5.796,0 0,-4.212 6.57,0 0,-1.332 -8.082,0 0,12.42 8.082,0"
-         style=""
-         id="path9202" /><path
+         id="path9202"
+         inkscape:connector-curvature="0" /><path
          d="m 674.0766,504.70491 c 2.214,0 3.924,-1.386 3.924,-3.618 0,-3.99599 -5.976,-3.186 -5.976,-6.066 0,-1.062 0.91801,-1.746 1.944,-1.746 0.936,0 1.81801,0.468 2.322,1.422 l 1.17,-0.756 c -0.77399,-1.386 -2.016,-1.98 -3.492,-1.98 -1.87199,0 -3.438,1.24201 -3.438,3.186 0,3.78 5.976,3.00601 5.976,6.03 0,1.458 -0.99,2.142 -2.43,2.142 -1.47599,0 -2.754,-0.774 -2.934,-2.394 l -1.44,0.432 c 0.342,2.25 2.30401,3.348 4.374,3.348"
-         style=""
-         id="path9204" /><path
+         id="path9204"
+         inkscape:connector-curvature="0" /><path
          d="m 702.39835,504.56091 0,-12.42 -2.394,0 -3.546,9.81 -3.546,-9.81 -2.394,0 0,12.42 1.512,0 0,-10.926 3.6,9.846 1.656,0 3.6,-9.846 0,10.926 1.512,0"
-         style=""
-         id="path9206" /><path
+         id="path9206"
+         inkscape:connector-curvature="0" /><path
          d="m 717.17932,501.86091 5.346,0 0.954,2.7 1.638,0 -4.68,-12.42 -1.17,0 -4.698,12.42 1.656,0 0.954,-2.7 m 0.504,-1.368 2.178,-6.12 2.16,6.12 -4.338,0"
-         style=""
-         id="path9208" /><path
+         id="path9208"
+         inkscape:connector-curvature="0" /><path
          d="m 740.94426,493.50891 c 1.422,0 2.43,0.774 2.43,2.124 0,1.26 -0.936,1.98 -2.232,2.052 l -2.322,0 0,-4.176 2.124,0 m 4.68,11.07 -3.366,-5.724 c 1.566,-0.378 2.61,-1.584 2.61,-3.204 0,-2.19599 -1.746,-3.492 -3.942,-3.492 l -3.636,0 0,12.42 1.512,0 0,-5.526 1.89,0 3.186,5.526 1.746,0"
-         style=""
-         id="path9210" /><path
+         id="path9210"
+         inkscape:connector-curvature="0" /><path
          d="m 766.09998,493.41891 0,-1.278 -9.828,0 0,1.278 4.158,0 0,11.142 1.512,0 0,-11.142 4.158,0"
-         style=""
-         id="path9212" /><path
+         id="path9212"
+         inkscape:connector-curvature="0" /><path
          d="m 685.4706,519.14091 -1.566,0 -2.898,10.476 -3.042,-9.396 -1.206,0 -3.042,9.396 -2.898,-10.476 -1.566,0 3.528,12.42 1.62,0 2.97,-8.892 2.952,8.892 1.62,0 3.528,-12.42"
-         style=""
-         id="path9214" /><path
+         id="path9214"
+         inkscape:connector-curvature="0" /><path
          d="m 702.46614,520.34691 c 2.93399,0 4.122,2.37601 4.122,5.004 0,2.628 -1.18801,5.004 -4.122,5.004 -2.934,0 -4.122,-2.376 -4.122,-5.004 0,-2.62799 1.188,-5.004 4.122,-5.004 m 0,11.394 c 3.85199,0 5.634,-2.934 5.634,-6.39 0,-3.45599 -1.78201,-6.39 -5.634,-6.39 -3.852,0 -5.634,2.93401 -5.634,6.39 0,3.456 1.782,6.39 5.634,6.39"
-         style=""
-         id="path9216" /><path
+         id="path9216"
+         inkscape:connector-curvature="0" /><path
          d="m 724.54582,520.50891 c 1.422,0 2.43,0.774 2.43,2.124 0,1.26 -0.936,1.98 -2.232,2.052 l -2.322,0 0,-4.176 2.124,0 m 4.68,11.07 -3.366,-5.724 c 1.566,-0.378 2.61,-1.584 2.61,-3.204 0,-2.19599 -1.746,-3.492 -3.942,-3.492 l -3.636,0 0,12.42 1.512,0 0,-5.526 1.89,0 3.186,5.526 1.746,0"
-         style=""
-         id="path9218" /><path
+         id="path9218"
+         inkscape:connector-curvature="0" /><path
          d="m 748.22554,531.56091 0,-1.386 -5.31,0 0,-11.034 -1.512,0 0,12.42 6.822,0"
-         style=""
-         id="path9220" /><path
+         id="path9220"
+         inkscape:connector-curvature="0" /><path
          d="m 762.00132,530.17491 0,-9.666 1.692,0 c 3.24,0 4.788,1.67401 4.788,4.842 0,3.384 -2.124,4.824 -4.986,4.824 l -1.494,0 m 8.01,-4.734 c 0,-4.08599 -2.232,-6.3 -6.282,-6.3 l -3.24,0 0,12.42 3.222,0 c 4.014,0 6.282,-2.196 6.3,-6.12"
-         style=""
-         id="path9222" /></g></g><g
+         id="path9222"
+         inkscape:connector-curvature="0" /></g></g><g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="SPINE"><path
+       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.77165354;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 560.55118,81.246921 c 0,2.93537 -2.37959,5.31496 -5.31495,5.31496 -2.93538,0 -5.31497,-2.37959 -5.31497,-5.31496 0,-2.93537 2.37959,-5.31496 5.31497,-5.31496 2.93536,0 5.31495,2.37959 5.31495,5.31496 z"
+       id="path4136"
+       inkscape:connector-curvature="0" /></g><g
      inkscape:label="XX_HD_DRAFT"
      id="g6173"
      inkscape:groupmode="layer"
@@ -3964,6 +3978,7 @@
    sodipodi:linespacing="125%">9    783950    420005       </text>
 
 
+
 <g
    transform="matrix(1.3629382,0,0,1.3629382,-156.50888,-1134.6061)"
    id="g3549"
@@ -4125,6 +4140,7 @@
    id="text3611">9    783950    420005       </text>
 
 
+
 </g><text
    sodipodi:linespacing="125%"
    id="text3674"
@@ -4132,6 +4148,7 @@
    style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;font-family:HK Grotesk;-inkscape-font-specification:HK Grotesk"
    y="-309.18542"
    x="300.79898">Behind the Smart World - saving, deleting and resufacing data.BPublished: 2015 by servus.at, Linz, Austria under CC-BY-SA-4..</text>
+
 
 
 <flowRoot
