@@ -1,0 +1,110 @@
+# =========================================================================== #
+#  O V E R W R I T E   F U N C T I O N S
+# =========================================================================== #
+
+# ...
+
+function mkqr() {
+
+QRHREF=""
+
+}
+
+
+# =========================================================================== #
+#  S H A R E D
+# =========================================================================== #
+  #SHORTURLBASE="http://lfkn.de"
+  #XLINKID="xlink:href"
+  #SRCLIST=${TMPID}X.list
+
+# =========================================================================== #
+
+ #SPLITHERE="$COMSTART SPLIT$RANDOM"
+  SPLITHERE="$COMSTART SPLIT"
+
+function SPLIT() {
+
+  SPLITNAME=`echo $*                   | #
+             unaccent utf-8 | #
+             sed 's/[^a-zA-Z1-9 _]//g' | #
+             tr [:upper:] [:lower:]    | #
+             tr -s ' ' | sed 's/ /_/g'`
+
+  if [ `echo $SPLITNAME | wc -c` -lt 3 ]; then
+        SPLITNAME="xx"
+        SPLITHREF="../dev/${SPLITNAME}.html"
+        write2src "<a href=\"$SPLITHREF\">$SPLITNAME</a>"'<!-- 2TOC -->'
+        write2src "$SPLITHERE $SPLITNAME $COMCLOSE"  
+  else
+        SPLITHREF="../dev/${SPLITNAME}.html"
+        write2src "<a href=\"$SPLITHREF\">$*</a>"'<!-- 2TOC -->'
+        write2src "$SPLITHERE $* $COMCLOSE"  
+  fi
+
+}
+
+# =========================================================================== #
+
+  touch ${TMPID}.splitlist
+
+function SPLITNOW() {
+
+ COUNT=1
+
+ for THISLINENUM in `grep -n "$SPLITHERE" $SRCDUMP | #
+                     cut -d ":" -f 1`
+  do
+     SPLITNAME=`sed -n "${THISLINENUM}p" $SRCDUMP | #
+                sed "s/^$SPLITHERE//"             | #
+                sed "s/${COMCLOSE}$//"            | #
+                sed "s/^[ ]*//"                   | #
+                sed "s/[ ]*$//"                   | #
+                unaccent utf-8 | #
+                sed 's/[^a-zA-Z1-9 _]//g'         | #
+                tr [:upper:] [:lower:]            | #
+                tr -s ' ' | sed 's/ /_/g'`
+
+     # TODO: SET HTMLBASEDIR
+     echo $SPLITNAME
+     if [ "X$SPLITNAME" == "X" ]; then
+           OUT=dev/${COUNT}.split
+     else
+           OUT=dev/${SPLITNAME}.split
+     fi
+
+     NEXTLINENUM=`grep -n   "$SPLITHERE" $SRCDUMP  | #
+                  grep -A 1 "^${THISLINENUM}:" | #
+                  tail -n 1                    | #
+                  grep -v "^${THISLINENUM}:"   | #
+                  cut -d ":" -f 1`
+
+     if [ "X$NEXTLINENUM" != "X" ]; then
+     
+         #echo "THISLINENUM = $THISLINENUM"
+         #echo "NEXTLINENUM = $NEXTLINENUM"
+          sed "${THISLINENUM},${NEXTLINENUM}!d" $SRCDUMP >> $OUT
+     else
+         #echo "THISLINENUM = $THISLINENUM"
+          sed -n "${THISLINENUM},\$p" $SRCDUMP >> $OUT
+     fi
+
+     echo "$OUT" >> ${TMPID}.splitlist
+     COUNT=`expr $COUNT + 1`
+ done
+
+     cp ${TMPID}.splitlist debug.splitlist
+
+}
+
+# =========================================================================== #
+
+function BIOGRAPHY() {
+
+   write2src "<div class=\"looklike bio\"></div>"
+
+}
+
+# =========================================================================== #
+
+
