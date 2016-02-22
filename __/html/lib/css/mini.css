@@ -140,6 +140,18 @@ h1:nth-child(1) { /* color:#00ff00; */
 
 body { font-family: hk-grotesk-regular; }
 
+body.intro { font-family: inconsolata; }
+body.intro > p,
+body.intro > ul,
+body.intro > ol,
+body.intro > blockquote { text-align:left;}
+body.intro > h1,
+body.intro > h2,
+body.intro > h3 { 
+     font-family: hk-grotesk-bold;
+   word-spacing: normal;
+}
+
 p,ul,ol {
 
    font-size: 1em;
