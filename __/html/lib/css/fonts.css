@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'hk-grotesk-bold';
+    src: url('../fonts/hkgrotesk/hkgrotesk_bold.eot');
+    src: url('../fonts/hkgrotesk/hkgrotesk_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hkgrotesk/hkgrotesk_bold.woff') format('woff'),
+         url('../fonts/hkgrotesk/hkgrotesk_bold.ttf') format('truetype'),
+         url('../fonts/hkgrotesk/hkgrotesk_bold.svg#hk-grotesk-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'hk-grotesk-regular';
+    src: url('../fonts/hkgrotesk/hkgrotesk_regular.eot');
+    src: url('../fonts/hkgrotesk/hkgrotesk_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hkgrotesk/hkgrotesk_regular.woff') format('woff'),
+         url('../fonts/hkgrotesk/hkgrotesk_regular.ttf') format('truetype'),
+         url('../fonts/hkgrotesk/hkgrotesk_regular.svg#hk-grotesk-regular') format('svg');
+}
+
+@font-face {
+    font-family: 'inconsolata-bold';
+    src: url('../fonts/inconsolata/inconsolata_bold.eot');
+    src: url('../fonts/inconsolata/inconsolata_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata/inconsolata_bold.woff') format('woff'),
+         url('../fonts/inconsolata/inconsolata_bold.ttf') format('truetype'),
+         url('../fonts/inconsolata/inconsolata_bold.svg#inconsolata-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    src: url('../fonts/inconsolata/inconsolata_regular.eot');
+    src: url('../fonts/inconsolata/inconsolata_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata/inconsolata_regular.woff') format('woff'),
+         url('../fonts/inconsolata/inconsolata_regular.ttf') format('truetype'),
+         url('../fonts/inconsolata/inconsolata_regular.svg#inconsolata') format('svg');
+}
+
