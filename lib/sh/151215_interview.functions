@@ -4,8 +4,6 @@
                 grep "^-w"         | #
                 cut -d " " -f 2`
 
-  echo $TARGETFORMAT
-
   if [ "T$TARGETFORMAT" == "Tlatex" ]; then
 
      if [ `grep "\LK" $SRCDUMP | wc -l` -lt 1 ]; then
