@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'inconsolata-bold';
+    src: url('inconsolata_bold.eot');
+    src: url('inconsolata_bold.eot?#iefix') format('embedded-opentype'),
+         url('inconsolata_bold.woff') format('woff'),
+         url('inconsolata_bold.ttf') format('truetype'),
+         url('inconsolata_bold.svg#inconsolata-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'inconsolata';
+    src: url('inconsolata_regular.eot');
+    src: url('inconsolata_regular.eot?#iefix') format('embedded-opentype'),
+         url('inconsolata_regular.woff') format('woff'),
+         url('inconsolata_regular.ttf') format('truetype'),
+         url('inconsolata_regular.svg#inconsolata') format('svg');
+}
+

@@ -1,0 +1,74 @@
+
+  FONTLOG: Inconsolata
+
+  --------------------------------------------
+  Inconsolata Bold
+  --------------------------------------------
+
+  This file provides detailed information on the Inconsolata 
+  font Software.
+  This information should be distributed along with the 
+  Inconsolata fonts and any derivative works.
+  
+  Inconsolata Font Information
+  
+  Inconsolata is a Unicode typeface family that supports 
+  languages that use the Latin script and its variants, and 
+  could be expanded to support other scripts.
+  
+  
+  ChangeLog
+  
+  16 Dec 2015 (Christoph Haag) Inconsolata bold v. 1.017
+- created fontforge sources as base to work on GNU/Linux
+- added FONTLOG to .sfdir
+- Mastered Font from Fontforge SFDIR to 
+  UFO,OTF,TTF,EOT,WOFF,SVG
+- added endash + emdash
+  
+  21 September 2015 (Dave Crossland) Inconsolata bold v. 1.016
+- Fixed internal metadata
+- Updated ttfautohint to v1.3
+  
+  18 September 2012 (Alexei Vanyashiin) Inconsolata Bold v. 
+  1.014
+- Fixed spacing issue associated with the character "4"and 
+  "0"
+- Applied ttfautohint (to fix windows rendering problem 
+  that occurred in v 1.000)
+  
+  7 December 2011 (Kirill Tkachev) Inconsolata Bold v. 1.000
+- Completed Bold version of Inconsolata in VBF format.
+  
+  
+  Acknowledgements
+  
+  If you make modifications be sure to add your name (N), 
+  email (E), web-address (if you have one) (W) and 
+  description (D). This list is in alphabetical order.
+  
+  N: Alexei Vanyashiin
+  W:
+  E:
+  D:
+  
+  N: Christoph Haag
+  E: christoph@lafkon.net
+  W: www.lafkon.net
+  D: Transformer
+  
+  N: Dave Crossland
+  W:
+  E:
+  D:
+  
+  N: Kirill Tkachev
+  W: www.cyreal.org
+  E: contact at cyreal.org
+  D: Designer
+
+
+  --------------------------------------------
+  Inconsolata
+  --------------------------------------------
+  see above
