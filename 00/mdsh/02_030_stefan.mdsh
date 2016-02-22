@@ -168,6 +168,7 @@ in 10 exhibitions. By November 2015 more then 27.400 short messages
 were collected.
 
 % B!IOGRAPHY: -------------------------------------
+% HTMLIN: <div class="looklike bio"></div>
 
 % VFILL:
 % TEXINJECT: \scalefont{.75}
