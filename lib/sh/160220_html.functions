@@ -5,9 +5,7 @@
 # =========================================================================== #
 #  S H A R E D
 # =========================================================================== #
-  #SHORTURLBASE="http://lfkn.de"
    XLINKID="xlink:href"
-  #SRCLIST=${TMPID}X.list
 
 # =========================================================================== #
 
@@ -15,12 +13,24 @@
 
 function SPLIT() {
 
+
+  if [ `echo $* | wc -w` -gt 1 ]; then
   SPLITNAME=`echo $*                   | #
              unaccent utf-8            | #
              sed 's/[^a-zA-Z1-9 _]//g' | #
              tr [:upper:] [:lower:]    | #
              tr -s ' ' | sed 's/ /_/g' | #
-              sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
+             sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
+  else
+  SPLITNAME=`echo $*                   | #
+             unaccent utf-8            | #
+             sed 's/[^a-zA-Z1-9 _]//g' | #
+             tr [:upper:] [:lower:]`
+  fi
+
+  echo $SPLITNAME
+
+
 
   if [ `echo $SPLITNAME | wc -c` -lt 3 ]; then
         SPLITNAME="xx"
@@ -50,12 +60,22 @@ function SPLITNOW() {
                 sed "s/^$SPLITHERE//"             | #
                 sed "s/${COMCLOSE}$//"            | #
                 sed "s/^[ ]*//"                   | #
-                sed "s/[ ]*$//"                   | #
-                unaccent utf-8                    | #
-                sed 's/[^a-zA-Z1-9 _]//g'         | #
-                tr [:upper:] [:lower:]            | #
-                tr -s ' ' | sed 's/ /_/g'         | #
-                sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
+                sed "s/[ ]*$//"`
+  if [ `echo "$SPLITNAME" | wc -w` -gt 1 ]; then
+        SPLITNAME=`echo $SPLITNAME           | #
+                   unaccent utf-8            | #
+                   sed 's/[^a-zA-Z1-9 _]//g' | #
+                   tr [:upper:] [:lower:]    | #
+                   tr -s ' ' | sed 's/ /_/g' | #
+                   sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
+   else
+        SPLITNAME=`echo $SPLITNAME           | #
+                   unaccent utf-8            | #
+                   sed 's/[^a-zA-Z1-9 _]//g' | #
+                   tr [:upper:] [:lower:]`
+  fi
+
+  echo $SPLITNAME
 
      if [ "X$SPLITNAME" == "X" ]; then
            OUT=$HTMLBASE/${COUNT}.split
