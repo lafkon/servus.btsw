@@ -3,8 +3,8 @@
 # THIS IS A FRAGILE SYSTEM, HANDLE WITH CARE.
 # --------------------------------------------------------------------------- #
 
-  MAIN=Behind_The_Smart_World_PDF.mdsh
- #MAIN=DEBUG.mdsh
+  MAIN=Behind_The_Smart_World.mdsh
+
 
   TMPDIR=. ;  TMPID=$TMPDIR/TMP`date +%Y%m%H``echo $RANDOM | cut -c 1-4`
   SRCDUMP=${TMPID}.maindump
@@ -118,9 +118,10 @@
   pdflatex -interaction=nonstopmode \
             $TMPTEX  # > /dev/null
 
-# D E B U G D E B U G D E B U G D E B U G D E B G D E B U D E B U G D E B U G #
+
+
   cp ${TMPID}.pdf debug.pdf
-  cp $TMPTEX debug.tex
+  mv ${TMPID}.pdf __/BTSW_`date +%y%m%d`.pdf
 
   else 
 
