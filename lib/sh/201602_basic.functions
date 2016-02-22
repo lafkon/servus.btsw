@@ -17,6 +17,8 @@
   QRHREFIMG="lib/img/qrwww.svg"
 
 # --------------------------------------------------------------------------- #
+# WRITE TO DUMP
+# --------------------------------------------------------------------------- #
   function write2src() { echo "$*" >> $SRCDUMP ; }
 # --------------------------------------------------------------------------- #
 
@@ -29,7 +31,6 @@
 
   SOURCE=$1
   TARGET=$2
- #echo "$SOURCE -> $TARGET"
 
   if [ `echo $TARGET | wc -c` -lt 2 ]; then SUCCESS="NO"
        #echo "No target provided! Skipping." 
@@ -63,53 +64,67 @@
 
   }
 
+
+
+
+
+
 # --------------------------------------------------------------------------- #
 # GENERATE QR CODE FOR INCLUSION
 # --------------------------------------------------------------------------- #
-  QRDEKOSRC=EDIT/151007_qrdeko-simple.svg
-   QRURLLOG=${TMPID}.qrurls
 
-  function mkqr() {
+  function mkqr() { sleep 0; }
 
-  QRID=`echo $* | sed 's/#/\n#/g' | #
-        grep -v "^#" | sed 's/ //g'`
-  QRID=`echo $QRID | md5sum | base64 | cut -c 1-5`
+#  QRDEKOSRC=EDIT/151007_qrdeko-simple.svg
+#   QRURLLOG=${TMPID}.qrurls
+#
+#  function mkqr() {
+#
+#  QRID=`echo $* | sed 's/#/\n#/g' | #
+#        grep -v "^#" | sed 's/ //g'`
+#  QRID=`echo $QRID | md5sum | base64 | cut -c 1-5`
+#
+#  QURL="http://lfkn.de/$QRID"
+#
+## CREATE QR LINK
+## --------------------------------------------------------
+#  QRHREF=`echo "<div class=\"qr\">
+#          <a href=\"$QURL\">
+#          <img src=\"$QRHREFIMG\" />
+#          </a></div>"             | #
+#          sed ':a;N;$!ba;s/\n/ /g'| #
+#          tr -s ' '               | #
+#          sed 's/>[ ]*</></g'`      #
+#
+#  }
+## --------------------------------------------------------------------------- #
+#
+#function QR() {
+#
+#      O=`echo $* | cut -d " " -f 1`
+#
+#  if [ X"$O" == XON   ] ||
+#     [ X"$O" == XOFF  ]
+#   then
+#        QRMODE=$O
+#        echo "QRMODE: $QRMODE"
+#   else
+#    if [ X"$QRMODE" != XOFF  ]; then
+#        mkqr $*
+#        write2src "$QRHREF"
+#
+#    fi
+#  fi
+#
+#  }
+#
+#
+#
+## =========================================================================== #
 
-  QURL="http://lfkn.de/$QRID"
 
-# CREATE QR LINK
-# --------------------------------------------------------
-  QRHREF=`echo "<div class=\"qr\">
-          <a href=\"$QURL\">
-          <img src=\"$QRHREFIMG\" />
-          </a></div>"             | #
-          sed ':a;N;$!ba;s/\n/ /g'| #
-          tr -s ' '               | #
-          sed 's/>[ ]*</></g'`      #
 
-  }
-# --------------------------------------------------------------------------- #
 
-function QR() {
-
-      O=`echo $* | cut -d " " -f 1`
-
-  if [ X"$O" == XON   ] ||
-     [ X"$O" == XOFF  ]
-   then
-        QRMODE=$O
-        echo "QRMODE: $QRMODE"
-   else
-    if [ X"$QRMODE" != XOFF  ]; then
-        mkqr $*
-        write2src "$QRHREF"
-
-    fi
-  fi
-
-  }
-
-# =========================================================================== #
 # =========================================================================== #
 # MAIN MDSH CONVERT FUNCTION
 # =========================================================================== #
@@ -245,7 +260,8 @@ function QR() {
  #tee -a beforepandoc.debug | #
   eval "$PANDOCACTION"                   | # MD TO TARGET MARKUP
  #tee -a afterpandoc.debug | #
-  sed "/^<[^>]*>[a-f0-9]\{32\}$MKLONG<[^>]*>/s/<[^>]*>//g" | # REMOVE TAGS IF LINE IS 'FUNCTION'
+ #sed "/^<[^>]*>[a-f0-9]\{32\}$MKLONG<[^>]*>/s/<[^>]*>//g" | # REMOVE TAGS IF LINE IS 'FUNCTION'
+  sed "/^<[^>]*>\([a-f0-9]\{32\}${MKLONG}[ ]*\)*<[^>]*>$/s/<[^>]*>//g" | # REMOVE TAGS IF IS 'FUNCTIONS ONLY'
   sed "s/[ \t]*$FN1FOO/$APND$FNOESC/g"   | # SUBSTITUTE WITH TARGET MARKUP 
   sed "s/[ \t]*$FN2FOO/$FOOTNOTECLOSE/g" | # SUBSTITUTE WITH TARGET MARKUP 
   sed "s/[ \t]*$CI1FOO/$APND$CTOESC/g"   | # SUBSTITUTE WITH TARGET MARKUP 
@@ -254,7 +270,6 @@ function QR() {
   sed "s/[ \t]*$CP2FOO/$CITEPCLOSE/g"    | # SUBSTITUTE WITH TARGET MARKUP 
   tee > $MDSHMOD                           # WRITE TO FILE
 
-  cp $MDSHMOD mdshmod.debug
 
 # --------------------------------------------------------------------------- #
 # MAKE MD5 HASH TO PREVENT (REPETITION)/RECURSION -> SKIP IF NECESSARY
@@ -263,7 +278,7 @@ function QR() {
   touch ${TMPID}.included
   TIMESINCLUDED=`grep $MD5THIS ${TMPID}.included | wc -l`
   echo $MD5THIS >> ${TMPID}.included
-  #echo $TIMESINCLUDED ; echo $MD5THIS
+ #echo $TIMESINCLUDED ; echo $MD5THIS # DEBUG
 
   if [ $TIMESINCLUDED -ge 5 ]; then
        echo "Skipping! (caught in a loop)"
@@ -288,6 +303,7 @@ function QR() {
       sed -i "s/$COMMENTID/\n$COMMENT\n/g" $MDSHMOD
    done
   fi
+
 
 # CLEAN UP (RM: 'REAL' EMPTY LINES, ORPHAN HTML TAGS)
 # ----------------------------------------------
@@ -354,10 +370,6 @@ function QR() {
        # --------------------------------------------------- # 
   done
 
- #echo "DONE"
- #echo "$INPUT converted"
- #echo "--------------------------------------------------------------------"
-
 # POST-PROCESSING
 # --------------------------------------------------------------------------- #
 
@@ -366,8 +378,11 @@ function QR() {
  #sed -i "/^%/s/\(%\)\(.*\)%$/$COMSTART \2 $COMCLOSE/" $SRCDUMP # ADJUST COMMENTS
   sed -i "/^%/s/\(%\)\(.*\)[%]*$/$COMSTART \2 $COMCLOSE/" $SRCDUMP
 
+ #sed -i -e :a  \
+ #    -i -e "\$!N;s/\n*[ \t]*$APND//;ta" \
+ #    -i -e 'P;D'                    $SRCDUMP  # APPEND & RM APPEND IDS
   sed -i -e :a  \
-      -i -e "\$!N;s/\n*[ \t]*$APND//;ta" \
+      -i -e "\$!N;s/\(<[/]*.\{1,10\}>\)*\n\(<[/]*.\{1,10\}>\)*[ \t]*$APND//;ta" \
       -i -e 'P;D'                    $SRCDUMP  # APPEND & RM APPEND IDS
   sed -i "s/[ \t]*$APND//g"          $SRCDUMP  # RM REMAINING APPEND IDS +SPACE
   sed -i "s/[ \t]*$ESC//g"           $SRCDUMP  # RM ESC IDS +SPACE 
