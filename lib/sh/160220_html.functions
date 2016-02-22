@@ -2,43 +2,34 @@
 #  O V E R W R I T E   F U N C T I O N S
 # =========================================================================== #
 
-# ...
-
-function mkqr() {
-
-QRHREF=""
-
-}
-
-
 # =========================================================================== #
 #  S H A R E D
 # =========================================================================== #
   #SHORTURLBASE="http://lfkn.de"
-  #XLINKID="xlink:href"
+   XLINKID="xlink:href"
   #SRCLIST=${TMPID}X.list
 
 # =========================================================================== #
 
- #SPLITHERE="$COMSTART SPLIT$RANDOM"
   SPLITHERE="$COMSTART SPLIT"
 
 function SPLIT() {
 
   SPLITNAME=`echo $*                   | #
-             unaccent utf-8 | #
+             unaccent utf-8            | #
              sed 's/[^a-zA-Z1-9 _]//g' | #
              tr [:upper:] [:lower:]    | #
-             tr -s ' ' | sed 's/ /_/g'`
+             tr -s ' ' | sed 's/ /_/g' | #
+              sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
 
   if [ `echo $SPLITNAME | wc -c` -lt 3 ]; then
         SPLITNAME="xx"
-        SPLITHREF="../dev/${SPLITNAME}.html"
-        write2src "<a href=\"$SPLITHREF\">$SPLITNAME</a>"'<!-- 2TOC -->'
+        SPLITHREF="${SPLITNAME}.html"
+        write2src "<a href=\"$SPLITHREF\" class=\"split\">$SPLITNAME</a>"'<!-- 2TOC -->'
         write2src "$SPLITHERE $SPLITNAME $COMCLOSE"  
   else
-        SPLITHREF="../dev/${SPLITNAME}.html"
-        write2src "<a href=\"$SPLITHREF\">$*</a>"'<!-- 2TOC -->'
+        SPLITHREF="${SPLITNAME}.html"
+        write2src "<a href=\"$SPLITHREF\" class=\"split\">$*</a>"'<!-- 2TOC -->'
         write2src "$SPLITHERE $* $COMCLOSE"  
   fi
 
@@ -60,40 +51,34 @@ function SPLITNOW() {
                 sed "s/${COMCLOSE}$//"            | #
                 sed "s/^[ ]*//"                   | #
                 sed "s/[ ]*$//"                   | #
-                unaccent utf-8 | #
+                unaccent utf-8                    | #
                 sed 's/[^a-zA-Z1-9 _]//g'         | #
                 tr [:upper:] [:lower:]            | #
-                tr -s ' ' | sed 's/ /_/g'`
+                tr -s ' ' | sed 's/ /_/g'         | #
+                sed 's/\(_*\)\([a-z0-9]\)\([^_.]*_*\)/\2/g'`
 
-     # TODO: SET HTMLBASEDIR
-     echo $SPLITNAME
      if [ "X$SPLITNAME" == "X" ]; then
-           OUT=dev/${COUNT}.split
+           OUT=$HTMLBASE/${COUNT}.split
      else
-           OUT=dev/${SPLITNAME}.split
+           OUT=$HTMLBASE/${SPLITNAME}.split
      fi
 
      NEXTLINENUM=`grep -n   "$SPLITHERE" $SRCDUMP  | #
-                  grep -A 1 "^${THISLINENUM}:" | #
-                  tail -n 1                    | #
-                  grep -v "^${THISLINENUM}:"   | #
-                  cut -d ":" -f 1`
+                  grep -A 1 "^${THISLINENUM}:"    | #
+                  tail -n 1                      | #
+                  grep -v "^${THISLINENUM}:"    | #
+                  cut -d ":" -f 1`               #
 
      if [ "X$NEXTLINENUM" != "X" ]; then
      
-         #echo "THISLINENUM = $THISLINENUM"
-         #echo "NEXTLINENUM = $NEXTLINENUM"
           sed "${THISLINENUM},${NEXTLINENUM}!d" $SRCDUMP >> $OUT
      else
-         #echo "THISLINENUM = $THISLINENUM"
           sed -n "${THISLINENUM},\$p" $SRCDUMP >> $OUT
      fi
 
      echo "$OUT" >> ${TMPID}.splitlist
      COUNT=`expr $COUNT + 1`
  done
-
-     cp ${TMPID}.splitlist debug.splitlist
 
 }
 
@@ -107,4 +92,337 @@ function BIOGRAPHY() {
 
 # =========================================================================== #
 
+function BY() {
+
+  AUTHOR=`echo $* | recode utf8..h0`
+  write2src "<div class=\"by\">by $AUTHOR</div>"
+}
+
+# =========================================================================== #
+
+function HTMLIN() {
+
+ write2src "$*"
+
+}
+
+# =========================================================================== #
+
+  function svglayers2pdfpages() {
+
+   CROP=10.63 # 3mm in px
+
+     SVGLAYER=$1
+
+     PDFPAGES=$2
+    #PDFPAGES=`echo $2 | sed 's/\.pdf$//'`_single.pdf
+     PDFDOUBLEPAGES=`echo $2 | sed 's/\.pdf$//'`_double.pdf
+     SUPERTMP=${TMPID}.`echo $SVGL | md5sum | cut -c 1-4`.tmp
+ 
+     CANVASWIDTH=`sed ":a;N;\$!ba;s/\n//g" $SVGLAYER | # SVG WITHOUT LINEBREAKS
+                  sed 's/width=/\n&/g'               | # EXTRACT WIDTH
+                  grep "^width="                     | # EXTRACT WIDTH
+                  cut -d "\"" -f 2                   | # EXTRACT WIDTH VALUE
+                  head -n 1`                           # FIRST WIDTH ONLY
+      LAYERNAMES=`sed ":a;N;\$!ba;s/\n//g" $SVGLAYER | # SVG WITHOUT LINEBREAKS
+                  sed 's/nkscape:label/\n&/g'        | # EXTRACT LAYER NAME
+                  grep "^nkscape:label"              | # EXTRACT LAYER NAME
+                  cut -d "\"" -f 2                   | # EXTRACT LAYER NAME
+                  grep -v XX_                        | # IGNORE XX_LAYERS
+                  sort -u`                             # SORT AND UNIQ
+ 
+     BFOO=NL`echo ${RANDOM} | cut -c 1`F00
+     SFOO=SP`echo ${RANDOM} | cut -c 1`F0O
+   # ----------------------------------------------------------------------- #
+   # MOVE LAYERS ON SEPARATE LINES (TEMPORARILY; EASIFY PARSING LATER ON)
+   # ----------------------------------------------------------------------- #
+     sed ":a;N;\$!ba;s/\n/$BFOO/g" $SVGLAYER | # REMOVE ALL LINEBREAKS (BUT SAVE)
+     sed "s/ /$SFOO/g"                       | # REMOVE ALL SPACE (BUT SAVE)
+     sed 's/<g/4Fgt7RfjIoPg7/g'              | # PLACEHOLDER FOR GROUP OPEN
+     sed ':a;N;$!ba;s/\n/ /g'                | # REMOVE ALL NEW LINES
+     sed 's/4Fgt7RfjIoPg7/\n<g/g'            | # RESTORE GROUP OPEN + NEWLINE
+     sed '/groupmode="layer"/s/<g/4Fgt7R/g'  | # PLACEHOLDER FOR LAYERGROUP OPEN
+     sed ':a;N;$!ba;s/\n/ /g'                | # REMOVE ALL LINEBREAKS
+     sed 's/4Fgt7R/\n<g/g'                   | # RESTORE LAYERGROUP OPEN + NEWLINE
+     sed 's/<\/svg>//g'                      | # REMOVE SVG CLOSE
+     sed 's/display:none/display:inline/g'   | # MAKE VISIBLE EVEN WHEN HIDDEN
+     tee > ${SUPERTMP}                         # WRITE TO TEMPORARY FILE
+   # ----------------------------------------------------------------------- #
+   # WRITE LAYERS TO SEPARATE FILES AND TRANSFORM TO PDF 
+   # ----------------------------------------------------------------------- #
+     COUNT=1 
+     for LAYERNAME in $LAYERNAMES
+      do
+         for PAGE in 1 2
+          do
+             if [ $PAGE -eq 1 ]; then
+                  XSHIFT=-$CROP
+             else
+                  XSHIFT=-`python -c "print $CANVASWIDTH - $CROP"`
+             fi
+             TRANSFORM="transform=\"translate($XSHIFT,0)\""
+             NUM=`echo 0000$COUNT | rev | cut -c 1-4 | rev`
+             LNAME=`echo $LAYERNAME | md5sum | cut -c 1-6`
+
+                head -n 1 ${SUPERTMP}  | # THE HEADER
+                sed "s/$BFOO/\n/g"     | # RESTORE ORIGINAL LINEBREAKS
+                sed "s/$SFOO/ /g"      | # RESTORE ORIGINAL SPACES
+                tee                    >   ${TMPID}_${NUM}_${LNAME}.svg
+                echo "<g $TRANSFORM>"  >>  ${TMPID}_${NUM}_${LNAME}.svg
+                grep "inkscape:label=\"$LAYERNAME\"" ${SUPERTMP} | #
+                sed "s/$BFOO/\n/g"     | # RESTORE ORIGINAL LINEBREAKS
+                sed "s/$SFOO/ /g"      | # RESTORE ORIGINAL SPACES
+                tee                    >>  ${TMPID}_${NUM}_${LNAME}.svg
+                echo "</g>"            >>  ${TMPID}_${NUM}_${LNAME}.svg
+                echo "</svg>"          >>  ${TMPID}_${NUM}_${LNAME}.svg 
+    
+                inkscape --export-pdf=${TMPID}_${NUM}_${LNAME}.pdf \
+                         --export-text-to-path \
+                         ${TMPID}_${NUM}_${LNAME}.svg
+   
+                rm ${TMPID}_${NUM}_${LNAME}.svg
+
+             COUNT=`expr $COUNT + 1`
+          done
+
+             head -n 1 ${SUPERTMP}    | # THE HEADER
+             sed "s/$BFOO/\n/g"       | # RESTORE ORIGINAL LINEBREAKS
+             sed "s/$SFOO/ /g"        | # RESTORE ORIGINAL SPACES
+             sed "s/width=\"[^\"]*\"/width=\"1090\"/" | # MAKE FULL WIDTH
+             tee                    >   ${TMPID}_${NUM}_${LNAME}.svg
+             grep "inkscape:label=\"$LAYERNAME\"" ${SUPERTMP} | #
+             sed "s/$BFOO/\n/g"       | # RESTORE ORIGINAL LINEBREAKS
+             sed "s/$SFOO/ /g"        | # RESTORE ORIGINAL SPACES
+             tee                    >>  ${TMPID}_${NUM}_${LNAME}.svg
+             echo "</svg>"          >>  ${TMPID}_${NUM}_${LNAME}.svg
+
+             inkscape --export-pdf=${TMPID}-X_${NUM}_${LNAME}.pdf \
+                      --export-text-to-path ${TMPID}_${NUM}_${LNAME}.svg
+
+             rm ${TMPID}_${NUM}_${LNAME}.svg
+     done
+   # ----------------------------------------------------------------------- #
+   # MAKE MULTIPAGE PDF
+   # ----------------------------------------------------------------------- #
+     pdftk ${TMPID}_*.pdf   cat output $PDFPAGES
+     pdftk ${TMPID}-X_*.pdf cat output $PDFDOUBLEPAGES
+
+   # ----------------------------------------------------------------------- #
+   # CLEAN UP (OBSOLETE?)
+   # ----------------------------------------------------------------------- #
+     rm ${TMPID}_*.pdf ${TMPID}-X_*.pdf $SVGLAYER
+ 
+  }
+
+# =========================================================================== #
+
+ function mkpages() {
+
+ # TODO: check if pages exists -> ~ adjust
+
+   FIRSTPAGEIS="" # RESET
+ 
+   PDFSRC=`echo $* | sed 's/ /\n/g'    | # SPACES TO NEWLINES
+           egrep "\.svg$|\.pdf$"       | # SELECT ENDING WITH .svg/.pdf
+           head -n 1`                    # SELECT FIRST
+    PAGES=`echo $* | sed 's/ /\n/g'    | # SPACES TO NEWLINES
+           sed "/[^0-9\\-]/d"          | # NO LINES WITH MORE THAN NUMS AND -
+           egrep -v "^-|-$"            | # IGNORE ISOLATED - 
+           grep -v "^[ ]*$" | tail -n 1` # 
+      EXT=`echo $PDFSRC | rev | cut -d "." -f 1 | rev`
+ 
+   if [ `echo $PAGES | wc -c` -le 1 ]; then
+         PAGES=-
+   elif [ `echo $PAGES | grep "^[0-9]" | wc -l` -ge 1 ]; then
+         P1=`echo $PAGES | cut -d "-" -f 1`
+         if [ `python -c "print $P1 / 2.0" | #
+               cut -d "." -f 2` -lt 5 ]; then
+               FIRSTPAGEIS="even"
+         else
+               FIRSTPAGEIS="odd"
+         fi
+   else
+         PAGES=- ; PAGECOMMAND=""
+   fi
+ 
+   PDFGET=${TMPID}`echo $PDFSRC | md5sum | cut -c 1-4`.pdf
+   SVGTMP=${TMPID}`echo $PDFSRC | md5sum | cut -c 5-9`.svg
+ 
+   if [ -f $PDFGET ]; then
+        echo "$PDFGET exists"
+   else 
+        if [ "X$EXT" == "Xsvg" ]; then
+    
+              getFile $PDFSRC $SVGTMP
+    
+        if [ "X$SUCCESS" == "XYES" ]; then
+
+           SVGTMP=`realpath $SVGTMP`
+
+        # ------------------------------------------------ #
+        # MAKE IMAGE HREFS ABSOLUTE
+        # ------------------------------------------------ #
+    
+        # TODO: if image does not exist -> substitute
+ 
+          IFHTTP=`echo $PDFSRC | grep "http.\?://" | wc -l`
+          if [ $IFHTTP -lt 1 ]; then
+          SRCPATH=`realpath $PDFSRC | rev | #
+                   cut -d "/" -f 2- | rev`
+          SRCSRC=`basename $PDFSRC`
+          cd $SRCPATH
+            for XLINK in `cat $SRCSRC            | #
+                          sed "s/$XLINKID/\n&/g" | #
+                          grep "$XLINKID"`         #
+             do
+               IMGSRC=`echo $XLINK         | #
+                       cut -d "\"" -f 2    | #
+                       cut -d "\"" -f 2    | #
+                       sed "s/$XLINKID//g" | #
+                       sed 's,file://,,g'`   #
+               IMG=`basename $IMGSRC`
+               IMGPATH=`realpath $IMGSRC | rev | # 
+                        cut -d "/" -f 2- | rev`  #
+               ABSPATH=`realpath $IMGPATH`
+               NEWXLINK="$XLINKID=\"$ABSPATH/$IMG\""
+               sed -i "s,$XLINK,$NEWXLINK,g" $SVGTMP
+               echo "$XLINK -> $NEWXLINK"
+            done
+          cd - > /dev/null
+         fi
+              svglayers2pdfpages $SVGTMP $PDFGET
+        fi
+    
+        elif [ "X$EXT" == "Xpdf" ]; then
+    
+               getFile $PDFSRC $PDFGET   
+        fi
+   fi
+ }
+
+# --------------------------------------------------------------------------- #
+
+function SPREAD() {
+
+ # TODO: if image do not export svg
+
+   PLUSCLASS=`echo $* | sed 's/ /\n/g' | # SPACES TO NEWLINES
+              grep "^class:" | cut -d ":" -f 2` # SELECT CLASS
+
+ # -------------------------------------------------------- #
+ # WHAT HAPPENS HERE ????????
+ # -------------------------------------------------------- #
+   mkpages $*
+
+
+   EXPORTBASE=`echo $PDFSRC | md5sum | cut -c 1-10`
+ # -------------------------------------------------------- #
+ # DOUBLE PAGES
+ # -------------------------------------------------------- #
+   if [ `ls ${TMPID}${EXPORTBASE}_[0-9]*.pdf 2> /dev/null | # IF NOT YET DONE
+         wc -l` -lt  1 ]; then
+         pdftk $PDFDOUBLEPAGES burst \
+               output ${TMPID}${EXPORTBASE}_%05d.pdf
+       PN=1
+       for DOUBLEPAGE in `ls ${TMPID}${EXPORTBASE}_*.pdf`
+        do
+           EXPORTNUM="${PN}-$((PN + 1))"
+           EXPORTNAME="${EXPORTBASE}_${EXPORTNUM}"
+           mv $DOUBLEPAGE ${TMPID}${EXPORTNAME}.pdf
+           PN=`expr $PN + 2`
+       done
+   fi
+ # -------------------------------------------------------- #
+ # SINGLE PAGES
+ # -------------------------------------------------------- #
+   if [ `ls ${TMPID}${EXPORTBASE}_[0-9]*.png 2> /dev/null | # IF NOT YET DONE
+         wc -l` -lt  1 ]; then
+         convert $PDFGET -scene 1 ${TMPID}${EXPORTBASE}_%05d.png  
+         pdftk $PDFGET burst output ${TMPID}${EXPORTBASE}_%05d.pdf
+         rm doc_data.txt
+   fi
+
+ # -------------------------------------------------------- #
+ # CHECK PAGES
+ # -------------------------------------------------------- #
+   if [ `echo $PAGES | grep "^-$" | wc -l` -gt 0 ]; then
+         PA="1"
+         PX=`pdftk $PDFGET dump_data output | #
+             grep -i NumberofPages | cut -d ":" -f 2 | #
+             sed 's/ //g'`
+         PAGES="${PA}-${PX}"
+   fi
+
+ # -------------------------------------------------------- #
+ # MAKE EXPORTS ACCORDING TO PAGE SELECTION
+ # -------------------------------------------------------- #
+   REGION="-crop 417x592+10+10 +repage"
+   PA=`echo $PAGES | cut -d "-" -f 1`
+   PX=`echo $PAGES | cut -d "-" -f 2`
+ # -------------------------------------------------------- #
+ # WORKAROUND: IF FIRST PAGE IS RIGHT -> ADD LEFT SIDE
+ # -------------------------------------------------------- #
+   if [ `python -c "print $PA / 2.0" | #
+         cut -d "." -f 2` -lt 5 ];then
+         PA=`expr $PA - 1`
+   elif [ $PA -eq 1 ]; then
+         PA="1"
+   fi
+
+   CNT=1 ; PN=$PA # KEEP ON COUNTING
+   for PAGESELECTION in `ls ${TMPID}${EXPORTBASE}_[0-9]*.png | #
+                         sed -n "${PA},${PX}p"`
+     do
+         PAIR="$PAIR \( $PAGESELECTION $REGION -flatten -coalesce -append \)"
+         CNT=`expr $CNT + 1`
+         if [ $CNT -gt 2 ]; then
+ 
+            EXPORTNUM="${PN}-$((PN + 1))"
+            EXPORTNAME="${EXPORTBASE}_${EXPORTNUM}"
+            EXPORTFULL=$HTMLSRCDIR/${EXPORTNAME}.png
+ 
+            eval "convert $PAIR +append -gravity west ${EXPORTFULL}"
+            EXPORTFULL=$HTMLSRCDIR/${EXPORTNAME}.svg
+            PDFNOW=${TMPID}${EXPORTNAME}.pdf
+           #inkscape --export-plain-svg=${EXPORTFULL} ${PDFNOW}
+ 
+            TAKETHIS=`ls -S $HTMLSRCDIR/${EXPORTNAME}.* | #
+                      tail -n 1 | rev | cut -d "/" -f 1 | rev`
+            if [ `echo $TAKETHIS | grep ".svg$" | wc -l` -gt 0 ]
+            then ADDCLASS="v"; else ADDCLASS=""; fi
+            IMGPFAD="$HTMLSRCDIRNAME/${TAKETHIS}"
+           #write2src "<table class=\"spread full $PLUSCLASS\"><tr><td>"
+           #write2src "<img src=\"$IMGPFAD\" class=\"full $ADDCLASS\" />"
+           #write2src '</td></tr></table>'
+            write2src "<img src=\"$IMGPFAD\" class=\"spread full $ADDCLASS $PLUSCLASS\" />"
+ 
+            PAIR=""; CNT=1 # RESET
+            PN=`expr $PN + 2`
+         fi
+    done
+         if [ `echo $PAIR | wc -c` -gt 1 ]; then
+ 
+            EXPORTNAME="${EXPORTBASE}_${PX}-X"
+            EXPORTFULL=$HTMLSRCDIR/${EXPORTNAME}.png
+            eval "convert $PAIR +append \
+                                -gravity west ${EXPORTFULL}"
+    
+            PDFLAST=`echo $PAGESELECTION | sed 's/\.png$/.pdf/'`
+            EXPORTFULL=$HTMLSRCDIR/${EXPORTNAME}.svg
+           #inkscape --export-plain-svg=${EXPORTFULL} ${PDFLAST}
+    
+            TAKETHIS=`ls -S $HTMLSRCDIR/${EXPORTNAME}.* | #
+                      tail -n 1 | rev | cut -d "/" -f 1 | rev`
+            if [ `echo $TAKETHIS | grep ".svg$" | wc -l` -gt 0 ]
+            then ADDCLASS="v"; else ADDCLASS=""; fi
+            IMGPFAD="$HTMLSRCDIRNAME/${TAKETHIS}"
+           #write2src "<table class=\"spread half $PLUSCLASS\"><tr><td>"
+           #write2src "<img src=\"$IMGPFAD\" class=\"half\" />"
+           #write2src '</td></tr></table>'
+            write2src "<img src=\"$IMGPFAD\" class=\"spread half $ADDCLASS $PLUSCLASS\" />"
+         fi
+         PAIR="" # RESET
+}
+
+# --------------------------------------------------------------------------- #
 
