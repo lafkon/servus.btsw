@@ -1,67 +1,105 @@
 
-  if [ `grep "\LK" $SRCDUMP | wc -l` -lt 1 ]; then
-  write2src "\newcommand{\LK}{}"
-  write2src "\newif\iflindafirst%
-             \lindafirsttrue%
-             \renewcommand\LK{%
-             \iflindafirst%
-             {\textbf{%
-               Linda Kronman~(LK): }}\lindafirstfalse
-              \else\textbf{%
-               LK: 
-              }\fi
-             }"
-  write2src "\newcommand{\AS}{}"
-  write2src "\newif\ifaudreyfirst%
-             \audreyfirsttrue%
-             \renewcommand\AS{%
-             \ifaudreyfirst%
-             {\textbf{%
-               Audrey Samson~(AS): }}\audreyfirstfalse
-              \else\textbf{%
-               AS: 
-              }\fi
-             }"
-  write2src "\newcommand{\AZ}{}"
-  write2src "\newif\ifandreasfirst%
-             \andreasfirsttrue%
-             \renewcommand\AZ{%
-             \ifandreasfirst%
-             {\textbf{%
-               Andreas Zingerle~(AZ): }}\andreasfirstfalse
-              \else\textbf{%
-               AZ: 
-              }\fi
-             }"
-  write2src "\newcommand{\ML}{}"
-  write2src "\newif\ifmichaelafirst%
-             \michaelafirsttrue%
-             \renewcommand\ML{%
-             \ifmichaelafirst%
-             {\textbf{%
-               Michaela Lakova~(ML): }}\michaelafirstfalse
-              \else\textbf{%
-               ML: 
-              }\fi
-             }"
-  fi
+  TARGETFORMAT=`echo $PANDOCACTION | #
+                sed 's/\-w/\n&/'   | #
+                grep "^-w"         | #
+                cut -d " " -f 2`
 
+  echo $TARGETFORMAT
 
+  if [ "T$TARGETFORMAT" == "Tlatex" ]; then
+
+     if [ `grep "\LK" $SRCDUMP | wc -l` -lt 1 ]; then
+     write2src "\newcommand{\LK}{}"
+     write2src "\newif\iflindafirst%
+                \lindafirsttrue%
+                \renewcommand\LK{%
+                \iflindafirst%
+                {\textbf{%
+                  Linda Kronman~(LK): }}\lindafirstfalse
+                 \else\textbf{%
+                  LK: 
+                 }\fi
+                }"
+     write2src "\newcommand{\AS}{}"
+     write2src "\newif\ifaudreyfirst%
+                \audreyfirsttrue%
+                \renewcommand\AS{%
+                \ifaudreyfirst%
+                {\textbf{%
+                  Audrey Samson~(AS): }}\audreyfirstfalse
+                 \else\textbf{%
+                  AS: 
+                 }\fi
+                }"
+     write2src "\newcommand{\AZ}{}"
+     write2src "\newif\ifandreasfirst%
+                \andreasfirsttrue%
+                \renewcommand\AZ{%
+                \ifandreasfirst%
+                {\textbf{%
+                  Andreas Zingerle~(AZ): }}\andreasfirstfalse
+                 \else\textbf{%
+                  AZ: 
+                 }\fi
+                }"
+     write2src "\newcommand{\ML}{}"
+     write2src "\newif\ifmichaelafirst%
+                \michaelafirsttrue%
+                \renewcommand\ML{%
+                \ifmichaelafirst%
+                {\textbf{%
+                  Michaela Lakova~(ML): }}\michaelafirstfalse
+                 \else\textbf{%
+                  ML: 
+                 }\fi
+                }"
+     fi
+   
+   
 function LK(){
-  write2src "\LK"
-}
-
+     write2src "\LK"
+   }
+   
 function AS(){
-  write2src "\AS"
-}
-
+     write2src "\AS"
+   }
+   
 function AZ(){
-  write2src "\AZ"
-}
-
+     write2src "\AZ"
+   }
+   
 function ML(){
-  write2src "\ML"
-}
+     write2src "\ML"
+   }
 
 function BY() { write2src "{\by{$*}}"; }
+   
+ elif [ "T$TARGETFORMAT" == "Thtml" ]; then
+
+    
+function LK(){
+     write2src "<span class=\"lk\">LK:</span> "
+   }
+   
+function AS(){
+     write2src "<span class=\"as\">AS:</span> "
+   }
+   
+function AZ(){
+     write2src "<span class=\"az\">AZ:</span> "
+   }
+   
+function ML(){
+     write2src "<span class=\"ml\">ML:</span> "
+   }
+   
+function BY() { 
+   
+   write2src "<p class=\"by\">$* </p>" 
+   
+   }
+
+fi
+
+
 
