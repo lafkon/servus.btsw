@@ -1,0 +1,83 @@
+# =========================================================================== #
+#  O V E R W R I T E   F U N C T I O N S
+# =========================================================================== #
+
+# =========================================================================== #
+#  S H A R E D
+# =========================================================================== #
+   XLINKID="xlink:href"
+
+# =========================================================================== #
+
+function BIOGRAPHY() {
+
+   write2src "<div class=\"looklike bio\"></div>"
+
+}
+
+# =========================================================================== #
+
+function BY() {
+
+  AUTHOR=`echo $* | recode utf8..h0`
+  write2src "<div class=\"by\">by $AUTHOR</div>"
+}
+
+# =========================================================================== #
+
+function HTMLIN() {
+
+ write2src "$*"
+
+}
+
+# =========================================================================== #
+
+function FLUSHTHISIS() {
+
+
+ THISISID="<!-- THISIS"
+
+ COUNT=1
+ for THISLINENUM in `grep -n "$THISISID" $SRCDUMP | cut -d ":" -f 1`
+  do
+      THISID=`sed -n "${LASTLINENUM}p" $SRCDUMP | #
+              sed "s/^$THISISID//g"    | #
+              sed "s/^[ ]*//"          | #
+              cut -d " " -f 1`
+      COUNTPAD=`echo 0000$COUNT | rev | cut -c 1-4 | rev`
+      if [ $COUNT -eq 1 ]; then
+           sed -n "1,${THISLINENUM}p" $SRCDUMP > ${TMPID}.html
+      else
+           sed -n "${LASTLINENUM},${THISLINENUM}p" $SRCDUMP | #
+           sed "s/<p/& class=\"$THISID\"/g" | #
+           sed "s/<h[0-9]/& class=\"$THISID\"/g" | #
+           sed "s/<[ou]l/& class=\"$THISID\"/g" | #
+           tee >> ${TMPID}.html
+      fi 
+      LASTLINENUM=$THISLINENUM
+      COUNT=`expr $COUNT + 1`
+ done
+        
+ sed -n "${THISLINENUM},\$p" $SRCDUMP | # 
+ sed "s/<p/& class=\"$THISID\"/g" | #
+ sed "s/<h[0-9]/& class=\"$THISID\"/g" | #
+ sed "s/<[ou]l/& class=\"$THISID\"/g" | #
+ tee >> ${TMPID}.html
+
+
+}
+
+# =========================================================================== #
+
+function THISIS() {
+
+
+ write2src "$COMSTART THISIS $* $COMCLOSE"
+ echo "$COMSTART THISIS $* $COMCLOSE"
+
+
+}
+
+# =========================================================================== #
+
