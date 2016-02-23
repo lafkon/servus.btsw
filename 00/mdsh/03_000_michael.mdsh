@@ -248,10 +248,50 @@ associated costs (not necessarily monetary, but also effort required or
 “drawbacks” experienced).
 
 
-
-
 % SUPERIMPOSE: 00/pages/03_000_michael.svg 4-5
 % NEWPAGE:
+
+% HTMLIN: <table><tr>
+% HTMLIN: <td class="m">Source of knowledge</td>
+% HTMLIN: <td class="m">Time required</td>
+% HTMLIN: <td class="m">Reliability</td>
+% HTMLIN: <td class="m">Completeness</td>
+% HTMLIN: <td class="m">Costs</td></tr><tr>
+% HTMLIN: <td>Just know</td>
+% HTMLIN: <td>None, but long preparation</td>
+% HTMLIN: <td>Medium-Very good; depends on sources</td>
+% HTMLIN: <td>Medium-Very good; depends on sources</td>
+% HTMLIN: <td>Low; most sources are free</td></tr><tr>
+% HTMLIN: <td>Do again and observe</td>
+% HTMLIN: <td>Low/as long as the original</td>
+% HTMLIN: <td>Good; wrong identification is unlikely</td>
+% HTMLIN: <td>Medium; depends on observer</td>
+% HTMLIN: <td>Low</td></tr><tr>
+% HTMLIN: <td>Third party sources</td>
+% HTMLIN: <td>None, but long preparation</td>
+% HTMLIN: <td>Medium; disclosed data is correct, mere reports not necessarily</td>
+% HTMLIN: <td>Low; only what actually occurred and was published</td>
+% HTMLIN: <td>Low-Medium; many sources are free</td></tr><tr>
+% HTMLIN: <td>Technical capabilities</td>
+% HTMLIN: <td>Medium; investigation who+capabilities required</td>
+% HTMLIN: <td>Low; not everyone who can, actually does</td>
+% HTMLIN: <td>Good, but not every party can be identified</td>
+% HTMLIN: <td>Low</td></tr><tr>
+% HTMLIN: <td>Upstream providers</td>
+% HTMLIN: <td>Low</td>
+% HTMLIN: <td>Good; services can be bought (=tested)</td>
+% HTMLIN: <td>Low; often not disclosed</td>
+% HTMLIN: <td>Low-Medium; depends on data provided/testing</td></tr><tr>
+% HTMLIN: <td>Publish traps</td>
+% HTMLIN: <td>Medium-Long</td>
+% HTMLIN: <td>Very good; actual use is observed</td>
+% HTMLIN: <td>Medium; depends on time and observability</td>
+% HTMLIN: <td>Low-Medium; providing data is free, but active tests might cost</td></tr><tr>
+% HTMLIN: <td>Illegal activity + wait</td>
+% HTMLIN: <td>Medium; investigation will take some time</td>
+% HTMLIN: <td>Very good</td>
+% HTMLIN: <td>Very good; limited to certain groups (enforcement)</td>
+% HTMLIN: <td>Very high</td></tr></table>
 
 % SCALEFONT: .95
 
