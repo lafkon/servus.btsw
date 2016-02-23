@@ -8,7 +8,6 @@
 % THISIS: intro ------------------------------------------------------------- %
 
 
-
 %  F O R E W O R D   U S H I
 % --------------------------------------------------------------------------- %
 % SPLIT: foreword
@@ -20,7 +19,6 @@
 % INCLUDE: 00/mdsh/00_000_ushi.mdsh 25-47
 % RESETALL:
 % NEXT:
-
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ %
@@ -266,4 +264,5 @@
 % SPREAD: https://github.com/christop/licenses/raw/5acdcf9/pdf/CC-BY-SA_4.0.pdf -
 
 % CONFORMPAGENUMBER:
+% FLUSHSTYLES:
 
