@@ -108,7 +108,7 @@ blockquote + * { margin-top: 4%; }
 blockquote + blockquote { margin-top: 0px;}
 
 h1:nth-child(1) { /* color:#00ff00; */
-                  margin-top: 10%; }
+                  margin-top: 8%; }
 
 
 /* COMPENSATE */
@@ -197,10 +197,8 @@ h1 > tt { text-transform: none;
 
 pre,code {
 
-  font-family: source-code-pro-light;
-  font-size: 1.3vw;
-  max-font-size: 80px;
-  min-font-size: 15px;
+  font-family: inconsolata;
+  font-size: 1.1em;
 
 }
 
@@ -208,8 +206,6 @@ tt,
 a  > code,
 p  > code,
 li > code {
-  font-family: source-code-pro-light;
-  font-size: 1em;
   white-space: nowrap;
 }
 
@@ -263,12 +259,6 @@ pre  a { text-decoration: none; }
 /* MDSH SPECIFIC
    ------------------------------------------- */
 
-div.footnotes { padding-bottom: 20%;}
-div.footnotes > * {
-  color:#00ffff;
-  width: 100%;
-}
-
 .by { margin-bottom:2%;margin-top:-2%;width:100%;}
 
 .split { visibility: hidden;
@@ -319,7 +309,13 @@ img.spread.hide { display: none; }
 
 /* CITATIONS */
 
-.book .fname { font-style:italic;color:#ff0000;}
-.book .gname { color:#00ff00; }
-.book .title { color:#0000ff; }
+div.footnotes { padding-bottom: 20%;}
+div.footnotes > * {
+  color:#0f0f0f;
+  width: 100%;
+}
+
+.book .fname {}
+.book .gname {}
+.book .title { font-style:italic; }
 
