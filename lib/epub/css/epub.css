@@ -1,0 +1,64 @@
+@font-face {
+font-family: hkgrotesk_regular;
+font-style: normal;
+font-weight: normal;
+src:url("hkgrotesk_regular.ttf");
+}
+
+@font-face {
+font-family: inconsolata_regular;
+font-style: normal;
+font-weight: normal;
+src:url("inconsolata_regular.ttf");
+}
+
+/* This defines styles and classes used in the book */
+body { font-family: hkgrotesk_regular;
+       margin: 5%; 
+       text-align: justify; 
+       font-size: medium; 
+       line-height: 1.2em;
+      }
+code { font-family: inconsolata_regular; }
+h1 { text-align: left; }
+h2 { text-align: left; }
+h3 { text-align: left; }
+h4 { text-align: left; }
+h5 { text-align: left; }
+h6 { text-align: left; }
+ol.toc { padding: 0; margin-left: 1em; }
+ol.toc li { list-style-type: none; margin: 0; padding: 0; }
+
+.hide { display:none; }
+
+h1,h2,h3 { font-family: inconsolata_regular;
+           line-height: 1.2em;
+ }
+
+h1.intro,
+h2.intro,
+h3.intro { color:#ff0000; 
+           font-family: hkgrotesk_regular;
+}
+p.intro { font-family: inconsolata_regular; 
+          text-align: left;
+}
+
+h1.standard,
+h2.standard,
+h3.standard { color:#00ff00; 
+
+}
+
+table { width: 80%;
+        margin-bottom: 4%;
+        clear: both;
+}
+table,td {
+
+ border: 1px solid #000000;
+ font-size:0.9em;
+
+}
+td { padding: 5px; }
+table .m { font-weight: bold; }
