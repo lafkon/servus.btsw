@@ -442,6 +442,8 @@ function SPREAD() {
             write2src "<img src=\"$IMGPFAD\" class=\"spread half $ADDCLASS $PLUSCLASS\" />"
          fi
          PAIR="" # RESET
+
+         rm ${TMPID}${EXPORTBASE}_*.p*  # SAVE DISKSPACE
 }
 
 # --------------------------------------------------------------------------- #
